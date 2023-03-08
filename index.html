@@ -1,30 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PnTest</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <style>
-    body {
-      font-family: sans-serif;
-      background-color: #252526;
-      color: #D4D4D4;
-      text-align: center;
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
     }
 
-    hr {
-      width: 400px;
-      border: 1px solid #FC6A0C;
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
     }
 
-    #main {
-      margin-top: 100px;
-    }
   </style>
 </head>
+
 <body>
-  <div id="main">
-    <h1>This browser is being intercepted by PnTest!</h1>
-  </div>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark main-nav">
+      <div class="container justify-content-center">
+        <img src="img/logo.svg" width="100" />
+        <strong class="display-6" style="color:white">PnTest</strong>
+        <ul class="nav navbar-nav w-100 justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary btn-sm" href="#" style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+              <i class="bi bi-download"></i>
+              Download
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="py-5 container-fluid" style="background-color: #2D2D2D; color: #D4D4D4;">
+      <div class="row py-lg-5">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-5">
+          <h1 class="fw-light">Intercept, modify and replay calls from micro services and browsers.</h1>
+          <p class="lead py-4">
+            Cross Platform. Open Source. Native GUI application.
+          </p>
+          <p>
+            <a href="#" class="btn btn-primary my-2" style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+              <i class="bi bi-download"></i>
+              Download (Beta)
+            </a>
+
+            <a href="#" class="btn btn-secondary my-2">
+              <i class="bi bi-github"></i>
+              Github
+            </a>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <a href="img/screenshot1.png">
+            <img src="img/screenshot1.png" width=700 />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">One-click setup to intercept HTTP, HTTPS and Websocket messages from:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-2">
+          <p><strong>Chrome</strong></p>
+          <img src="img/chrome.png" width="96" />
+        </div>
+        <div class="col-md-2">
+          <p><strong>Firefox</strong></p>
+          <img src="img/firefox.png" width="96" />
+        </div>
+        <div class=" col-md-2">
+          <p><strong>Docker</strong></p>
+          <img src="img/docker1.png" width="96" />
+        </div>
+        <div class="col-md-2">
+          <p><strong>HTTP Proxy</strong></p>
+          <img src="img/server.png" width="96" />
+        </div>
+        <div class="col-md-2">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="container marketing py-4">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+          </h2>
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+            here.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/screenshot2.png" width=600 />
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5 order-md-2">
+          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+            layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-7 order-md-1">
+          <img src="img/screenshot3.png" width=600 />
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+            intended to be actually read, simply here to give you a better view of what this would look like with some
+            actual content. Your content.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/screenshot4.png" width=600 />
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
