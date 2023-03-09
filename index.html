@@ -35,15 +35,19 @@
         <strong class="display-6" style="color:white">PnTest</strong>
         <ul class="nav navbar-nav w-100 justify-content-end">
           <li class="nav-item active">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">FAQ</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class=" btn btn-primary btn-sm" href="#" style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+            <a class=" btn btn-primary btn-sm" href="#download"
+              style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
               <i class="bi bi-download"></i>
-              Download
+              Download (Beta)
             </a>
           </li>
         </ul>
@@ -57,17 +61,18 @@
       <div class="row py-lg-5">
         <div class="col-md-1">&nbsp;</div>
         <div class="col-md-5">
-          <h1 class="fw-light">Intercept, modify and replay calls from micro services and browsers.</h1>
+          <h1 class="fw-light">Intercept, modify and replay calls from browsers and containers.</h1>
           <p class="lead py-4">
             Cross Platform. Open Source. Native GUI application.
           </p>
           <p>
-            <a href="#" class="btn btn-primary my-2" style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+            <a href="#download" class="btn btn-primary my-2"
+              style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
               <i class="bi bi-download"></i>
               Download (Beta)
             </a>
 
-            <a href="#" class="btn btn-secondary my-2">
+            <a href="https://github.com/evanrolfe/pntest" class="btn btn-secondary my-2">
               <i class="bi bi-github"></i>
               Github
             </a>
@@ -77,6 +82,16 @@
           <a href="img/screenshot1.png">
             <img src="img/screenshot1.png" width=700 />
           </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <p class="lead">Enter your email to be notified of new releases:</p>
+          <div class="input-group mb-3 justify-content-center" width="300px">
+            <input type="text" class="form-control" placeholder="Email" style="max-width: 300px;">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+          </div>
+          <small>*You will be emailed at most twice per year</small>
         </div>
       </div>
     </section>
@@ -112,25 +127,14 @@
     <div class="container marketing py-4">
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
-          </h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-            here.</p>
+          <h2 class="featurette-heading">Intercept browsers and containers</h2>
+          <p class="lead py-3">One-click setup to intercept browsers, with automatic import of TLS certificates.</p>
+
+          <p class="lead py-3">Intercept all outbound traffic from your Docker containers.</p>
+
+          <p class="lead py-3">Capture HTTP, HTTPS and Websockets.</p>
         </div>
         <div class="col-md-5">
-          <img src="img/screenshot2.png" width=600 />
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-            layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-7 order-md-1">
           <img src="img/screenshot3.png" width=600 />
         </div>
       </div>
@@ -138,11 +142,24 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
+        <div class="col-md-5 order-md-2">
+          <h2 class="featurette-heading">Request editor</h2>
+          <p class="lead py-3">Send captured requests to the editor for modification and re-sending.</p>
+
+          <p class="lead py-3">Save responses for future reference.</p>
+        </div>
+        <div class="col-md-7 order-md-1">
+          <img src="img/screenshot2.png" width=600 />
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
+          <h2 class="featurette-heading">Modify requests on the fly</h2>
+
+          <p class="lead py-3">Modify requests and responses as they happen.</p>
         </div>
         <div class="col-md-5">
           <img src="img/screenshot4.png" width=600 />
@@ -151,15 +168,65 @@
 
       <hr class="featurette-divider">
 
-      <!-- /END THE FEATURETTES -->
+    </div>
 
-    </div><!-- /.container -->
+    <div id="download" class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">Download v0.0.1 (Beta)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">&nbsp;</div>
+        <div class="col-md-2">
+          <p><strong>Mac</strong></p>
+          <p><img src="img/mac.png" width="96" /></p>
+          <a href="https://github.com/evanrolfe/pntest/releases/download/v0.0.1beta/pntest-0.0.1.dmg">Download .dmg</a>
+        </div>
+        <div class="col-md-2">
+          <p><strong>Linux</strong></p>
+          <p><img src="img/linux.png" width="84" /></p>
+          <a href="https://github.com/evanrolfe/pntest/releases/download/v0.0.1beta/pntest-0.0.1.deb">Download .deb</a>
 
+          <p>(.rpm coming soon)</p>
+        </div>
+        <div class=" col-md-2">
+          <p><strong>Windows</strong></p>
+          <p><img src="img/windows.png" width="96" /></p>
+          <p>(coming soon)</p>
+        </div>
+        <div class="col-md-3">&nbsp;</div>
+      </div>
+    </div>
+
+    <div id="contact" class="container-fluid py-4">
+      <div class="row">
+        <div class="col-md-3">&nbsp;</div>
+        <div class="col-md-6">
+          <p class="lead">Contact Us:</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your name">
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your email address">
+          </div>
+
+          <div class="input-group mb-3">
+            <textarea class="form-control" aria-label="Message" placeholder="Message" rows="5"></textarea>
+          </div>
+
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+          </div>
+        </div>
+        <div class="col-md-3">&nbsp;</div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
