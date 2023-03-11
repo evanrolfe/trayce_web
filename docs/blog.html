@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PnTest</title>
+  <link rel="canonical" href="https://pntest.io">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .snippet {
+      background-color: #D4D4D4;
+      color: #2D2D2D;
+    }
+
+    pre {
+      background-color: #D4D4D4;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark main-nav">
+      <div class="container justify-content-center">
+        <img src="img/logo.svg" width="100" />
+        <strong class="display-6" style="color:white">PnTest</strong>
+        <ul class="nav navbar-nav w-100 justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#features">Features</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"
+              href="https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary btn-sm" href="#download"
+              style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+              <i class="bi bi-download"></i>
+              Download (Beta)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="py-5 container-fluid" style="max-width: 1000px">
+  <article class="blog-post">
+    <h2 class="blog-post-title">Intercepting Traffic from Docker Containers with Mitmproxy</h2>
+    <p class="blog-post-meta">11 March, 2023 by <a href="#">Evan Rolfe</a></p>
+
+    <hr>
+
+    <h4>Overview</h4>
+
+    <p>
+      <a href="https://github.com/evanrolfe/pntest_blog1">Full solution in Github.</a>
+    </p>
+
+    <p>Mitmproxy is an open-source proxy written in Python that allows interception, inspection, modification, and
+      replay of network traffic between a client and a server. Typically users start the proxy from the command line,
+      configure their application (such as a web browser or a mobile app) to use the proxy port, and then all traffic
+      flows through the proxy where it can be intercepted.</p>
+
+    <p>While such a setup is a powerful tool to have, there are cases where you might not have the option or the
+      inclination to configure your application to use mitmproxy's port, for example:
+    <ul>
+      <li>Closed-source or proprietary software that do not allow proxy configuration</li>
+      <li>Applications which do not respect the <span class="snippet">HTTP_PROXY</span> or <span
+          class="snippet">HTTPS_PROXY</span> environment variables (most Go applications
+        are like this)</li>
+      <li>Poorly written and legacy code where it would be difficult to ensure that all external HTTP calls make use of
+        a proxy port</li>
+    </ul>
+    </p>
+
+    <p>This can be solved by using Mitmproxy in transparent mode along with our application running inside a Docker
+      container. Transparent mode means that Mitmproxy is able to intercept requests as the network layer and not just
+      from the application. So we do not need to change the configuration of our application.
+    </p>
+
+    <p>
+      We could follow the Mitmproxy docs to run it in the same container that our application runs, however there are
+      still some issues with this approach:
+    <ul>
+      <li>The application container might already have Iptables configured which would interfere with Mitmproxy's setup
+      </li>
+      <li>We would need to install dependencies such as Python which might conflict with existing dependencies already
+        installed</li>
+      <li>The installation process would need to be manually repeated for each container we want to intercept, because
+        every container is different - some run ubuntu, others run alpine, some has bash, others have sh etc. </li>
+    </ul>
+    </p>
+
+    <p>So to address both of these issues, we run mitmproxy in a separate container - called the proxy container, and we
+      configure the application container to use the proxy container's network. This means that the application
+      container does not need to be modified, simply restarted with the <span class="snippet">--network</span> option
+      changed. And the proxy container can be re-used to intercept other applications, without any manual setup. This
+      configuration is illustrated below:</p>
+
+    <div class="text-center">
+      <img src="img/pntest-blog-arch.png">
+    </div>
+
+    <h4>The Application Container</h4>
+
+    <p>Let's start by creating an application, who's outbound traffic we want to intercept. We'll create a simple web
+      server in python which returns some content when you make a GET request to it. The server handler will also make
+      its own HTTP request to http://pntest.io every time it receives a request.</p>
+
+    <p>In <span class="snippet">app_container/server.py:</span>
+    <pre><code>import os
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+import requests
+
+host_name = os.environ['HOST_NAME']
+port = os.environ['PORT']
+
+RESPONSE_HTML = "This is an example web server. Request path: %s"
+
+class ServerHandlers(BaseHTTPRequestHandler):
+    def do_GET(self):
+        response = requests.get("http://pntest.io" + self.path)
+        print("Response from pntest.io: ", response.status_code)
+
+        self.send_response(200)
+        self.send_header("Content-type", "text/html")
+        self.end_headers()
+        self.wfile.write(bytes(RESPONSE_HTML % self.path, "utf-8"))
+
+if __name__ == "__main__":
+    server = HTTPServer((host_name, int(port)), ServerHandlers)
+    print("Server starting at http://%s:%s" % (host_name, port))
+    server.serve_forever()</code></pre>
+    </p>
+
+    <p>Now lets run this server in a container by adding a Dockerfile.</p>
+
+    <p>
+      In <span class="snippet">app_container/Dockerfile:</span>
+    <pre><code>FROM python:3.11-slim
+
+ENV HOST_NAME=0.0.0.0
+ENV PORT=8090
+
+WORKDIR /app
+ADD ./ /app
+
+RUN apt-get update
+RUN apt-get upgrade -qy
+RUN apt-get install curl -qy
+
+RUN pip install --upgrade pip
+RUN pip install requests
+
+EXPOSE 8090
+
+ENTRYPOINT ["python", "/app/server.py"]</code></pre>
+    </p>
+
+    <p>Test the server works by building and running the container:
+    <pre><code>$ docker build -t my_server .
+$ docker run -p 8090:8090 -i -t my_server:latest</pre></code>
+    </p>
+
+    <p>Then browse to <a href="http://localhost:8090">http://localhost:8090</a> and you should see content returned from
+      the server.</p>
+
+    <h4>The Proxy Container</h4>
+
+    <p>For the proxy, create a script which will set the iptables rules to route all traffic through mitmproxy, and also
+      start mitmproxy itself.</p>
+
+    <p>In <span class="snippet">proxy_container/run.sh</span>:
+    <pre><code>iptables -t nat -A OUTPUT -m owner ! --uid-owner mitmproxyuser -p tcp --dport 1:65535 -j REDIRECT --to-port $PROXY_PORT
+
+su mitmproxyuser -c "mitmweb -p $PROXY_PORT --web-port $WEB_UI_PORT --web-host 0.0.0.0 --mode transparent"</code></pre>
+    </p>
+
+    <p>The iptables rule essentially says to route all outbound TCP traffic to `$PROXY_PORT`, unless the traffic is
+      coming from the mitmproxyuser. This is so that we don't create an infinite loop where mitmproxy sends the requests
+      back to itself.</p>
+
+    <p>Now to run the proxy in a container, we add the Dockerfile and a script which sets the environment variables,
+      install
+      dependencies and create the mitmproxyuser.</p>
+
+    <p>In <span class="snippet">proxy_container/Dockerfile</span>:
+    <pre><code>FROM python:3.11-slim
+
+ENV PROXY_PORT=8091
+ENV WEB_UI_PORT=8092
+
+WORKDIR /app
+ADD ./ /app
+
+RUN apt-get update
+RUN apt-get upgrade -qy
+RUN apt-get install iptables curl -qy
+
+RUN pip install --upgrade pip
+RUN pip install mitmproxy
+
+RUN useradd --create-home mitmproxyuser
+ENTRYPOINT /bin/bash run.sh</code></pre>
+    </p>
+
+    <p>Test the proxy works by building and running its container:
+    <pre><code>$ docker build -t proxy .
+$ docker run --privileged -p 8092:8092 -i -t proxy:latest</code></pre>
+    </p>
+
+    <p>Note that `--privileged` is required in order to set the iptables rule, otherwise it will fail with an "operation
+      not permitted" error. We also forward port 8092 to the container because that is where the mitmproxy web UI is
+      running. Open <a href="http://localhost:8092">http://localhost:8092</a> in a browser to get the Mitmproxy web UI:
+    </p>
+
+    <div class="text-center">
+      <img src="img/blog-screenshot1.png">
+    </div>
+
+    <p>To verify that request intercept is working, get the id of the proxy container you just started, open a bash
+      console
+      on it, and make a curl request to a URL:
+    <pre><code>$ docker container ls
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+d7219ea073ce proxy:latest "/bin/sh -c '/bin/ba…" About an hour ago Up About an hour 0.0.0.0:8090->8090/tcp,
+0.0.0.0:8092->8092/tcp inspiring_mendeleev
+
+$ docker exec -it d7219ea073ce bash
+root@d7219ea073ce:/app# curl https://www.pntest.io</code></pre>
+    </p>
+
+    <p>Now check the web UI again and you should see the request you just made with curl come up:</p>
+
+    <div class="text-center">
+      <img src="img/blog-screenshot2.png">
+    </div>
+
+    <h4>Intercepting the Application with the Proxy</h4>
+
+    <p>In the last two steps, we created an application whose traffic we want to intercept, and we created a proxy
+      container which routes all of its traffic to mitmproxy. To intercept the traffic from the application container,
+      start the proxy container with ports forwarded for both the Mitmproxy web UI and for the application container's
+      server:
+    <pre><code>$ docker run --privileged -p 8090:8090 -p 8092:8092 -i -t proxy:latest</code></pre>
+    </p>
+
+    <p>Then start the application container without any ports forwarded and with the <span
+        class="snippet">--network</span> option set to the proxy
+      container's ID:
+    <pre><code>$ docker run --network container:d7219ea073ce -i -t my_server:latest</code></pre>
+    </p>
+
+    <p>Now try browsing to <a href="http://localhost:8090">http://localhost:8090</a> and you should see the request that
+      the server makes to https://www.pntest.io appear in the MitmProxy web UI.</p>
+
+    <p>Why does this work? By setting <span class="snippet">--network container:d7219ea073ce</span> on the application
+      container, we tell it to use
+      the network of the proxy container, so both the app and proxy containers are effectively sharing the same traffic.
+      This is why we also need to forward the port 8090 to the proxy container, in order to allow the server to still be
+      accessed from the outside.</p>
+
+    <p>This approach is powerful because we can use the proxy container to intercept traffic from any other containers
+      regardless of what applications or configuration is running on them.</p>
+
+    <hr>
+  </article>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <hr>
+      <p class="float-start">Created by Evan Rolfe
+        <a href="https://www.linkedin.com/in/evan-rolfe-a7202862/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/evanrolfe"><i class="bi bi-github"></i></a>
+      </p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script
+    type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+</body>
+
+</html>
