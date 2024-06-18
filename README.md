@@ -1,4 +1,4 @@
-# PnTest Website
+# Trayce Website
 
 (Mac) install `brew install fswatch`
 
