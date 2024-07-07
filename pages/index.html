@@ -4,8 +4,9 @@
         <div class="col-md-5">
             <h1 class="fw-light">"The network tab for Docker containers."</h1>
             <p class="lead py-4">
-                Intercept HTTP(S) requests to, from and in-between Docker containers.
+                Intercept HTTP(S) requests to & from Docker containers in your local dev environment.
             </p>
+
             <p>
                 <a href="#download" class="btn btn-primary my-2"
                     style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
@@ -13,15 +14,15 @@
                     Download (Beta)
                 </a>
 
-                <a href="https://github.com/evanrolfe/pntest" class="btn btn-secondary my-2">
+                <a href="https://github.com/evanrolfe/trayce_gui" class="btn btn-secondary my-2">
                     <i class="bi bi-github"></i>
                     Github
                 </a>
             </p>
         </div>
         <div class="col-md-2">
-            <a href="img/screenshot1.png">
-                <img src="img/screenshot1.png" width=700 />
+            <a href="img/screenshot.jpg">
+                <img src="img/screenshot.jpg" width=700 />
             </a>
         </div>
     </div>
@@ -39,92 +40,11 @@
                         id="mc-embedded-subscribe">Sign
                         Up</button>
                 </div>
-                <small>*You will be emailed at most twice per year</small>
+                <small>*You can unsubscribe at anytime</small>
             </form>
         </div>
     </div>
 </section>
-
-<div id="features" class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
-    <div class="row">
-        <div class="col-md-12">
-            <p class="lead">One-click setup to intercept HTTP, HTTPS and Websocket messages from:</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">&nbsp;</div>
-        <div class="col-md-2">
-            <p><strong>Chrome</strong></p>
-            <img src="img/chrome.png" width="96" />
-        </div>
-        <div class="col-md-2">
-            <p><strong>Firefox</strong></p>
-            <img src="img/firefox.png" width="96" />
-        </div>
-        <div class=" col-md-2">
-            <p><strong>Docker</strong></p>
-            <img src="img/docker1.png" width="96" />
-        </div>
-        <div class="col-md-2">
-            <p><strong>HTTP Proxy</strong></p>
-            <img src="img/server.png" width="96" />
-        </div>
-        <div class="col-md-2">&nbsp;</div>
-    </div>
-</div>
-
-<div class="container marketing py-4">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Intercept browsers and containers</h2>
-            <p class="lead py-3">One-click setup to intercept browsers, with automatic import of TLS certificates.</p>
-
-            <p class="lead py-3">Intercept all outbound traffic from your Docker containers, including
-                container-to-container calls.</p>
-
-            <p class="lead py-3">Capture HTTP, HTTPS and Websockets.</p>
-        </div>
-        <div class="col-md-5">
-            <a href="img/screenshot3.png">
-                <img src="img/screenshot3.png" width=600 />
-            </a>
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-5 order-md-2">
-            <h2 class="featurette-heading">Request editor</h2>
-            <p class="lead py-3">Send captured requests to the editor for modification and re-sending.</p>
-
-            <p class="lead py-3">Save responses for future reference.</p>
-        </div>
-        <div class="col-md-7 order-md-1">
-            <a href="img/screenshot2.png">
-                <img src="img/screenshot2.png" width=600 />
-            </a>
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Modify requests on the fly</h2>
-
-            <p class="lead py-3">Modify requests and responses as they happen.</p>
-        </div>
-        <div class="col-md-5">
-            <a href="img/screenshot4.png">
-                <img src="img/screenshot4.png" width=600 />
-            </a>
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-</div>
 
 <div id="download" class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
     <div class="row">
@@ -137,12 +57,12 @@
         <div class="col-md-2">
             <p><strong>Mac</strong></p>
             <p><img src="img/mac.png" width="96" /></p>
-            <a href="https://github.com/evanrolfe/pntest/releases/download/v0.0.1-beta/pntest.dmg">Download .dmg</a>
+            <a href="https://github.com/evanrolfe/trayce_gui/releases/tag/v0.0.1">Download .dmg</a>
         </div>
         <div class="col-md-2">
             <p><strong>Linux</strong></p>
             <p><img src="img/linux.png" width="84" /></p>
-            <a href="https://github.com/evanrolfe/pntest/releases/download/v0.0.1-beta/pntest.deb">Download .deb</a>
+            <a href="https://github.com/evanrolfe/trayce_gui/releases/tag/v0.0.1">Download .deb</a>
 
             <p>(.rpm coming soon)</p>
         </div>
@@ -153,4 +73,59 @@
         </div>
         <div class="col-md-3">&nbsp;</div>
     </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="https://github.com/evanrolfe/trayce_gui/blob/main/BUILD.md">Build from source</a>
+        </div>
+    </div>
+</div>
+
+<div class="container marketing py-4">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">How does it work?</h2>
+            <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container runs
+                along side your existing containers. The agent uses eBPF probes to
+                intercept network requests and send them back to the GUI to be displayed.</p>
+
+            <p>Protocols Supported:
+            <ul>
+                <li>HTTP</li>
+                <li>HTTPS (for Go and OpenSSL-based languages like Python, Ruby etc.) </li>
+            </ul>
+            </p>
+
+            <p>Coming soon:
+            <ul>
+                <li>Websockets</li>
+                <li>GRPC</li>
+                <li>MySQL & Postgres</li>
+                <li>MongoDB</li>
+                <li>Redis</li>
+                <li>Kafka</li>
+            </ul>
+            </p>
+
+            <br>
+
+            <h2 class="featurette-heading">Who is it for?</h2>
+            <p class="lead py-3">
+                Trayce is intended for anyone wanting to see whats going on inside their <b>local</b> Docker containers,
+                backend developers, QA engineers, testers etc.
+            </p>
+            <p class="lead py-3">
+                It is however not intended to be used for production-monitoring. There are plenty of existing tools to
+                do that.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <a href="img/screenshot2.png">
+                <img src="img/screenshot2.png" width=600 />
+            </a>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
 </div>
