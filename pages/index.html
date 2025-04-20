@@ -2,16 +2,21 @@
     <div class="row py-lg-5">
         <div class="col-md-1">&nbsp;</div>
         <div class="col-md-5">
-            <h1 class="fw-light">"The network tab for Docker containers."</h1>
+            <h1 class="fw-light">"The network tab for containers."</h1>
             <p class="lead py-4">
-                Intercept HTTP(S) requests to & from Docker containers in your local dev environment.
+                Instantly monitor network traffic in your local Docker containers.
+                <br>
+            </p>
+
+            <p class="">
+                HTTP, HTTP2, GRPC, MySQL, Postgres, TLS.
             </p>
 
             <p>
                 <a href="#download" class="btn btn-primary my-2"
                     style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
                     <i class="bi bi-download"></i>
-                    Download (Beta)
+                    Download
                 </a>
 
                 <a href="https://github.com/evanrolfe/trayce_gui" class="btn btn-secondary my-2">
@@ -21,8 +26,8 @@
             </p>
         </div>
         <div class="col-md-2">
-            <a href="img/screenshot.jpg">
-                <img src="img/screenshot.jpg" width=700 />
+            <a href="img/screenshot_grpc.png">
+                <img src="img/screenshot_grpc.png" width=700 />
             </a>
         </div>
     </div>
@@ -53,7 +58,7 @@
 <div id="download" class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
     <div class="row">
         <div class="col-md-12">
-            <p class="lead">Download v0.0.2 (Beta)</p>
+            <p class="lead">Download</p>
         </div>
     </div>
     <div class="row">
@@ -61,12 +66,12 @@
         <div class="col-md-2">
             <p><strong>Mac</strong></p>
             <p><img src="img/mac.png" width="96" /></p>
-            <a href="https://github.com/evanrolfe/trayce_gui/releases/tag/v0.0.2-beta">Download .dmg</a>
+            <a href="https://github.com/evanrolfe/trayce_gui/releases/latest">Download .dmg</a>
         </div>
         <div class="col-md-2">
             <p><strong>Linux</strong></p>
             <p><img src="img/linux.png" width="84" /></p>
-            <a href="https://github.com/evanrolfe/trayce_gui/releases/tag/v0.0.2-beta">Download .deb</a>
+            <a href="https://github.com/evanrolfe/trayce_gui/releases/latest">Download .deb</a>
 
             <p>(.rpm coming soon)</p>
         </div>
@@ -80,12 +85,12 @@
     <br>
     <div class="row">
         <div class="col-md-12">
-            <a href="https://github.com/evanrolfe/trayce_gui/blob/main/BUILD.md">Build from source</a>
+            <a href="https://github.com/evanrolfe/trayce_gui/blob/main/README.md#build">Build from source</a>
         </div>
     </div>
 </div>
 
-<div class="container marketing py-4">
+<div id="features" class="container marketing py-4">
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">How does it work?</h2>
@@ -97,14 +102,15 @@
             <ul>
                 <li>HTTP</li>
                 <li>HTTPS (for Go and OpenSSL-based languages like Python, Ruby etc.) </li>
+                <li>GRPC</li>
+                <li>MySQL</li>
+                <li>Postgres</li>
             </ul>
             </p>
 
             <p>Coming soon:
             <ul>
                 <li>Websockets</li>
-                <li>GRPC</li>
-                <li>MySQL & Postgres</li>
                 <li>MongoDB</li>
                 <li>Redis</li>
                 <li>Kafka</li>
@@ -117,12 +123,20 @@
             <p class="lead py-3">
                 Trayce is intended for anyone wanting to see whats going on inside their <b>local</b> Docker containers:
                 backend developers, QA engineers, testers etc.
+                It is not intended for production monitoring.
             </p>
         </div>
         <div class="col-md-5">
-            <a href="img/screenshot2.png">
-                <img src="img/screenshot2.png" width=500 />
-            </a>
+            <p>
+                <a href="img/screenshot_containers.png">
+                    <img src="img/screenshot_containers.png" width=500 />
+                </a>
+            </p>
+            <p>
+                <a href="img/screenshot_psql.png">
+                    <img src="img/screenshot_psql.png" width=500 />
+                </a>
+            </p>
         </div>
     </div>
 </div>
