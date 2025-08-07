@@ -46,7 +46,7 @@
                         <a class="nav-link" href="index.html#features">Features</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html#pricing">Pricing</a>
+                        <a class="nav-link" href="https://get.trayce.dev">Purchase</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -73,14 +73,13 @@
     <div class="row py-lg-5">
         <div class="col-md-1">&nbsp;</div>
         <div class="col-md-5">
-            <h1 class="fw-light">"The network tab for containers."</h1>
+            <h1 class="fw-light">"The network tab for containers with an HTTP client."</h1>
             <p class="lead py-4">
                 Instantly monitor network traffic in your local Docker containers.
-                <br>
-            </p>
-
-            <p class="">
-                Supported protocols: HTTP, HTTP2, GRPC, MySQL, Postgres, TLS.
+                <br><br>
+                HTTP client based on local files in the .bru format.
+                <br><br>
+                Lightweight & fast UI, without electron or a web browser.
             </p>
 
             <p>
@@ -97,8 +96,8 @@
             </p>
         </div>
         <div class="col-md-2">
-            <a href="img/screenshot_grpc.png">
-                <img src="img/screenshot_grpc.png" width=700 />
+            <a href="img/screenshot5.png">
+                <img src="img/screenshot5.png" width=700 />
             </a>
         </div>
     </div>
@@ -161,10 +160,34 @@
     </div>
 </div>
 
-<div id="features" class="container marketing py-4">
+<div id="features" class="container-fluid py-4" style="background-color: #2D2D2D; color: #D4D4D4;">
     <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">How does it work?</h2>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-6">
+            <h2 class="featurette-heading">Features</h2>
+            <p class="lead py-3">
+            <ul>
+                <li>Offline only - HTTP requests are stored in local files using the .bru format</li>
+                <li>Manage collections and folders to organize your requests</li>
+                <li>Variables to re-use values</li>
+                <li>Environment variables to switch between different environments</li>
+                <li>Securely store secret variables in a .env file</li>
+            </ul>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <p>
+                <a href="img/screenshot_grpc.png">
+                    <img src="img/screenshot_grpc.png" width=500 />
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row featurette">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-6">
+            <h2 class="featurette-heading">How does container monitoring work?</h2>
             <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container runs
                 along side your existing containers. The agent uses eBPF probes to
                 intercept network requests and send them back to the GUI to be displayed.</p>
@@ -179,20 +202,12 @@
             </ul>
             </p>
 
-            <p>Coming soon:
-            <ul>
-                <li>Websockets</li>
-                <li>MongoDB</li>
-                <li>Redis</li>
-                <li>Kafka</li>
-            </ul>
-            </p>
-
             <br>
 
             <h2 class="featurette-heading">Who is it for?</h2>
             <p class="lead py-3">
-                Trayce is intended for anyone wanting to see whats going on inside their <b>local</b> Docker containers:
+                Trayce container monitoring is intended for anyone wanting to see whats going on inside their
+                <b>local</b> Docker containers:
                 backend developers, QA engineers, testers etc.
                 It is not intended for production monitoring.
             </p>
@@ -212,51 +227,102 @@
     </div>
 </div>
 
-<div id="pricing" class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
+<!-- <div id="faq" class="container-fluid py-4" style="background-color: #F5F5F5;">
     <div class="row">
-        <div class="col-md-12">
-            <h2 class="mb-4">Pricing</h2>
+        <div class="col-md-12 text-center">
+            <h2 class="mb-4">Frequently Asked Questions</h2>
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-md-5">
-            <div class="card mb-4 shadow-sm h-100">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Free</h4>
+        <div class="col-md-8">
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            How does container monitoring work?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The TrayceAgent container runs alongside your existing containers and uses eBPF probes to
+                            intercept network requests. These requests are then sent back to the GUI to be displayed in
+                            real-time.
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body d-flex flex-column">
-                    <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/month</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Monitor HTTP & HTTPS traffic</li>
-                        <li>Search & filter</li>
-                    </ul>
-                    <a href="#download" class="w-100 d-block text-decoration-none text-primary mt-auto">Download
-                        Free</a>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            What protocols are supported?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Trayce supports monitoring HTTP, HTTPS (for Go and OpenSSL-based languages), GRPC, MySQL,
+                            and Postgres traffic.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="card mb-4 shadow-sm h-100">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Is Trayce suitable for production monitoring?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            No, Trayce is designed for local development and testing environments only. It's perfect for
+                            backend developers, QA engineers, and testers who want to monitor network traffic in their
+                            local Docker containers.
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body d-flex flex-column">
-                    <h1 class="card-title pricing-card-title">$20<small class="text-muted fw-light">/year</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Monitor HTTP & HTTPS traffic</li>
-                        <li>Monitor GRPC, MySQL, Postgres traffic</li>
-                        <li>Upload GRPC protobuf files to decode messages</li>
-                        <li>Search & filter</li>
-                        <li>Support Open Source Software</li>
-                    </ul>
-                    <a href="https://get.trayce.dev" class="w-100 btn btn-lg btn-primary mt-auto"
-                        style="background-color: #6CB4AD; border: 0;">Get
-                        Pro</a>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            How do I organize my HTTP requests?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can manage collections and folders to organize your requests. Trayce also supports
+                            variables to re-use values and environment variables to switch between different
+                            environments. Secret variables can be securely stored in a .env file.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            What is the .bru format?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The .bru format is a local file format used to store HTTP requests. This makes Trayce
+                            completely offline - all your requests are stored locally on your machine, ensuring privacy
+                            and security.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
         <!-- FOOTER -->
