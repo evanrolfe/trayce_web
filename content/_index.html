@@ -4,8 +4,146 @@ description: "Love Bruno? Hate Electron? Trayce is an API client which is intero
 modern UI which does not use browser-rendering."
 ---
 
-<section class="py-5 container-fluid" style="background-color: #2D2D2D; color: #D4D4D4;">
-    <div class="row py-lg-5">
+<style>
+    .hero-section {
+        position: relative;
+        background-color: #2D2D2D;
+        color: #D4D4D4;
+        overflow: hidden;
+    }
+
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -20%;
+        width: 40%;
+        height: 200%;
+        background: #6CB4AD;
+        border-radius: 50%;
+        filter: blur(300px);
+        opacity: 0.3;
+    }
+
+    .hero-section::after {
+        content: '';
+        position: absolute;
+        top: -10%;
+        right: -30%;
+        width: 50%;
+        height: 160%;
+        background: #FB8C00;
+        border-radius: 40% 60% 70% 30%;
+        filter: blur(300px);
+        opacity: 0.2;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-section2::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -20%;
+        width: 40%;
+        height: 200%;
+        background: #6CB4AD;
+        border-radius: 50%;
+        filter: blur(300px);
+        opacity: 0.3;
+    }
+
+    .feature-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+        padding: 2rem;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    .feature-card h3 {
+        color: #D4D4D4;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    .download-section {
+        position: relative;
+        background-color: rgba(99, 99, 99, 0.8);
+        color: #D4D4D4;
+        overflow: hidden;
+    }
+
+    .download-section::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -20%;
+        width: 40%;
+        height: 200%;
+        background: #6CB4AD;
+        border-radius: 50%;
+        filter: blur(300px);
+        opacity: 0.3;
+    }
+
+    .download-section::after {
+        content: '';
+        position: absolute;
+        top: -10%;
+        right: -30%;
+        width: 50%;
+        height: 160%;
+        background: #FB8C00;
+        border-radius: 40% 60% 70% 30%;
+        filter: blur(300px);
+        opacity: 0.2;
+    }
+
+    .download-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .features-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+        padding: 2rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .features-card .card-header {
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 1.5rem 0;
+    }
+
+    .features-card .card-header h4 {
+        color: #D4D4D4;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .features-card .card-body {
+        padding: 0;
+    }
+
+    .features-card .table {
+        color: #D4D4D4;
+    }
+
+    .features-card .table-secondary {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
+
+<section class="py-5 container-fluid hero-section">
+    <div class="row py-lg-5 hero-content">
         <div class="col-md-1">&nbsp;</div>
         <div class="col-md-5">
             <h1 class="fw-light">Love Bruno? Hate Electron?</h1>
@@ -33,11 +171,28 @@ modern UI which does not use browser-rendering."
         </div>
         <div class="col-md-2">
             <a href="img/screenshot5.png">
-                <img src="/img/screenshot5.png" width=700 />
+                <img src="/img/screenshot5.png" width=1000 />
             </a>
         </div>
     </div>
-    <div class="row text-center">
+    <!-- <div class="row py-lg-5 hero-content justify-content-center">
+        <div class="col-md-3">
+            <div class="feature-card">
+                <h3>API Client</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="feature-card">
+                <h3>Developer First</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="feature-card">
+                <h3>Network Monitor</h3>
+            </div>
+        </div>
+    </div> -->
+    <div class="row text-center hero-content">
         <div class="col-md-12">
             <form
                 action="https://pntest.us14.list-manage.com/subscribe/post?u=12e6589bb25afc25201b8a0d6&amp;id=c96c436682&amp;f_id=008192e0f0"
@@ -61,13 +216,13 @@ modern UI which does not use browser-rendering."
     </div>
 </section>
 
-<div id="download" class="container-fluid text-center py-4" style="background-color: #F5F5F5;">
-    <div class="row">
+<div id="download" class="container-fluid text-center py-4 download-section">
+    <div class="row download-content">
         <div class="col-md-12">
             <h2 class="mb-4">Download</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row download-content">
         <div class="col-md-3">&nbsp;</div>
         <div class="col-md-2">
             <p><strong>Mac</strong></p>
@@ -89,14 +244,15 @@ modern UI which does not use browser-rendering."
         <div class="col-md-3">&nbsp;</div>
     </div>
     <br>
-    <div class="row">
+    <div class="row download-content">
         <div class="col-md-12">
             <a href="https://github.com/evanrolfe/trayce_gui/blob/main/README.md#build">Build from source</a>
         </div>
     </div>
 </div>
 
-<div id="features" class="container-fluid text-center py-4" style="background-color: #2D2D2D; color: #D4D4D4;">
+<div id="features" class="container-fluid text-center py-4 hero-section"
+    style="background-color: #2D2D2D; color: #D4D4D4;">
     <div class="row">
         <div class="col-md-12">
             <h2 class="mb-4">Features</h2>
@@ -104,9 +260,9 @@ modern UI which does not use browser-rendering."
     </div>
     <div class="row justify-content-center">
         <div class="col-md-3">
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-bold" style="color: #2D2D2D;">Free & Open Source</h4>
+            <div class="features-card">
+                <div class="card-header">
+                    <h4 class="my-0 fw-bold">Free & Open Source</h4>
                 </div>
                 <div class="card-body">
                     <table class="table table-borderless">
@@ -200,10 +356,8 @@ modern UI which does not use browser-rendering."
             </div>
         </div>
     </div>
-</div>
 
-<div id="how_does_it_work" class="container-fluid py-4" style="background-color: #2D2D2D; color: #D4D4D4;">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center my-5">
         <div class="col-md-4 text-start">
             <h2 class="featurette-heading">How does it work?</h2>
             <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container runs
