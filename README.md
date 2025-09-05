@@ -1,9 +1,9 @@
 # Trayce Website
 
-(Mac) install `brew install fswatch`
+Pre-requisites: [Hugo](https://gohugo.io/getting-started/installing/), [Go](https://golang.org/doc/install) and [Git](https://git-scm.com)
 
+```shell
+# Start the server
+hugo mod tidy
+hugo server --logLevel debug --disableFastRender -p 1313
 ```
-python3 -m pip install pelican
-fswatch -0 ./pages/ | xargs -0 -n 1 -I {} python3 generate.py
-```
-

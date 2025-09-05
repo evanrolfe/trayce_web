@@ -1,0 +1,43 @@
+# Hugo configuration file
+title: Trayce
+baseURL: "https://trayce.dev"
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Features
+      url: "/#features"
+      weight: 1
+    - name: Blog
+      url: "/blog"
+      weight: 2
+    - name: Contact
+      url: "https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17"
+      weight: 3
+    - name: Download
+      url: "#download"
+      weight: 4
+    - name: GitHub
+      url: "https://github.com/evanrolfe/trayce_gui"
+      weight: 5
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+
+  editURL:
+    enable: false
