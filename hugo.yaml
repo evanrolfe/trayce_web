@@ -2,6 +2,9 @@
 title: Trayce
 baseURL: "https://trayce.dev"
 
+# Configure Hugo to build to ./docs instead of ./public
+publishDir: "docs"
+
 markup:
   # allow raw html
   goldmark:
