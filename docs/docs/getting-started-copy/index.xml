@@ -1,0 +1,74 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Site – Getting Started</title>
+    <link>//localhost:1313/docs/getting-started-copy/</link>
+    <description>Recent content in Getting Started on My Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/getting-started-copy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Install</title>
+      <link>//localhost:1313/docs/getting-started-copy/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/getting-started-copy/install/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Create a Collection</title>
+      <link>//localhost:1313/docs/getting-started-copy/create-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/getting-started-copy/create-collection/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Create a Folder</title>
+      <link>//localhost:1313/docs/getting-started-copy/create-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/getting-started-copy/create-folder/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Create a Request</title>
+      <link>//localhost:1313/docs/getting-started-copy/create-request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/getting-started-copy/create-request/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Site – GraphQL</title>
+    <link>//localhost:1313/docs/sending-requests-copy/graphql/</link>
+    <description>Recent content in GraphQL on My Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/sending-requests-copy/graphql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Query</title>
+      <link>//localhost:1313/docs/sending-requests-copy/graphql/query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/sending-requests-copy/graphql/query/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>//localhost:1313/docs/sending-requests-copy/graphql/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/sending-requests-copy/graphql/variables/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

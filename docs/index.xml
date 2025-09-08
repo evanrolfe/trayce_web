@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Site – Trayce - API Client</title>
+    <title>Trayce App – Trayce - API Client</title>
     <link>//localhost:34043/</link>
-    <description>Recent content in Trayce - API Client on My Site</description>
+    <description>Recent content in Trayce - API Client on Trayce App</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     

@@ -2,20 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>//localhost:34043/docs/variables/environment-variables/</loc>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>//localhost:34043/docs/scripting/execution-flow/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/first-page/</loc>
+    <loc>//localhost:34043/docs/sending-requests/graphql/query/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/</loc>
+    <loc>//localhost:34043/docs/sending-requests/http/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/folder/</loc>
+    <loc>//localhost:34043/docs/getting-started/install/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/folder/leaf/</loc>
+    <loc>//localhost:34043/docs/introduction/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>//localhost:34043/docs/sending-requests/http/parameters/</loc>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>//localhost:34043/docs/getting-started/create-collection/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/getting-started/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/global-environment-variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/sending-requests/graphql/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/sending-requests/graphql/variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/sending-requests/http/headers/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/js-file/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/collection-variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/getting-started/create-folder/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/sending-requests/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/sending-requests/http/body/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/getting-started/create-request/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/folder-variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/npm-packages/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/js-reference/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/request-variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/runtime-variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/sync-requests/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/process-environment-variables/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/response-query/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/scripting/random-values/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/variables/variables-interpolation/</loc>
+  </url><url>
+    <loc>//localhost:34043/about/</loc>
+  </url><url>
+    <loc>//localhost:34043/categories/</loc>
+  </url><url>
+    <loc>//localhost:34043/docs/</loc>
+  </url><url>
+    <loc>//localhost:34043/tags/</loc>
+  </url><url>
+    <loc>//localhost:34043/</loc>
   </url>
 </urlset>

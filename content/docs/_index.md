@@ -1,19 +1,10 @@
 ---
-title: Documentation
-next: first-page
-toc: false
+title: Docs
+type: docs
+cascade:
+  type: docs
 ---
 
-This is a demo of the theme's documentation layout.
+Welcome to Trayce documentation!
 
-## Hello, World!
 
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
