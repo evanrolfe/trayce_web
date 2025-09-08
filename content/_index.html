@@ -1,164 +1,17 @@
 ---
-title: "Trayce - API Client & Docker Network Monitoring"
-description: "Love Bruno? Hate Electron? Trayce is an API client which is interoperable with Bruno collections. Fast and
-modern UI which does not use browser-rendering."
+title: "Trayce - API Client"
+description: "Trayce - API Client"
 ---
-
-<style>
-    a {
-        color: #4DADEE;
-        text-decoration: underline;
-    }
-
-    .hero-section {
-        position: relative;
-        background-color: #2D2D2D;
-        color: #D4D4D4;
-        overflow: hidden;
-    }
-
-    .hero-section::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -20%;
-        width: 40%;
-        height: 200%;
-        background: #6CB4AD;
-        border-radius: 50%;
-        filter: blur(300px);
-        opacity: 0.3;
-    }
-
-    .hero-section::after {
-        content: '';
-        position: absolute;
-        top: -10%;
-        right: -30%;
-        width: 50%;
-        height: 160%;
-        background: #FB8C00;
-        border-radius: 40% 60% 70% 30%;
-        filter: blur(300px);
-        opacity: 0.2;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .feature-card {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 2px;
-        padding: 2rem;
-        text-align: center;
-        backdrop-filter: blur(10px);
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .feature-card h3 {
-        color: #D4D4D4;
-        font-weight: 300;
-        margin-bottom: 1rem;
-    }
-
-    .feature-card .card-header {
-        flex-shrink: 0;
-        margin-bottom: 10px;
-    }
-
-    .feature-card .card-body {
-        text-align: left;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .download-section {
-        position: relative;
-        background-color: rgba(99, 99, 99, 0.8);
-        color: #D4D4D4;
-        overflow: hidden;
-    }
-
-    .download-section::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -20%;
-        width: 40%;
-        height: 200%;
-        background: #6CB4AD;
-        border-radius: 50%;
-        filter: blur(300px);
-        opacity: 0.3;
-    }
-
-    .download-section::after {
-        content: '';
-        position: absolute;
-        top: -10%;
-        right: -30%;
-        width: 50%;
-        height: 160%;
-        background: #FB8C00;
-        border-radius: 40% 60% 70% 30%;
-        filter: blur(300px);
-        opacity: 0.2;
-    }
-
-    .download-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .features-list-card {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 2px;
-        padding: 2rem;
-        backdrop-filter: blur(10px);
-    }
-
-    .features-list-card .card-header {
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 1.5rem 0;
-    }
-
-    .features-list-card .card-header h4 {
-        color: #D4D4D4;
-        font-weight: 300;
-        margin: 0;
-    }
-
-    .features-list-card .card-body {
-        padding: 0;
-    }
-
-    .features-list-card .table {
-        color: #D4D4D4;
-    }
-
-    .features-list-card .table-secondary {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-</style>
 
 <section class="py-5 container-fluid hero-section">
     <div class="row py-lg-5 hero-content">
         <div class="col-md-1">&nbsp;</div>
         <div class="col-md-5">
-            <h1 class="fw-light">Love Bruno? Hate Electron?</h1>
+            <h1 class="fw-light">Tired of slow Electron-based API clients?</h1>
             <p class="lead py-4">
             <h4>Trayce is an API client which is interoperable with Bruno collections.</h4>
             <br>
-            A fast and modern app without using browser-rendered UI.
+            A fast and modern UI without using browser-rendered graphics.
             <br><br>
             Free and open source.
             <br><br>
@@ -187,6 +40,22 @@ modern UI which does not use browser-rendering."
         <div class="col-md-3">
             <div class="feature-card">
                 <div class="card-header">
+                    <h4 class="my-0 fw-bold">Developer First</h4>
+                </div>
+                <div class="card-body">
+                    <p><u>100% free and open source.</u> There are no paid-versions of this software.</p>
+
+                    <p><u>Offline only.</u> All files are stored locally in the git-friendly bruno-lang format. No
+                        account sign up is needed.</p>
+
+                    <p><u>Interoperable with Bruno.</u> You can open and work on Bruno collections with Trayce, and they
+                        will still be compatible with Bruno app.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="feature-card">
+                <div class="card-header">
                     <h4 class="my-0 fw-bold">API Client</h4>
                 </div>
                 <div class="card-body">
@@ -201,22 +70,6 @@ modern UI which does not use browser-rendering."
                     <p><u>Ultra-fast and lightweight GUI.</u> Looks and feels like a desktop application, not a website.
                         See performance benchmarks below.
                     </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="feature-card">
-                <div class="card-header">
-                    <h4 class="my-0 fw-bold">Developer First</h4>
-                </div>
-                <div class="card-body">
-                    <p><u>100% free and open source.</u> There are no paid-versions of this software.</p>
-
-                    <p><u>Offline only.</u> All files are stored locally in the git-friendly bruno-lang format. No
-                        account sign up is needed.</p>
-
-                    <p><u>Interoperable with Bruno.</u> You can open and work on Bruno collections with Trayce, and they
-                        will still be compatible with Bruno app.</p>
                 </div>
             </div>
         </div>
