@@ -1,6 +1,10 @@
 # Hugo configuration file
-title: Trayce
-baseURL: "https://trayce.dev"
+title: My Site
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
 
 # Configure Hugo to build to ./docs instead of ./public
 publishDir: "docs"
@@ -11,27 +15,35 @@ markup:
     renderer:
       unsafe: true
 
-  # enable syntax highlight
+  # enable hextra syntax highlight
   highlight:
     noClasses: false
 
 menu:
   main:
-    - name: Features
-      url: "/#features"
+    - name: Docs
+      pageRef: /docs
       weight: 1
-    - name: Blog
-      url: "/blog"
+    - name: About
+      pageRef: /about
       weight: 2
-    - name: Contact
-      url: "https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17"
+    - name: Contact ↗
+      url: "https://github.com/imfing"
       weight: 3
-    - name: Download
-      url: "#download"
+    - name: Search
       weight: 4
+      params:
+        type: search
     - name: GitHub
-      url: "https://github.com/evanrolfe/trayce_gui"
       weight: 5
+      url: "https://github.com/imfing/hextra-starter-template"
+      params:
+        icon: github
+    - name: Twitter
+      weight: 6
+      url: "https://twitter.com/"
+      params:
+        icon: x-twitter
 
 params:
   navbar:
@@ -43,4 +55,5 @@ params:
     displayPoweredBy: true
 
   editURL:
-    enable: false
+    enable: true
+    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"

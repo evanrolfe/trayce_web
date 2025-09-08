@@ -57,6 +57,10 @@ footer {
     overflow: hidden;
 }
 
+.hero-section img {
+    width: 1000px;
+}
+
 .hero-section::before {
     content: '';
     position: absolute;

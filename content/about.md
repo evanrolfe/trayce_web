@@ -1,6 +1,7 @@
 ---
 title: About
-type: about
+type: main
+toc: false
 ---
 
 This is the about page.

@@ -1,58 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr"><head>
+	<meta name="generator" content="Hugo 0.149.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=34043&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>My Site</title>
+  <meta name="description" content="Trayce - API Client" /><link rel="canonical" href="//localhost:34043/" itemprop="url" />
 
-<head>
-	<meta name="generator" content="Hugo 0.149.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trayce - API Client</title>
-    <link rel="canonical" href="http://localhost:1313/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.css">
+<meta property="og:title" content="Trayce - API Client">
+<meta
+  property="og:description"
+  content="
+    Trayce - API Client
+  ">
+<meta
+  property="og:type"
+  content="
+    website
+  ">
+<meta property="og:url" content="//localhost:34043/">
+
+
+  <meta itemprop="name" content="Trayce - API Client">
+  <meta itemprop="description" content="Trayce - API Client">
+  <meta itemprop="wordCount" content="405">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Trayce - API Client">
+  <meta name="twitter:description" content="Trayce - API Client">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+
+
+  <script>
+    
+
+    function setTheme(theme) {
+      document.documentElement.classList.remove("light", "dark");
+
+      if (theme !== "light" && theme !== "dark") {
+       theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+
+      document.documentElement.classList.add(theme);
+      document.documentElement.style.colorScheme = theme;
+    }
+
+    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'system')
+
+  </script>
+
+  <script>
+    
+
+    if (localStorage.getItem('banner-closed')) {
+      document.documentElement.style.setProperty("--hextra-banner-height", "0px");
+      document.documentElement.classList.add("hextra-banner-hidden");
+    }
+  </script>
+
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/style.css">
 </head>
+<body><header>
+    <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
+        <div class="container justify-content-center">
+            <img src="/img/logo.svg" width="100" />
+            <h1 style="color:white; font-weight: 300; margin-top: 3px;">Trayce</h1>
+            <ul class="nav navbar-nav w-100 justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#features">Features</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link"
+                        href="https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" btn btn-primary btn-sm" href="#download"
+                        style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+                        <i class="bi bi-download"></i>
+                        Download
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/evanrolfe/trayce_gui" class="btn btn-secondary btn-sm"
+                        style="margin-top: 4px; margin-left: 4px; border: 0; position: relative;">
+                        <i class="bi bi-github" style="height: 15px;"></i>
+                        Github
+                        <span class="badge position-absolute top-0 start-100 translate-middle"
+                            style="font-size: 0.6rem; z-index: 1000; background-color: #ffb3ba; color: #333;">
+                            446 Star
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
-            <div class="container justify-content-center">
-                <img src="/img/logo.svg" width="100" />
-                <h1 style="color:white; font-weight: 300; margin-top: 3px;">Trayce</h1>
-                <ul class="nav navbar-nav w-100 justify-content-end">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/#features">Features</a>
-                    </li>
-                    
-                    <li class="nav-item active">
-                        <a class="nav-link"
-                            href="https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class=" btn btn-primary btn-sm" href="#download"
-                            style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
-                            <i class="bi bi-download"></i>
-                            Download
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/evanrolfe/trayce_gui" class="btn btn-secondary btn-sm"
-                            style="margin-top: 4px; margin-left: 4px; border: 0; position: relative;">
-                            <i class="bi bi-github" style="height: 15px;"></i>
-                            Github
-                            <span class="badge position-absolute top-0 start-100 translate-middle"
-                                style="font-size: 0.6rem; z-index: 1000; background-color: #ffb3ba; color: #333;">
-                                446 Star
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        
 
 <section class="py-5 container-fluid hero-section">
     <div class="row py-lg-5 hero-content">
@@ -83,9 +140,9 @@
                 </a>
             </p>
         </div>
-        <div class="col-md-2">
-            <a href="img/screenshot5.png">
-                <img src="/img/screenshot5.png" width=1000 />
+        <div class="col-md-6">
+            <a href="/img/screenshot5.png">
+                <img src="/img/screenshot5.png" />
             </a>
         </div>
     </div>
@@ -101,7 +158,8 @@
                     <p><u>Offline only.</u> All files are stored locally in the git-friendly bruno-lang format. No
                         account sign up is needed.</p>
 
-                    <p><u>Interoperable with Bruno.</u> You can open and work on Bruno collections with Trayce, and they
+                    <p><u>Interoperable with Bruno.</u> You can open and work on Bruno collections with Trayce, and
+                        they
                         will still be compatible with Bruno app.</p>
                 </div>
             </div>
@@ -116,11 +174,13 @@
                         variables and secrets
                         management.</p>
 
-                    <p><u>Near-parity with Bruno features.</u> Most of the features from Bruno have been implemented in
+                    <p><u>Near-parity with Bruno features.</u> Most of the features from Bruno have been implemented
+                        in
                         Trayce, but some are still being worked on. See the feature list below for more details.
                     </p>
 
-                    <p><u>Ultra-fast and lightweight GUI.</u> Looks and feels like a desktop application, not a website.
+                    <p><u>Ultra-fast and lightweight GUI.</u> Looks and feels like a desktop application, not a
+                        website.
                         See performance benchmarks below.
                     </p>
                 </div>
@@ -135,7 +195,8 @@
                     <p><u>The network tab for Docker containers.</u> View network traffic on your local Docker
                         containers, for development, debugging and testing purposes.</p>
 
-                    <p><u>Zero configuration required.</u> No need to run a proxy or a configure a CA certificate, the
+                    <p><u>Zero configuration required.</u> No need to run a proxy or a configure a CA certificate,
+                        the
                         Trayce Agent uses eBPF to monitor network traffic including TLS-encrypted traffic. </p>
 
                     <p>Supports HTTP, HTTP2, gRPC, MySQL, PostgreSQL, TLS.</p>
@@ -192,19 +253,19 @@
         <div class="col-md-3">&nbsp;</div>
         <div class="col-md-2">
             <p><strong>Mac</strong></p>
-            <p><img src="/img/mac.png" width="96" /></p>
+            <div class="d-flex justify-content-center"><img src="/img/mac.png" width="96" /></div>
             <a href="https://github.com/evanrolfe/trayce_gui/releases/latest">Download .dmg</a>
         </div>
         <div class="col-md-2">
             <p><strong>Linux</strong></p>
-            <p><img src="/img/linux.png" width="84" /></p>
+            <div class="d-flex justify-content-center"><img src="/img/linux.png" width="84" /></div>
             <a href="https://github.com/evanrolfe/trayce_gui/releases/latest">Download .deb</a>
 
             <p>(.rpm coming soon)</p>
         </div>
         <div class=" col-md-2">
             <p><strong>Windows</strong></p>
-            <p><img src="/img/windows.png" width="96" /></p>
+            <div class="d-flex justify-content-center"><img src="/img/windows.png" width="96" /></div>
             <p>(coming soon)</p>
         </div>
         <div class="col-md-3">&nbsp;</div>
@@ -339,7 +400,8 @@
     <div class="row justify-content-center my-5">
         <div class="col-md-4 text-start">
             <h2 class="featurette-heading">How does it work?</h2>
-            <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container runs
+            <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container
+                runs
                 along side your existing containers. The agent uses eBPF probes to
                 intercept network requests and send them back to the GUI to be displayed.</p>
 
@@ -412,20 +474,21 @@
 </script>
 
 
-    </main>
+      <footer class="container-fluid py-4 text-center" style="background-color: #2D2D2D; color: #D4D4D4;">
+    <div class="row">
+        <div class="col-md-12">
+            <p>© 2025 Trayce. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
     
-    <footer class="container-fluid py-4 text-center" style="background-color: #2D2D2D; color: #D4D4D4;">
-        <div class="row">
-            <div class="col-md-12">
-                <p>© 2025 Trayce. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
+        <script defer src="/en.search.js" integrity=""></script>
+  </body>
 </html>

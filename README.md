@@ -7,3 +7,5 @@ Pre-requisites: [Hugo](https://gohugo.io/getting-started/installing/), [Go](http
 hugo mod tidy
 hugo server --logLevel debug --disableFastRender -p 1313
 ```
+
+**Note:** `./docs` is where the generated html files live. Actual docs markdown files are in `./content/docs`.

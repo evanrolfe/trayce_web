@@ -1,57 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=34043&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>About – My Site</title>
+  <meta name="description" content="This is the about page." /><link rel="canonical" href="//localhost:34043/about/" itemprop="url" />
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="canonical" href="http://localhost:1313/about/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.css">
+<meta property="og:title" content="About">
+<meta
+  property="og:description"
+  content="
+    
+      This is the about page.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="//localhost:34043/about/"><meta property="article:section" content="">
+
+
+
+
+  <meta itemprop="name" content="About">
+  <meta itemprop="description" content="This is the about page.">
+  <meta itemprop="wordCount" content="5">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="About">
+  <meta name="twitter:description" content="This is the about page.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+
+
+  <script>
+    
+
+    function setTheme(theme) {
+      document.documentElement.classList.remove("light", "dark");
+
+      if (theme !== "light" && theme !== "dark") {
+       theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+
+      document.documentElement.classList.add(theme);
+      document.documentElement.style.colorScheme = theme;
+    }
+
+    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'system')
+
+  </script>
+
+  <script>
+    
+
+    if (localStorage.getItem('banner-closed')) {
+      document.documentElement.style.setProperty("--hextra-banner-height", "0px");
+      document.documentElement.classList.add("hextra-banner-hidden");
+    }
+  </script>
+
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/style.css">
 </head>
+<body><header>
+    <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
+        <div class="container justify-content-center">
+            <img src="/img/logo.svg" width="100" />
+            <h1 style="color:white; font-weight: 300; margin-top: 3px;">Trayce</h1>
+            <ul class="nav navbar-nav w-100 justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#features">Features</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link"
+                        href="https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" btn btn-primary btn-sm" href="#download"
+                        style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
+                        <i class="bi bi-download"></i>
+                        Download
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/evanrolfe/trayce_gui" class="btn btn-secondary btn-sm"
+                        style="margin-top: 4px; margin-left: 4px; border: 0; position: relative;">
+                        <i class="bi bi-github" style="height: 15px;"></i>
+                        Github
+                        <span class="badge position-absolute top-0 start-100 translate-middle"
+                            style="font-size: 0.6rem; z-index: 1000; background-color: #ffb3ba; color: #333;">
+                            446 Star
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
-            <div class="container justify-content-center">
-                <img src="/img/logo.svg" width="100" />
-                <h1 style="color:white; font-weight: 300; margin-top: 3px;">Trayce</h1>
-                <ul class="nav navbar-nav w-100 justify-content-end">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/#features">Features</a>
-                    </li>
-                    
-                    <li class="nav-item active">
-                        <a class="nav-link"
-                            href="https://us14.list-manage.com/contact-form?u=12e6589bb25afc25201b8a0d6&form_id=da49f328f865cdff8c4cc70aa118cd17">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class=" btn btn-primary btn-sm" href="#download"
-                            style="margin-top: 4px; background-color: #6CB4AD; border: 0;">
-                            <i class="bi bi-download"></i>
-                            Download
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/evanrolfe/trayce_gui" class="btn btn-secondary btn-sm"
-                            style="margin-top: 4px; margin-left: 4px; border: 0; position: relative;">
-                            <i class="bi bi-github" style="height: 15px;"></i>
-                            Github
-                            <span class="badge position-absolute top-0 start-100 translate-middle"
-                                style="font-size: 0.6rem; z-index: 1000; background-color: #ffb3ba; color: #333;">
-                                446 Star
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -68,20 +129,21 @@
     </div>
 </div>
 
-    </main>
+      <footer class="container-fluid py-4 text-center" style="background-color: #2D2D2D; color: #D4D4D4;">
+    <div class="row">
+        <div class="col-md-12">
+            <p>© 2025 Trayce. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
     
-    <footer class="container-fluid py-4 text-center" style="background-color: #2D2D2D; color: #D4D4D4;">
-        <div class="row">
-            <div class="col-md-12">
-                <p>© 2025 Trayce. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
+        <script defer src="/en.search.js" integrity=""></script>
+  </body>
 </html>

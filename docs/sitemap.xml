@@ -2,22 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>//localhost:34043/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>//localhost:34043/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//localhost:34043/docs/first-page/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/first-page/</loc>
+    <loc>//localhost:34043/docs/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/</loc>
+    <loc>//localhost:34043/docs/folder/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/folder/</loc>
+    <loc>//localhost:34043/docs/folder/leaf/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/folder/leaf/</loc>
+    <loc>//localhost:34043/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//localhost:34043/</loc>
   </url>
 </urlset>

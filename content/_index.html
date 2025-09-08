@@ -1,6 +1,7 @@
 ---
 title: "Trayce - API Client"
 description: "Trayce - API Client"
+toc: false
 ---
 
 <section class="py-5 container-fluid hero-section">
@@ -32,9 +33,9 @@ description: "Trayce - API Client"
                 </a>
             </p>
         </div>
-        <div class="col-md-2">
-            <a href="img/screenshot5.png">
-                <img src="/img/screenshot5.png" width=1000 />
+        <div class="col-md-6">
+            <a href="/img/screenshot5.png">
+                <img src="/img/screenshot5.png" />
             </a>
         </div>
     </div>
@@ -50,7 +51,8 @@ description: "Trayce - API Client"
                     <p><u>Offline only.</u> All files are stored locally in the git-friendly bruno-lang format. No
                         account sign up is needed.</p>
 
-                    <p><u>Interoperable with Bruno.</u> You can open and work on Bruno collections with Trayce, and they
+                    <p><u>Interoperable with Bruno.</u> You can open and work on Bruno collections with Trayce, and
+                        they
                         will still be compatible with Bruno app.</p>
                 </div>
             </div>
@@ -65,11 +67,13 @@ description: "Trayce - API Client"
                         variables and secrets
                         management.</p>
 
-                    <p><u>Near-parity with Bruno features.</u> Most of the features from Bruno have been implemented in
+                    <p><u>Near-parity with Bruno features.</u> Most of the features from Bruno have been implemented
+                        in
                         Trayce, but some are still being worked on. See the feature list below for more details.
                     </p>
 
-                    <p><u>Ultra-fast and lightweight GUI.</u> Looks and feels like a desktop application, not a website.
+                    <p><u>Ultra-fast and lightweight GUI.</u> Looks and feels like a desktop application, not a
+                        website.
                         See performance benchmarks below.
                     </p>
                 </div>
@@ -84,7 +88,8 @@ description: "Trayce - API Client"
                     <p><u>The network tab for Docker containers.</u> View network traffic on your local Docker
                         containers, for development, debugging and testing purposes.</p>
 
-                    <p><u>Zero configuration required.</u> No need to run a proxy or a configure a CA certificate, the
+                    <p><u>Zero configuration required.</u> No need to run a proxy or a configure a CA certificate,
+                        the
                         Trayce Agent uses eBPF to monitor network traffic including TLS-encrypted traffic. </p>
 
                     <p>Supports HTTP, HTTP2, gRPC, MySQL, PostgreSQL, TLS.</p>
@@ -141,19 +146,19 @@ description: "Trayce - API Client"
         <div class="col-md-3">&nbsp;</div>
         <div class="col-md-2">
             <p><strong>Mac</strong></p>
-            <p><img src="/img/mac.png" width="96" /></p>
+            <div class="d-flex justify-content-center"><img src="/img/mac.png" width="96" /></div>
             <a href="https://github.com/evanrolfe/trayce_gui/releases/latest">Download .dmg</a>
         </div>
         <div class="col-md-2">
             <p><strong>Linux</strong></p>
-            <p><img src="/img/linux.png" width="84" /></p>
+            <div class="d-flex justify-content-center"><img src="/img/linux.png" width="84" /></div>
             <a href="https://github.com/evanrolfe/trayce_gui/releases/latest">Download .deb</a>
 
             <p>(.rpm coming soon)</p>
         </div>
         <div class=" col-md-2">
             <p><strong>Windows</strong></p>
-            <p><img src="/img/windows.png" width="96" /></p>
+            <div class="d-flex justify-content-center"><img src="/img/windows.png" width="96" /></div>
             <p>(coming soon)</p>
         </div>
         <div class="col-md-3">&nbsp;</div>
@@ -288,7 +293,8 @@ description: "Trayce - API Client"
     <div class="row justify-content-center my-5">
         <div class="col-md-4 text-start">
             <h2 class="featurette-heading">How does it work?</h2>
-            <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container runs
+            <p class="lead py-3">The <a href="https://github.com/evanrolfe/trayce_agent/">TrayceAgent</a> container
+                runs
                 along side your existing containers. The agent uses eBPF probes to
                 intercept network requests and send them back to the GUI to be displayed.</p>
 
