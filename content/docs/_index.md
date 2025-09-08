@@ -1,6 +1,7 @@
 ---
 title: Documentation
 next: first-page
+toc: false
 ---
 
 This is a demo of the theme's documentation layout.
