@@ -2,78 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:34043/docs/variables/environment-variables/</loc>
+    <loc>//localhost:1313/docs/variables/environment-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/execution-flow/</loc>
+    <loc>//localhost:1313/docs/scripting/execution-flow/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/graphql/query/</loc>
+    <loc>//localhost:1313/docs/sending-requests/graphql/query/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/</loc>
+    <loc>//localhost:1313/docs/sending-requests/http/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/install/</loc>
+    <loc>//localhost:1313/docs/getting-started/install/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/introduction/</loc>
+    <loc>//localhost:1313/docs/introduction/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/parameters/</loc>
+    <loc>//localhost:1313/docs/sending-requests/http/parameters/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/create-collection/</loc>
+    <loc>//localhost:1313/docs/getting-started/create-collection/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/</loc>
+    <loc>//localhost:1313/docs/getting-started/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/global-environment-variables/</loc>
+    <loc>//localhost:1313/docs/variables/global-environment-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/graphql/</loc>
+    <loc>//localhost:1313/docs/sending-requests/graphql/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/graphql/variables/</loc>
+    <loc>//localhost:1313/docs/sending-requests/graphql/variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/headers/</loc>
+    <loc>//localhost:1313/docs/sending-requests/http/headers/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/js-file/</loc>
+    <loc>//localhost:1313/docs/scripting/js-file/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/collection-variables/</loc>
+    <loc>//localhost:1313/docs/variables/collection-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/create-folder/</loc>
+    <loc>//localhost:1313/docs/getting-started/create-folder/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/</loc>
+    <loc>//localhost:1313/docs/sending-requests/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/variables/</loc>
+    <loc>//localhost:1313/docs/scripting/variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/body/</loc>
+    <loc>//localhost:1313/docs/sending-requests/http/body/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/create-request/</loc>
+    <loc>//localhost:1313/docs/getting-started/create-request/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/folder-variables/</loc>
+    <loc>//localhost:1313/docs/variables/folder-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/npm-packages/</loc>
+    <loc>//localhost:1313/docs/scripting/npm-packages/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/</loc>
+    <loc>//localhost:1313/docs/variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/js-reference/</loc>
+    <loc>//localhost:1313/docs/scripting/js-reference/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/request-variables/</loc>
+    <loc>//localhost:1313/docs/variables/request-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/</loc>
+    <loc>//localhost:1313/docs/scripting/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/runtime-variables/</loc>
+    <loc>//localhost:1313/docs/variables/runtime-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/sync-requests/</loc>
+    <loc>//localhost:1313/docs/scripting/sync-requests/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/process-environment-variables/</loc>
+    <loc>//localhost:1313/docs/variables/process-environment-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/response-query/</loc>
+    <loc>//localhost:1313/docs/scripting/response-query/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/random-values/</loc>
+    <loc>//localhost:1313/docs/scripting/random-values/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/variables-interpolation/</loc>
+    <loc>//localhost:1313/docs/variables/variables-interpolation/</loc>
   </url><url>
-    <loc>//localhost:34043/about/</loc>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>//localhost:34043/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/</loc>
+    <loc>//localhost:1313/docs/</loc>
   </url><url>
-    <loc>//localhost:34043/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url><url>
-    <loc>//localhost:34043/</loc>
+    <loc>//localhost:1313/</loc>
   </url>
 </urlset>
