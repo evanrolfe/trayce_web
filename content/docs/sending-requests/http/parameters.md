@@ -23,6 +23,7 @@ Query parameters are a way to pass additional information to a server via the UR
 1. Create a request
 2. Navigate to the Params tab
 3. Enter the Name of the parameter and its corresponding Value
+
 ![](./1.png)
 
 You’ll notice that the values are appended to the URL, starting with a ?.
@@ -49,4 +50,5 @@ https://api.example.com/users/:id
 2. Navigate to the Params tab
 3. Add the path parameter variable in the URL. e.g. `/users/:user`
 4. Enter the value in the path parameter section for the corresponding variable.
+
 ![](./2.png)

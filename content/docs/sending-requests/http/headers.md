@@ -15,4 +15,5 @@ Request headers are key-value pairs sent along with an HTTP request to provide a
 1. Create a request
 2. Navigate to the Headers tab
 3. Enter the Name of the header and its corresponding Value.
+
 ![](./3.png)

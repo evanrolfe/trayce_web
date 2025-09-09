@@ -20,6 +20,7 @@ Text-based data allows you to send data in its raw, unprocessed form in the body
 2. Select your preferred data format (i.e. JSON).
 3. Add appropriate data for your API request.
 4. Save and execute the request.
+
 ![](./6.png)
 
 ### 2. Form Data
@@ -32,6 +33,7 @@ Multipart form data is used for sending files along with form data, allowing mul
 2. Select Multipart Form from dropdown.
 3. Click on Add File and upload your file.
 4. Save and execute the request.
+
 ![](8.png)
 
 **URL-Encoded Form**
@@ -42,6 +44,7 @@ URL-Encoded form data is commonly used for simple form submissions where data is
 2. Select Form URL Encoded from dropdown.
 3. Click on Add Param and add key-value pair.
 4. Save and execute the request.
+
 ![](./7.png)
 
 ### 3. File Data
@@ -53,4 +56,5 @@ File data allows you to upload and send files directly in the body of your API r
 3. Click Browse to upload a file.
 4. Click the file's radio button to select it to be sent
 5. Save and execute the request.
+
 ![](./9.png)

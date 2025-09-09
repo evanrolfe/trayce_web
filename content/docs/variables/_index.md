@@ -1,6 +1,7 @@
 ---
 title: Variables
 weight: 4
+prev: docs/sending-requests/graphql/variables/
 next: docs/variables/environment-variables
 ---
 
