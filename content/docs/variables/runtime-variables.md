@@ -44,9 +44,9 @@ req.setHeader("Authorization", `Bearer ${token}`);
 
 You can view all runtime variables by clicking on the **Eye** icon located in the top-right corner of the navigation bar
 
-<Callout emoji="">
+{{<callout type="info" >}}
   The request must be executed before you can view the runtime variables.
-</Callout>
+{{</callout>}}
 
 #### Example:
 

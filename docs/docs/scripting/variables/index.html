@@ -9,14 +9,29 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Variables – Trayce App</title>
-  <meta name="description" content="Welcome to getting started!" /><link rel="canonical" href="//localhost:1313/docs/scripting/variables/" itemprop="url" />
+  <meta name="description" content="The Variables tab allows you to manage variables at different stages of your request lifecycle. You can set and use variables:
+Before the request (Pre Request) After receiving the response (Post Response) Variables are scoped within the request and cannot be accessed outside of it. This ensures clean separation between different requests. Pre Request Vars In the Variables tab, select the Pre Request option from the dropdown, you can write any strings, numbers or any valid JavaScript literal." /><link rel="canonical" href="//localhost:1313/docs/scripting/variables/" itemprop="url" />
 
 <meta property="og:title" content="Variables">
 <meta
   property="og:description"
   content="
     
-      Welcome to getting started!
+      The Variables tab allows you to manage variables at different stages of your request lifecycle. You can set and use variables:
+
+Before the request (Pre Request)
+After receiving the response (Post Response)
+
+
+  
+
+  
+    Variables are scoped within the request and cannot be accessed outside of it. This ensures clean separation between different requests.
+  
+
+
+Pre Request Vars
+    In the Variables tab, select the Pre Request option from the dropdown, you can write any strings, numbers or any valid JavaScript literal.
     
   ">
 <meta
@@ -30,11 +45,13 @@
 
 
   <meta itemprop="name" content="Variables">
-  <meta itemprop="description" content="Welcome to getting started!">
-  <meta itemprop="wordCount" content="4">
+  <meta itemprop="description" content="The Variables tab allows you to manage variables at different stages of your request lifecycle. You can set and use variables:
+Before the request (Pre Request) After receiving the response (Post Response) Variables are scoped within the request and cannot be accessed outside of it. This ensures clean separation between different requests. Pre Request Vars In the Variables tab, select the Pre Request option from the dropdown, you can write any strings, numbers or any valid JavaScript literal.">
+  <meta itemprop="wordCount" content="142">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Variables">
-  <meta name="twitter:description" content="Welcome to getting started!">
+  <meta name="twitter:description" content="The Variables tab allows you to manage variables at different stages of your request lifecycle. You can set and use variables:
+Before the request (Pre Request) After receiving the response (Post Response) Variables are scoped within the request and cannot be accessed outside of it. This ensures clean separation between different requests. Pre Request Vars In the Variables tab, select the Pre Request option from the dropdown, you can write any strings, numbers or any valid JavaScript literal.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -392,6 +409,20 @@
   >Variables
     </a>
   
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#pre-request-vars"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Pre Request Vars</a>
+            </li>
+          <li>
+              <a
+                href="#post-response-vars"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Post Response Vars</a>
+            </li>
+          </ul>
+  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -722,7 +753,26 @@
 
         <div class="content">
           <h1>Variables</h1>
-          <p>Welcome to getting started!</p>
+          <p>The <strong>Variables</strong> tab allows you to manage variables at different stages of your request lifecycle. You can set and use variables:</p>
+<ul>
+<li>Before the request (Pre Request)</li>
+<li>After receiving the response (Post Response)</li>
+</ul>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">Variables are scoped within the request and cannot be accessed outside of it. This ensures clean separation between different requests.</div>
+  </div>
+</div>
+
+<h2>Pre Request Vars<span class="hx:absolute hx:-mt-20" id="pre-request-vars"></span>
+    <a href="#pre-request-vars" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>In the <strong>Variables</strong> tab, select the <strong>Pre Request</strong> option from the dropdown, you can write any strings, numbers or any valid JavaScript literal.</p>
+<p>
+    <img src=".././5.png" alt=""  loading="lazy" /></p>
+<h2>Post Response Vars<span class="hx:absolute hx:-mt-20" id="post-response-vars"></span>
+    <a href="#post-response-vars" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>In the <strong>Variables</strong> tab, select the <strong>Post Response</strong> option from the dropdown, you can write any valid JavaScript expression. The <code>res</code> object is available, allowing you to declaratively parse the response object and set variables, instead of writing scripts to do the same.</p>
+<p>For parsing the response, you can checkout the <a href="../response-query">response query</a> that allows you to easily query your response.</p>
 
         </div>
         <div class="hx:mt-16"></div>

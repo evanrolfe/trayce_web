@@ -9,14 +9,18 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Javascript Reference – Trayce App</title>
-  <meta name="description" content="Welcome to getting started!" /><link rel="canonical" href="//localhost:1313/docs/scripting/js-reference/" itemprop="url" />
+  <meta name="description" content="Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows. Here is the complete set of API reference for the scripting feature in Trayce.
+Request The req variable represents the HTTP request object and is automatically available inside your scripting and testing context. It provides methods to access and modify the current request’s properties such as URL, method, headers, body, and other configuration options before the request is sent to the server." /><link rel="canonical" href="//localhost:1313/docs/scripting/js-reference/" itemprop="url" />
 
 <meta property="og:title" content="Javascript Reference">
 <meta
   property="og:description"
   content="
     
-      Welcome to getting started!
+      Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows.
+Here is the complete set of API reference for the scripting feature in Trayce.
+Request
+    The req variable represents the HTTP request object and is automatically available inside your scripting and testing context. It provides methods to access and modify the current request&rsquo;s properties such as URL, method, headers, body, and other configuration options before the request is sent to the server.
     
   ">
 <meta
@@ -30,11 +34,13 @@
 
 
   <meta itemprop="name" content="Javascript Reference">
-  <meta itemprop="description" content="Welcome to getting started!">
-  <meta itemprop="wordCount" content="4">
+  <meta itemprop="description" content="Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows. Here is the complete set of API reference for the scripting feature in Trayce.
+Request The req variable represents the HTTP request object and is automatically available inside your scripting and testing context. It provides methods to access and modify the current request’s properties such as URL, method, headers, body, and other configuration options before the request is sent to the server.">
+  <meta itemprop="wordCount" content="2499">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Javascript Reference">
-  <meta name="twitter:description" content="Welcome to getting started!">
+  <meta name="twitter:description" content="Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows. Here is the complete set of API reference for the scripting feature in Trayce.
+Request The req variable represents the HTTP request object and is automatically available inside your scripting and testing context. It provides methods to access and modify the current request’s properties such as URL, method, headers, body, and other configuration options before the request is sent to the server.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -408,6 +414,26 @@
   >Javascript Reference
     </a>
   
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#request"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Request</a>
+            </li>
+          <li>
+              <a
+                href="#response"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Response</a>
+            </li>
+          <li>
+              <a
+                href="#bru"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Bru</a>
+            </li>
+          </ul>
+  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -722,7 +748,1499 @@
 
         <div class="content">
           <h1>Javascript Reference</h1>
-          <p>Welcome to getting started!</p>
+          <p>Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows.
+Here is the complete set of API reference for the scripting feature in Trayce.</p>
+<h2>Request<span class="hx:absolute hx:-mt-20" id="request"></span>
+    <a href="#request" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The <code>req</code> variable represents the HTTP request object and is automatically available inside your scripting and testing context. It provides methods to access and modify the current request&rsquo;s properties such as URL, method, headers, body, and other configuration options before the request is sent to the server.</p>
+<p>Below is the API documentation for the methods available on <code>req</code></p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">The <code>req</code> object is available in pre-request scripts and test scripts, allowing you to modify request properties before execution and access them after completion.</div>
+  </div>
+</div>
+
+<h3><code>getUrl</code><span class="hx:absolute hx:-mt-20" id="geturl"></span>
+    <a href="#geturl" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current request url</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getUrl</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setUrl</code><span class="hx:absolute hx:-mt-20" id="seturl"></span>
+    <a href="#seturl" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the current request url</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setUrl</span><span class="p">(</span><span class="s2">&#34;https://api.github.com/search/repositories?q=vue&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getAuthMode</code><span class="hx:absolute hx:-mt-20" id="getauthmode"></span>
+    <a href="#getauthmode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current authentication mode</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">authMode</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getAuthMode</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getMethod</code><span class="hx:absolute hx:-mt-20" id="getmethod"></span>
+    <a href="#getmethod" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current request method</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">method</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getMethod</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setMethod</code><span class="hx:absolute hx:-mt-20" id="setmethod"></span>
+    <a href="#setmethod" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the current request method</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setMethod</span><span class="p">(</span><span class="s2">&#34;POST&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getName</code><span class="hx:absolute hx:-mt-20" id="getname"></span>
+    <a href="#getname" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current request name</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getName</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getHeader</code><span class="hx:absolute hx:-mt-20" id="getheader"></span>
+    <a href="#getheader" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the request header by name</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">getHeader</span><span class="p">(</span><span class="s2">&#34;transaction-id&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getHeaders</code><span class="hx:absolute hx:-mt-20" id="getheaders"></span>
+    <a href="#getheaders" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current request headers</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getHeaders</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setHeader</code><span class="hx:absolute hx:-mt-20" id="setheader"></span>
+    <a href="#setheader" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the request header by name</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setHeader</span><span class="p">(</span><span class="s2">&#34;content-type&#34;</span><span class="p">,</span> <span class="s2">&#34;application/json&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setHeaders</code><span class="hx:absolute hx:-mt-20" id="setheaders"></span>
+    <a href="#setheaders" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the current request headers</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setHeaders</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;content-type&#34;</span><span class="o">:</span> <span class="s2">&#34;application/json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;transaction-id&#34;</span><span class="o">:</span> <span class="s2">&#34;foobar&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getBody</code><span class="hx:absolute hx:-mt-20" id="getbody"></span>
+    <a href="#getbody" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current request body/payload</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setBody</code><span class="hx:absolute hx:-mt-20" id="setbody"></span>
+    <a href="#setbody" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the request body/payload</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setBody</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">username</span><span class="o">:</span> <span class="s2">&#34;john nash&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">password</span><span class="o">:</span> <span class="s2">&#34;governingdynamics&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setMaxRedirects</code><span class="hx:absolute hx:-mt-20" id="setmaxredirects"></span>
+    <a href="#setmaxredirects" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the maximum number of redirects to follow</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setMaxRedirects</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getTimeout</code><span class="hx:absolute hx:-mt-20" id="gettimeout"></span>
+    <a href="#gettimeout" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Gets the current timeout value of the request.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">timeout</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getTimeout</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">timeout</span><span class="p">);</span> <span class="c1">// Logs the current timeout value
+</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setTimeout</code><span class="hx:absolute hx:-mt-20" id="settimeout"></span>
+    <a href="#settimeout" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Sets a timeout for the request.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span> <span class="c1">// Sets the timeout to 5000 milliseconds (5 seconds)
+</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getExecutionMode</code><span class="hx:absolute hx:-mt-20" id="getexecutionmode"></span>
+    <a href="#getexecutionmode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the current active execution mode of the request.</p>
+<p><strong>Returns:</strong></p>
+<ul>
+<li><code>runner</code>: When the request is being executed as part of a collection run</li>
+<li><code>standalone</code>: When the request is being executed individually</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">executionMode</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getExecutionMode</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Request is running in </span><span class="si">${</span><span class="nx">executionMode</span><span class="si">}</span><span class="sb"> mode`</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getExecutionPlatform</code><span class="hx:absolute hx:-mt-20" id="getexecutionplatform"></span>
+    <a href="#getexecutionplatform" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the platform on which the request is being executed.</p>
+<p><strong>Returns:</strong></p>
+<ul>
+<li><code>app</code>: When running in the Trayce desktop application</li>
+<li><code>cli</code>: When running through the Trayce CLI</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">platform</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getExecutionPlatform</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Request is running on </span><span class="si">${</span><span class="nx">platform</span><span class="si">}</span><span class="sb"> platform`</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Error Handling<span class="hx:absolute hx:-mt-20" id="error-handling"></span>
+    <a href="#error-handling" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>onFail</code><span class="hx:absolute hx:-mt-20" id="onfail"></span>
+    <a href="#onfail" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>The <code>onFail</code> function allows you to handle request errors in a custom way. This is useful for implementing custom error handling logic, logging, or taking specific actions when a request fails.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">Error handling with scripts is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
+<h2>Response<span class="hx:absolute hx:-mt-20" id="response"></span>
+    <a href="#response" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The <code>res</code> variable represents the HTTP response object and is automatically available inside your scripting and testing context after a request is executed. It contains all the information about the response received from the server, including status codes, headers, body data, and timing information.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">The <code>res</code> object is only available in post-request scripts and test scripts, as it contains the response data from the completed request.</div>
+  </div>
+</div>
+
+<p>Below are the properties available on the <code>res</code> object.</p>
+<ul>
+<li><code>status</code>: The HTTP response status code (e.g., 200, 404, 500)</li>
+<li><code>statusText</code>: The HTTP response status text (e.g., &ldquo;OK&rdquo;, &ldquo;Not Found&rdquo;, &ldquo;Internal Server Error&rdquo;)</li>
+<li><code>headers</code>: An object containing all response headers</li>
+<li><code>body</code>: The response body data (automatically parsed as JSON if the response is JSON)</li>
+<li><code>responseTime</code>: The total time taken for the request in milliseconds</li>
+</ul>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">The <code>body</code> property is automatically parsed as JSON if the response has a JSON content type. For other content types, it will be a string.</div>
+  </div>
+</div>
+
+<p>Below are the methods available on the <code>res</code> object.</p>
+<h3><code>getStatus</code><span class="hx:absolute hx:-mt-20" id="getstatus"></span>
+    <a href="#getstatus" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response status</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getStatus</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getHeader</code><span class="hx:absolute hx:-mt-20" id="getheader-1"></span>
+    <a href="#getheader-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response header by name</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">transactionId</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getHeader</span><span class="p">(</span><span class="s2">&#34;transaction-id&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getHeaders</code><span class="hx:absolute hx:-mt-20" id="getheaders-1"></span>
+    <a href="#getheaders-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response headers</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getHeaders</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getBody</code><span class="hx:absolute hx:-mt-20" id="getbody-1"></span>
+    <a href="#getbody-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response data</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getResponseTime</code><span class="hx:absolute hx:-mt-20" id="getresponsetime"></span>
+    <a href="#getresponsetime" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response time</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">responseTime</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getResponseTime</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getStatusText</code><span class="hx:absolute hx:-mt-20" id="getstatustext"></span>
+    <a href="#getstatustext" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response status text</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">statusText</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getStatusText</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getUrl</code><span class="hx:absolute hx:-mt-20" id="geturl-1"></span>
+    <a href="#geturl-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response URL. In case of redirects, you will get the final URL which may be different from the original request URL if redirects were followed. This functionality is also available as a property <code>res.url</code>.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">This method is only available in post-response scripts and test scripts.</div>
+  </div>
+</div>
+
+<p><strong>Returns:</strong> Response URL as a string.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Get the response URL
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">responseUrl</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getUrl</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Response URL:&#34;</span><span class="p">,</span> <span class="nx">responseUrl</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Test that the response URL is as expected
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">test</span><span class="p">(</span><span class="s2">&#34;should end up at correct URL after redirects&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getUrl</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">expect</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s2">&#34;https://www.apple.com&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>setBody</code><span class="hx:absolute hx:-mt-20" id="setbody-1"></span>
+    <a href="#setbody-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the response body data</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">res</span><span class="p">.</span><span class="nx">setBody</span><span class="p">({</span> <span class="nx">message</span><span class="o">:</span> <span class="s2">&#34;Custom response data&#34;</span> <span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3><code>getSize</code><span class="hx:absolute hx:-mt-20" id="getsize"></span>
+    <a href="#getsize" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Get the response size in bytes. Returns an object with the following properties:</p>
+<ul>
+<li><code>body</code>: number,</li>
+<li><code>headers</code>: number,</li>
+<li><code>total</code>: number</li>
+</ul>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">responseSize</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getSize</span><span class="p">()</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">test</span><span class="p">(</span><span class="s2">&#34;Response body size is less than 1KB&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">responseSize</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getSize</span><span class="p">().</span><span class="nx">body</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">expect</span><span class="p">(</span><span class="nx">responseSize</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">lessThan</span><span class="p">(</span><span class="mi">1024</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h2>Bru<span class="hx:absolute hx:-mt-20" id="bru"></span>
+    <a href="#bru" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The <code>bru</code> variable is available inside your scripting and testing context.
+It exposes methods that allow you to interact with, e.g., process variables,
+environment variables and collection variables.</p>
+<p>Here is a complete table for all available methods with the <code>bru</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Title</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>bru.cwd()</td>
+          <td>Returns the current working directory.</td>
+      </tr>
+      <tr>
+          <td>bru.getEnvName()</td>
+          <td>Retrieves the environment name.</td>
+      </tr>
+      <tr>
+          <td>bru.getProcessEnv(key)</td>
+          <td>Fetches the process environment variable for a given key.</td>
+      </tr>
+      <tr>
+          <td>bru.hasEnvVar(key)</td>
+          <td>Checks if the environment variable exists.</td>
+      </tr>
+      <tr>
+          <td>bru.getEnvVar(key)</td>
+          <td>Retrieves the value of an environment variable.</td>
+      </tr>
+      <tr>
+          <td>bru.getFolderVar(key)</td>
+          <td>Fetches a folder-specific variable by key.</td>
+      </tr>
+      <tr>
+          <td>bru.getCollectionVar(key)</td>
+          <td>Retrieves the collection-level variable for the key.</td>
+      </tr>
+      <tr>
+          <td>bru.setEnvVar(key, value)</td>
+          <td>Sets a new environment variable.</td>
+      </tr>
+      <tr>
+          <td>bru.deleteEnvVar(key)</td>
+          <td>Deletes a specific environment variable.</td>
+      </tr>
+      <tr>
+          <td>bru.hasVar(key)</td>
+          <td>Checks if a variable exists.</td>
+      </tr>
+      <tr>
+          <td>bru.getVar(key)</td>
+          <td>Retrieves the value of a variable.</td>
+      </tr>
+      <tr>
+          <td>bru.setVar(key, value)</td>
+          <td>Sets a new variable with a key-value pair.</td>
+      </tr>
+      <tr>
+          <td>bru.deleteVar(key)</td>
+          <td>Deletes a specific variable.</td>
+      </tr>
+      <tr>
+          <td>bru.deleteAllVars()</td>
+          <td>Deletes all variables.</td>
+      </tr>
+      <tr>
+          <td>bru.setNextRequest(requestName)</td>
+          <td>Sets the next request to execute.</td>
+      </tr>
+      <tr>
+          <td>req.disableParsingResponseJson()</td>
+          <td>Disables JSON response parsing for the request.</td>
+      </tr>
+      <tr>
+          <td>bru.getRequestVar(key)</td>
+          <td>Retrieves the value of a request variable.</td>
+      </tr>
+      <tr>
+          <td>bru.runRequest(requestPathName)</td>
+          <td>Executes a request by its path name.</td>
+      </tr>
+      <tr>
+          <td>bru.getAssertionResults()</td>
+          <td>Retrieves the results of assertions.</td>
+      </tr>
+      <tr>
+          <td>bru.getTestResults()</td>
+          <td>Fetches the test</td>
+      </tr>
+      <tr>
+          <td>bru.sendRequest(options, callback)</td>
+          <td>Sends a programmatic HTTP request within your script</td>
+      </tr>
+      <tr>
+          <td>bru.getOauth2CredentialVar(key)</td>
+          <td>Retrieves an OAuth2 credential variable value.</td>
+      </tr>
+      <tr>
+          <td>bru.getCollectionName()</td>
+          <td>Retrieves the current collection name.</td>
+      </tr>
+      <tr>
+          <td>bru.cookies.jar()</td>
+          <td>Creates a cookie jar instance for managing cookies.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Below is the API documentation for the methods available on <code>bru</code></p>
+<h3><code>sendRequest</code><span class="hx:absolute hx:-mt-20" id="sendrequest"></span>
+    <a href="#sendrequest" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Send a programmatic HTTP request within your script. This allows you to make additional API calls during script execution.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">sendRequest</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">method</span><span class="o">:</span> <span class="nx">string</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span><span class="o">:</span> <span class="nx">string</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">headers</span><span class="o">?:</span> <span class="nx">object</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="o">?:</span> <span class="nx">string</span> <span class="o">|</span> <span class="nx">object</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">timeout</span><span class="o">?:</span> <span class="nx">number</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="nx">callback</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>method</code>: HTTP method (GET, POST, PUT, etc.)</li>
+<li><code>url</code>: The URL to send the request to</li>
+<li><code>headers</code>: (Optional) Request headers</li>
+<li><code>data</code>: (Optional) Request data. Can be a string or object</li>
+<li><code>timeout</code>: (Optional) Request timeout in milliseconds</li>
+<li><code>callback</code>: Function to handle the response with signature <code>(err, res)</code></li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">sendRequest</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://trayce.dev&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;value&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Error:&#39;</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Response:&#39;</span><span class="p">,</span> <span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Helpers<span class="hx:absolute hx:-mt-20" id="helpers"></span>
+    <a href="#helpers" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>sleep</code><span class="hx:absolute hx:-mt-20" id="sleep"></span>
+    <a href="#sleep" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Pauses execution for the specified duration. This is useful for introducing delays or waiting for a specific amount of time before proceeding with the next operation.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">sleep</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>interpolate</code><span class="hx:absolute hx:-mt-20" id="interpolate"></span>
+    <a href="#interpolate" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Evaluates dynamic variables and environment variables within a string. This function allows you to use Trayce&rsquo;s dynamic variables (like <code>{{$randomFirstName}}</code>) directly in your scripts.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="nx">string</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Generate a random first name
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="s1">&#39;{{$randomFirstName}}&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Random first name:&#39;</span><span class="p">,</span> <span class="nx">firstName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate a random email
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">email</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="s1">&#39;{{$randomEmail}}&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate multiple dynamic values in one call
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">userInfo</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb">  Name: {{$randomFullName}}
+</span></span></span><span class="line"><span class="cl"><span class="sb">  Job: {{$randomJobTitle}}
+</span></span></span><span class="line"><span class="cl"><span class="sb">  Email: {{$randomEmail}}
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>disableParsingResponseJson</code><span class="hx:absolute hx:-mt-20" id="disableparsingresponsejson"></span>
+    <a href="#disableparsingresponsejson" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>To prevent the automatic parsing of the JSON response body and work directly with the raw data, you can use the expression below in the pre-request script of the request.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">disableParsingResponseJson</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>disableParsingResponseJson()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
+<h3>Node process environment<span class="hx:absolute hx:-mt-20" id="node-process-environment"></span>
+    <a href="#node-process-environment" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce allows you to get Node process environment variables on the fly.</p>
+<h4><code>getProcessEnv</code><span class="hx:absolute hx:-mt-20" id="getprocessenv"></span>
+    <a href="#getprocessenv" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get the Node process environment variable. This allows secret token usage without committing secrets to version control.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">secret_token</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getProcessEnv</span><span class="p">(</span><span class="s2">&#34;secret_access_token&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Environments<span class="hx:absolute hx:-mt-20" id="environments"></span>
+    <a href="#environments" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce allows you to get and set Trayce environment variables on the fly.</p>
+<h4><code>setGlobalEnvVar</code><span class="hx:absolute hx:-mt-20" id="setglobalenvvar"></span>
+    <a href="#setglobalenvvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Set the Trayce global environment variable.</p>
+<p>Syntax:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setGlobalEnvVar</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setGlobalEnvVar</span><span class="p">(</span><span class="s2">&#34;val&#34;</span><span class="p">,</span> <span class="s2">&#34;trayce&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>getGlobalEnvVar</code><span class="hx:absolute hx:-mt-20" id="getglobalenvvar"></span>
+    <a href="#getglobalenvvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get the Trayce global environment variable.</p>
+<p>Syntax:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">getGlobalEnvVar</span><span class="p">(</span><span class="nx">key</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">getGlobalEnvVar</span><span class="p">(</span><span class="s2">&#34;val&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>getEnvVar</code><span class="hx:absolute hx:-mt-20" id="getenvvar"></span>
+    <a href="#getenvvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get the Trayce environment variable</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">token</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getEnvVar</span><span class="p">(</span><span class="s2">&#34;access_token&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>setEnvVar</code><span class="hx:absolute hx:-mt-20" id="setenvvar"></span>
+    <a href="#setenvvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Set the Trayce environment variable. By default, environment variables are temporary and do not persist between app restarts.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setEnvVar</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">options</span><span class="o">?</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>key</code> (string): The environment variable name</li>
+<li><code>value</code> (any): The value to set</li>
+<li><code>options</code> (object, optional): Configuration options
+<ul>
+<li><code>persist</code> (boolean): When <code>true</code>, saves the variable to file system. When <code>false</code> or not provided, maintains in-memory behavior.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// In-memory only (default behavior)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">bru</span><span class="p">.</span><span class="nx">setEnvVar</span><span class="p">(</span><span class="s2">&#34;sessionId&#34;</span><span class="p">,</span> <span class="s2">&#34;temp&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Persist to file system
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">bru</span><span class="p">.</span><span class="nx">setEnvVar</span><span class="p">(</span><span class="s2">&#34;apiToken&#34;</span><span class="p">,</span> <span class="s2">&#34;12345&#34;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">persist</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// In post-response script
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">onResponse</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">token</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">setEnvVar</span><span class="p">(</span><span class="s2">&#34;access_token&#34;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">token</span><span class="p">,</span> <span class="p">{</span> <span class="nx">persist</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Collection Variables<span class="hx:absolute hx:-mt-20" id="collection-variables"></span>
+    <a href="#collection-variables" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce allows you to get collection variables on the fly.</p>
+<h4><code>getCollectionVar</code><span class="hx:absolute hx:-mt-20" id="getcollectionvar"></span>
+    <a href="#getcollectionvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get the collection variable</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">namespace</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getCollectionVar</span><span class="p">(</span><span class="s2">&#34;namespace&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Folder Variables<span class="hx:absolute hx:-mt-20" id="folder-variables"></span>
+    <a href="#folder-variables" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce allows you to get folder variables on the fly.</p>
+<h4><code>getFolderVar</code><span class="hx:absolute hx:-mt-20" id="getfoldervar"></span>
+    <a href="#getfoldervar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get the folder variable</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">company</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getFolderVar</span><span class="p">(</span><span class="s2">&#34;company&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Runtime Variables<span class="hx:absolute hx:-mt-20" id="runtime-variables"></span>
+    <a href="#runtime-variables" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce allows you to get, set and delete runtime variables on the fly.</p>
+<h4><code>getVar</code><span class="hx:absolute hx:-mt-20" id="getvar"></span>
+    <a href="#getvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get the runtime variable</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">petId</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getVar</span><span class="p">(</span><span class="s2">&#34;petId&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>setVar</code><span class="hx:absolute hx:-mt-20" id="setvar"></span>
+    <a href="#setvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Set the runtime variable</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setVar</span><span class="p">(</span><span class="s2">&#34;petId&#34;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>deleteVar</code><span class="hx:absolute hx:-mt-20" id="deletevar"></span>
+    <a href="#deletevar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Delete the runtime variable</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">deleteVar</span><span class="p">(</span><span class="s2">&#34;petId&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Request Order<span class="hx:absolute hx:-mt-20" id="request-order"></span>
+    <a href="#request-order" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>You can influence the order in which requests are being run by the request-runner (UI) or the CLI.</p>
+<h4><code>setNextRequest</code><span class="hx:absolute hx:-mt-20" id="setnextrequest"></span>
+    <a href="#setnextrequest" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>By default, the collection runner (UI) and the CLI run requests in order.
+You can change the order by calling <code>setNextRequest</code> with the name of the next request to be run.
+This works only in a post-request script or test-script.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setNextRequest</span><span class="p">(</span><span class="s2">&#34;Get process status&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>You can also abort the run by explicitly setting the next request to <code>null</code>
+<strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setNextRequest</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span> <span class="c1">// aborts the run gracefully
+</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>runRequest</code><span class="hx:absolute hx:-mt-20" id="runrequest"></span>
+    <a href="#runrequest" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>You can execute any request in the collection and retrieve the response directly within the script.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">requestResponse</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">runRequest</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;absolute/path/to/a/request/from/collection/root&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">requestResponse</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">runRequest</span><span class="p">(</span><span class="s2">&#34;echo/echo json&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Collection Runner Utility Functions<span class="hx:absolute hx:-mt-20" id="collection-runner-utility-functions"></span>
+    <a href="#collection-runner-utility-functions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>setNextRequest</code><span class="hx:absolute hx:-mt-20" id="setnextrequest-1"></span>
+    <a href="#setnextrequest-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>By default, the collection runner (UI) and CLI execute requests in sequential order. You can alter this order by invoking <code>bru.runner.setNextRequest</code> with the name of the next request to execute. This function is applicable only within post-request scripts or test scripts.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">runner</span><span class="p">.</span><span class="nx">setNextRequest</span><span class="p">(</span><span class="s2">&#34;Get process status&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>skipRequest</code><span class="hx:absolute hx:-mt-20" id="skiprequest"></span>
+    <a href="#skiprequest" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>To skip the execution of the current request, use <code>bru.runner.skipRequest()</code> in the pre-request script section. This function is valid only within the context of a collection run.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">runner</span><span class="p">.</span><span class="nx">skipRequest</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>stopExecution</code><span class="hx:absolute hx:-mt-20" id="stopexecution"></span>
+    <a href="#stopexecution" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>You can terminate the collection run by using <code>bru.runner.stopExecution()</code> in the pre-request scripts, post-request scripts, or the test scripts. This function is effective only within the context of a collection run.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">runner</span><span class="p">.</span><span class="nx">stopExecution</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Test Utility Functions<span class="hx:absolute hx:-mt-20" id="test-utility-functions"></span>
+    <a href="#test-utility-functions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>getTestResults</code><span class="hx:absolute hx:-mt-20" id="gettestresults"></span>
+    <a href="#gettestresults" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Obtain the test results of a request by calling <code>bru.getTestResults</code> within test scripts.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">testResults</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getTestResults</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>getAssertionResults</code><span class="hx:absolute hx:-mt-20" id="getassertionresults"></span>
+    <a href="#getassertionresults" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Obtain the assertion results of a request by calling <code>bru.getAssertionResults</code> within test scripts.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">assertionResults</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getAssertionResults</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>OAuth2 Credentials<span class="hx:absolute hx:-mt-20" id="oauth2-credentials"></span>
+    <a href="#oauth2-credentials" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>getOauth2CredentialVar</code><span class="hx:absolute hx:-mt-20" id="getoauth2credentialvar"></span>
+    <a href="#getoauth2credentialvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Retrieve an OAuth2 credential variable value. This is useful for accessing OAuth2 tokens and credentials.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">accessToken</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getOauth2CredentialVar</span><span class="p">(</span><span class="s2">&#34;access_token&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Collection Information<span class="hx:absolute hx:-mt-20" id="collection-information"></span>
+    <a href="#collection-information" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>getCollectionName</code><span class="hx:absolute hx:-mt-20" id="getcollectionname"></span>
+    <a href="#getcollectionname" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Retrieve the name of the current collection.</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">collectionName</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getCollectionName</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Current collection:&#39;</span><span class="p">,</span> <span class="nx">collectionName</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Cookie Management<span class="hx:absolute hx:-mt-20" id="cookie-management"></span>
+    <a href="#cookie-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce provides Cookie Jar APIs that enable programmatic cookie management in request scripts. These APIs allow you to set, get, and delete cookies programmatically using a cookie jar instance.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">Cookie management APIs are available in pre-request scripts, post-request scripts, and test scripts.</div>
+  </div>
+</div>
+
+<h4><code>cookies.jar()</code><span class="hx:absolute hx:-mt-20" id="cookiesjar"></span>
+    <a href="#cookiesjar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Create a cookie jar instance for managing cookies.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Returns:</strong> A cookie jar instance with methods for cookie management</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>jar.setCookie</code><span class="hx:absolute hx:-mt-20" id="jarsetcookie"></span>
+    <a href="#jarsetcookie" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Set a single cookie with specified attributes. This method has two overloads for different use cases.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Overload 1: Key-value format
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">setCookie</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Overload 2: Object format
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">setCookie</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">cookieObject</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>url</code>: The URL for which the cookie should be set</li>
+<li><code>name</code>: The name of the cookie (for key-value format)</li>
+<li><code>value</code>: The value of the cookie (for key-value format)</li>
+<li><code>cookieObject</code>: Cookie object with the following properties:
+<ul>
+<li><code>key</code>: The name of the cookie</li>
+<li><code>value</code>: The value of the cookie</li>
+<li><code>domain</code>: The domain where the cookie is valid</li>
+<li><code>path</code>: The URL path where the cookie will be sent (default: &ldquo;/&rdquo;)</li>
+<li><code>expires</code>: The expiration date (Date object or string)</li>
+<li><code>maxAge</code>: Maximum age in seconds</li>
+<li><code>secure</code>: Boolean indicating if the cookie should only be sent over HTTPS</li>
+<li><code>httpOnly</code>: Boolean indicating if the cookie should be HTTP-only</li>
+<li><code>sameSite</code>: SameSite attribute (&ldquo;Strict&rdquo;, &ldquo;Lax&rdquo;, or &ldquo;None&rdquo;)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Set a simple cookie using key-value format
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">setCookie</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span> <span class="s2">&#34;sessionId&#34;</span><span class="p">,</span> <span class="s2">&#34;abc123&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Set a cookie with options using object format
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">setCookie</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">key</span><span class="o">:</span> <span class="s2">&#34;userToken&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">value</span><span class="o">:</span> <span class="s2">&#34;xyz789&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">domain</span><span class="o">:</span> <span class="s2">&#34;example.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">path</span><span class="o">:</span> <span class="s2">&#34;/api&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">secure</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">httpOnly</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">maxAge</span><span class="o">:</span> <span class="mi">3600</span> <span class="c1">// 1 hour
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>jar.setCookies</code><span class="hx:absolute hx:-mt-20" id="jarsetcookies"></span>
+    <a href="#jarsetcookies" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Set multiple cookies at once using an array of cookie objects.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">setCookies</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">cookies</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>url</code>: The URL for which the cookies should be set</li>
+<li><code>cookies</code>: Array of cookie objects, each with the following properties:
+<ul>
+<li><code>key</code>: The name of the cookie</li>
+<li><code>value</code>: The value of the cookie</li>
+<li><code>domain</code>: (Optional) The domain where the cookie is valid</li>
+<li><code>path</code>: (Optional) The URL path where the cookie will be sent</li>
+<li><code>expires</code>: (Optional) The expiration date</li>
+<li><code>maxAge</code>: (Optional) Maximum age in seconds</li>
+<li><code>secure</code>: (Optional) Boolean indicating if the cookie should only be sent over HTTPS</li>
+<li><code>httpOnly</code>: (Optional) Boolean indicating if the cookie should be HTTP-only</li>
+<li><code>sameSite</code>: (Optional) SameSite attribute</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">setCookies</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">key</span><span class="o">:</span> <span class="s2">&#34;sessionId&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">value</span><span class="o">:</span> <span class="s2">&#34;abc123&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">secure</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">httpOnly</span><span class="o">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">key</span><span class="o">:</span> <span class="s2">&#34;userPreference&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">value</span><span class="o">:</span> <span class="s2">&#34;dark-mode&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">path</span><span class="o">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">maxAge</span><span class="o">:</span> <span class="mi">86400</span> <span class="c1">// 24 hours
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">]);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>jar.getCookie</code><span class="hx:absolute hx:-mt-20" id="jargetcookie"></span>
+    <a href="#jargetcookie" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get a specific cookie by name.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">getCookie</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>url</code>: The URL for which to retrieve the cookie</li>
+<li><code>name</code>: The name of the cookie to retrieve</li>
+</ul>
+<p><strong>Returns:</strong> The cookie object or <code>null</code> if not found</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">sessionCookie</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">jar</span><span class="p">.</span><span class="nx">getCookie</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span> <span class="s2">&#34;sessionId&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">sessionCookie</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Session ID:&#34;</span><span class="p">,</span> <span class="nx">sessionCookie</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Expires:&#34;</span><span class="p">,</span> <span class="nx">sessionCookie</span><span class="p">.</span><span class="nx">expires</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>jar.getCookies</code><span class="hx:absolute hx:-mt-20" id="jargetcookies"></span>
+    <a href="#jargetcookies" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Get all cookies for a specific URL.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">getCookies</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>url</code>: The URL for which to retrieve all cookies</li>
+</ul>
+<p><strong>Returns:</strong> Array of cookie objects or empty array if no cookies found</p>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">allCookies</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">jar</span><span class="p">.</span><span class="nx">getCookies</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;All cookies:&#34;</span><span class="p">,</span> <span class="nx">allCookies</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>jar.deleteCookie</code><span class="hx:absolute hx:-mt-20" id="jardeletecookie"></span>
+    <a href="#jardeletecookie" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Delete a specific cookie by name.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">deleteCookie</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>url</code>: The URL for which to delete the cookie</li>
+<li><code>name</code>: The name of the cookie to delete</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Delete a cookie
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">deleteCookie</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span> <span class="s2">&#34;sessionId&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">When deleting cookies, the domain and path options must match the original cookie&rsquo;s domain and path for the deletion to be successful.</div>
+  </div>
+</div>
+
+<h4><code>jar.deleteCookies</code><span class="hx:absolute hx:-mt-20" id="jardeletecookies"></span>
+    <a href="#jardeletecookies" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Delete all cookies for a specific URL.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">deleteCookies</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>url</code>: The URL for which to delete all cookies</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Delete all cookies for a specific URL
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">deleteCookies</span><span class="p">(</span><span class="s2">&#34;https://example.com&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4><code>jar.clear</code><span class="hx:absolute hx:-mt-20" id="jarclear"></span>
+    <a href="#jarclear" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Clear all cookies from the cookie jar.</p>
+<p><strong>Syntax:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">jar</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">jar</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">cookies</span><span class="p">.</span><span class="nx">jar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Clear all cookies
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">jar</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
 
         </div>
         <div class="hx:mt-16"></div>

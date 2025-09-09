@@ -9,14 +9,25 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Random Values – Trayce App</title>
-  <meta name="description" content="Welcome to getting started!" /><link rel="canonical" href="//localhost:1313/docs/scripting/random-values/" itemprop="url" />
+  <meta name="description" content="Random variables enable you to generate and use random data in your testing workflow. Trayce uses the faker.js library to generate random data. You can use these variables like any other variables in Trayce. The syntax to use random variables is {{$randomData}}, and you can use them in the request body, authentication, parameters, and other fields.
+Random variables are case-sensitive and follow the camelCase convention. Using Random Variables in Scripts To use random variables in pre-request or post-response scripts, use the bru.interpolate() function. For example:" /><link rel="canonical" href="//localhost:1313/docs/scripting/random-values/" itemprop="url" />
 
 <meta property="og:title" content="Random Values">
 <meta
   property="og:description"
   content="
     
-      Welcome to getting started!
+      Random variables enable you to generate and use random data in your testing workflow. Trayce uses the faker.js library to generate random data. You can use these variables like any other variables in Trayce. The syntax to use random variables is {{$randomData}}, and you can use them in the request body, authentication, parameters, and other fields.
+
+  
+
+  
+    Random variables are case-sensitive and follow the camelCase convention.
+  
+
+
+Using Random Variables in Scripts
+    To use random variables in pre-request or post-response scripts, use the bru.interpolate() function. For example:
     
   ">
 <meta
@@ -30,11 +41,13 @@
 
 
   <meta itemprop="name" content="Random Values">
-  <meta itemprop="description" content="Welcome to getting started!">
-  <meta itemprop="wordCount" content="4">
+  <meta itemprop="description" content="Random variables enable you to generate and use random data in your testing workflow. Trayce uses the faker.js library to generate random data. You can use these variables like any other variables in Trayce. The syntax to use random variables is {{$randomData}}, and you can use them in the request body, authentication, parameters, and other fields.
+Random variables are case-sensitive and follow the camelCase convention. Using Random Variables in Scripts To use random variables in pre-request or post-response scripts, use the bru.interpolate() function. For example:">
+  <meta itemprop="wordCount" content="1231">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Random Values">
-  <meta name="twitter:description" content="Welcome to getting started!">
+  <meta name="twitter:description" content="Random variables enable you to generate and use random data in your testing workflow. Trayce uses the faker.js library to generate random data. You can use these variables like any other variables in Trayce. The syntax to use random variables is {{$randomData}}, and you can use them in the request body, authentication, parameters, and other fields.
+Random variables are case-sensitive and follow the camelCase convention. Using Random Variables in Scripts To use random variables in pre-request or post-response scripts, use the bru.interpolate() function. For example:">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -432,6 +445,26 @@
   >Random Values
     </a>
   
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#using-random-variables-in-scripts"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Using Random Variables in Scripts</a>
+            </li>
+          <li>
+              <a
+                href="#usage-examples"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Usage Examples</a>
+            </li>
+          <li>
+              <a
+                href="#available-dynamic-variables"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Available Dynamic Variables</a>
+            </li>
+          </ul>
+  
               
             </li></ul>
       </div>
@@ -722,7 +755,870 @@
 
         <div class="content">
           <h1>Random Values</h1>
-          <p>Welcome to getting started!</p>
+          <p>Random variables enable you to generate and use random data in your testing workflow. Trayce uses the <a href="https://fakerjs.dev/"target="_blank" rel="noopener">faker.js</a> library to generate random data. You can use these variables like any other variables in Trayce. The syntax to use random variables is <code>{{$randomData}}</code>, and you can use them in the request body, authentication, parameters, and other fields.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">Random variables are case-sensitive and follow the camelCase convention.</div>
+  </div>
+</div>
+
+<h2>Using Random Variables in Scripts<span class="hx:absolute hx:-mt-20" id="using-random-variables-in-scripts"></span>
+    <a href="#using-random-variables-in-scripts" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>To use random variables in pre-request or post-response scripts, use the <code>bru.interpolate()</code> function. For example:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Generate a random first name
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="s1">&#39;{{$randomFirstName}}&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Random first name:&#39;</span><span class="p">,</span> <span class="nx">firstName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate a random email
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">email</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="s1">&#39;{{$randomEmail}}&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Random email:&#39;</span><span class="p">,</span> <span class="nx">email</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate multiple random values in one call
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">userInfo</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb">  Name: {{$randomFullName}}
+</span></span></span><span class="line"><span class="cl"><span class="sb">  Job: {{$randomJobTitle}}
+</span></span></span><span class="line"><span class="cl"><span class="sb">  Email: {{$randomEmail}}
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">userInfo</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Use with environment variables
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">interpolate</span><span class="p">(</span><span class="s1">&#39;Hello {{user}} from {{$randomCity}}&#39;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>The <code>bru.interpolate()</code> function allows you to embed random variables in strings and have them evaluated at runtime within scripts, just like they would be in request bodies or headers.</p>
+<h2>Usage Examples<span class="hx:absolute hx:-mt-20" id="usage-examples"></span>
+    <a href="#usage-examples" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Here are some common use cases for random variables:</p>
+<ol>
+<li>
+<p><strong>Test Data Generation</strong>:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;user&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomUUID}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomFullName}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomEmail}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;phone&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomPhoneNumber}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;street&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomStreetAddress}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;city&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomCity}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;country&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomCountry}}&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Authentication</strong>:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;credentials&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;username&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomUserName}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomPassword}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;lastLogin&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$isoTimestamp}}&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Business Data</strong>:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;company&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomCompanyName}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;catchPhrase&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomCatchPhrase}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;department&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomDepartment}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;account&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;number&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomBankAccount}}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;{{$randomTransactionType}}&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</li>
+</ol>
+<h2>Available Dynamic Variables<span class="hx:absolute hx:-mt-20" id="available-dynamic-variables"></span>
+    <a href="#available-dynamic-variables" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Trayce provides a comprehensive set of dynamic variables for generating test data. These variables are organized into categories based on their functionality.</p>
+<h3>Basic Data Types<span class="hx:absolute hx:-mt-20" id="basic-data-types"></span>
+    <a href="#basic-data-types" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$guid}}</code></td>
+          <td>A random UUID</td>
+          <td>550e8400-e29b-41d4-a716-446655440000</td>
+      </tr>
+      <tr>
+          <td><code>{{$timestamp}}</code></td>
+          <td>Current timestamp in milliseconds</td>
+          <td>1562757107</td>
+      </tr>
+      <tr>
+          <td><code>{{$isoTimestamp}}</code></td>
+          <td>Current timestamp in ISO format</td>
+          <td>2024-03-20T12:34:56.789Z</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomUUID}}</code></td>
+          <td>A random UUID</td>
+          <td>550e8400-e29b-41d4-a716-446655440000</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomNanoId}}</code></td>
+          <td>A random Nano ID</td>
+          <td>V1StGXR8_Z5jdHi6B5cEn4c8b8w</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomAlphaNumeric}}</code></td>
+          <td>A random alpha-numeric character</td>
+          <td>6, y, z</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBoolean}}</code></td>
+          <td>A random boolean value</td>
+          <td>true, false</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomInt}}</code></td>
+          <td>A random integer between 0 and 1000</td>
+          <td>802, 494, 200</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomColor}}</code></td>
+          <td>A random color</td>
+          <td>red, fuchsia, grey</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomHexColor}}</code></td>
+          <td>A random hex value</td>
+          <td>#47594a, #431e48, #106f21</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomAbbreviation}}</code></td>
+          <td>A random abbreviation</td>
+          <td>SQL, PCI, JSON</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomWord}}</code></td>
+          <td>A random word</td>
+          <td>protocol, interface</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomWords}}</code></td>
+          <td>Multiple random words</td>
+          <td>quick brown fox</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Internet and Network<span class="hx:absolute hx:-mt-20" id="internet-and-network"></span>
+    <a href="#internet-and-network" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomIP}}</code></td>
+          <td>A random IPv4 address</td>
+          <td>241.102.234.100, 216.7.27.38</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomIPV4}}</code></td>
+          <td>A random IPv4 address</td>
+          <td>192.168.1.1</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomIPV6}}</code></td>
+          <td>A random IPv6 address</td>
+          <td>dbe2:7ae6:119b:c161:1560:6dda:3a9b:90a9</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomMACAddress}}</code></td>
+          <td>A random MAC address</td>
+          <td>33:d4:68:5f:b4:c7, 1f:6e:db:3d:ed:fa</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomPassword}}</code></td>
+          <td>A random 15-character alpha-numeric password</td>
+          <td>t9iXe7COoDKv8k3, QAzNFQtvR9cg2rq</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLocale}}</code></td>
+          <td>A random two-letter language code (ISO 639-1)</td>
+          <td>ny, sr, si</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomUserAgent}}</code></td>
+          <td>A random user agent</td>
+          <td>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.9.8; rv:15.6) Gecko/20100101 Firefox/15.6.6</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomProtocol}}</code></td>
+          <td>A random internet protocol</td>
+          <td>http, https</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomSemver}}</code></td>
+          <td>A random semantic version number</td>
+          <td>7.0.5, 2.5.8, 6.4.9</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDomainName}}</code></td>
+          <td>A random domain name</td>
+          <td>example.com</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDomainSuffix}}</code></td>
+          <td>A random domain suffix</td>
+          <td>.com, .org, .net</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDomainWord}}</code></td>
+          <td>A random domain word</td>
+          <td>example, test, demo</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomExampleEmail}}</code></td>
+          <td>A random example email</td>
+          <td><a href="mailto:user@example.com">user@example.com</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomEmail}}</code></td>
+          <td>A random email address</td>
+          <td><a href="mailto:john.doe@example.com">john.doe@example.com</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomUserName}}</code></td>
+          <td>A random username</td>
+          <td>johndoe123</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomUrl}}</code></td>
+          <td>A random URL</td>
+          <td><a href="https://example.com"target="_blank" rel="noopener">https://example.com</a></td>
+      </tr>
+  </tbody>
+</table>
+<h3>Names and Personal Information<span class="hx:absolute hx:-mt-20" id="names-and-personal-information"></span>
+    <a href="#names-and-personal-information" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomFirstName}}</code></td>
+          <td>A random first name</td>
+          <td>Ethan, Chandler, Megane</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLastName}}</code></td>
+          <td>A random last name</td>
+          <td>Schaden, Schneider, Willms</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomFullName}}</code></td>
+          <td>A random first and last name</td>
+          <td>Connie Runolfsdottir, Sylvan Fay, Jonathon Kunze</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomNamePrefix}}</code></td>
+          <td>A random name prefix</td>
+          <td>Dr., Ms., Mr.</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomNameSuffix}}</code></td>
+          <td>A random name suffix</td>
+          <td>I, MD, DD</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomJobArea}}</code></td>
+          <td>A random job area</td>
+          <td>Marketing, Engineering, Sales</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomJobDescriptor}}</code></td>
+          <td>A random job descriptor</td>
+          <td>Senior, Lead, Junior</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomJobTitle}}</code></td>
+          <td>A random job title</td>
+          <td>Software Engineer, Product Manager</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomJobType}}</code></td>
+          <td>A random job type</td>
+          <td>Full-time, Contract, Part-time</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomPhoneNumber}}</code></td>
+          <td>A random phone number</td>
+          <td>+1-555-123-4567</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomPhoneNumberExt}}</code></td>
+          <td>A random phone number with extension</td>
+          <td>+1-555-123-4567 ext. 123</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Location<span class="hx:absolute hx:-mt-20" id="location"></span>
+    <a href="#location" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomCity}}</code></td>
+          <td>A random city name</td>
+          <td>New York, London, Tokyo</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomStreetName}}</code></td>
+          <td>A random street name</td>
+          <td>Main Street, Park Avenue</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomStreetAddress}}</code></td>
+          <td>A random street address</td>
+          <td>123 Main St, 456 Park Ave</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCountry}}</code></td>
+          <td>A random country name</td>
+          <td>United States, Japan, Germany</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCountryCode}}</code></td>
+          <td>A random country code</td>
+          <td>US, JP, DE</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLatitude}}</code></td>
+          <td>A random latitude</td>
+          <td>40.7128, 35.6762</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLongitude}}</code></td>
+          <td>A random longitude</td>
+          <td>-74.0060, 139.6503</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Images<span class="hx:absolute hx:-mt-20" id="images"></span>
+    <a href="#images" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomAvatarImage}}</code></td>
+          <td>A random avatar image URL</td>
+          <td><a href="https://i.pravatar.cc/300"target="_blank" rel="noopener">https://i.pravatar.cc/300</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomImageUrl}}</code></td>
+          <td>A random image URL</td>
+          <td><a href="https://picsum.photos/200/300"target="_blank" rel="noopener">https://picsum.photos/200/300</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomAbstractImage}}</code></td>
+          <td>A random abstract image</td>
+          <td><a href="https://loremflickr.com/320/240/abstract"target="_blank" rel="noopener">https://loremflickr.com/320/240/abstract</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomAnimalsImage}}</code></td>
+          <td>A random animal image</td>
+          <td><a href="https://loremflickr.com/320/240/animals"target="_blank" rel="noopener">https://loremflickr.com/320/240/animals</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBusinessImage}}</code></td>
+          <td>A random business image</td>
+          <td><a href="https://loremflickr.com/320/240/business"target="_blank" rel="noopener">https://loremflickr.com/320/240/business</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCatsImage}}</code></td>
+          <td>A random cat image</td>
+          <td><a href="https://loremflickr.com/320/240/cats"target="_blank" rel="noopener">https://loremflickr.com/320/240/cats</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCityImage}}</code></td>
+          <td>A random city image</td>
+          <td><a href="https://loremflickr.com/320/240/city"target="_blank" rel="noopener">https://loremflickr.com/320/240/city</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomFoodImage}}</code></td>
+          <td>A random food image</td>
+          <td><a href="https://loremflickr.com/320/240/food"target="_blank" rel="noopener">https://loremflickr.com/320/240/food</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomNightlifeImage}}</code></td>
+          <td>A random nightlife image</td>
+          <td><a href="https://loremflickr.com/320/240/nightlife"target="_blank" rel="noopener">https://loremflickr.com/320/240/nightlife</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomFashionImage}}</code></td>
+          <td>A random fashion image</td>
+          <td><a href="https://loremflickr.com/320/240/fashion"target="_blank" rel="noopener">https://loremflickr.com/320/240/fashion</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomPeopleImage}}</code></td>
+          <td>A random people image</td>
+          <td><a href="https://loremflickr.com/320/240/people"target="_blank" rel="noopener">https://loremflickr.com/320/240/people</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomNatureImage}}</code></td>
+          <td>A random nature image</td>
+          <td><a href="https://loremflickr.com/320/240/nature"target="_blank" rel="noopener">https://loremflickr.com/320/240/nature</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomSportsImage}}</code></td>
+          <td>A random sports image</td>
+          <td><a href="https://loremflickr.com/320/240/sports"target="_blank" rel="noopener">https://loremflickr.com/320/240/sports</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomTransportImage}}</code></td>
+          <td>A random transport image</td>
+          <td><a href="https://loremflickr.com/320/240/transport"target="_blank" rel="noopener">https://loremflickr.com/320/240/transport</a></td>
+      </tr>
+      <tr>
+          <td><code>{{$randomImageDataUri}}</code></td>
+          <td>A random image data URI</td>
+          <td>data:image/png;base64,&hellip;</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Finance<span class="hx:absolute hx:-mt-20" id="finance"></span>
+    <a href="#finance" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomBankAccount}}</code></td>
+          <td>A random bank account number</td>
+          <td>1234567890</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBankAccountName}}</code></td>
+          <td>A random bank account name</td>
+          <td>Checking Account</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCreditCardMask}}</code></td>
+          <td>A masked credit card number</td>
+          <td>**** **** **** 1234</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBankAccountBic}}</code></td>
+          <td>A random BIC code</td>
+          <td>DEUTDEFF</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBankAccountIban}}</code></td>
+          <td>A random IBAN</td>
+          <td>DE89370400440532013000</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomTransactionType}}</code></td>
+          <td>A random transaction type</td>
+          <td>deposit, withdrawal</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCurrencyCode}}</code></td>
+          <td>A random currency code</td>
+          <td>USD, EUR, JPY</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCurrencyName}}</code></td>
+          <td>A random currency name</td>
+          <td>US Dollar, Euro, Yen</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCurrencySymbol}}</code></td>
+          <td>A random currency symbol</td>
+          <td>$, €, ¥</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBitcoin}}</code></td>
+          <td>A random Bitcoin address</td>
+          <td>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Business<span class="hx:absolute hx:-mt-20" id="business"></span>
+    <a href="#business" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomCompanyName}}</code></td>
+          <td>A random company name</td>
+          <td>TechCorp Inc.</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCompanySuffix}}</code></td>
+          <td>A random company suffix</td>
+          <td>LLC, Inc., Ltd.</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBs}}</code></td>
+          <td>A random business buzz phrase</td>
+          <td>revolutionize end-to-end systems</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBsAdjective}}</code></td>
+          <td>A random business adjective</td>
+          <td>innovative, scalable</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBsBuzz}}</code></td>
+          <td>A random business buzz word</td>
+          <td>synergize, leverage</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomBsNoun}}</code></td>
+          <td>A random business noun</td>
+          <td>solutions, platform</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCatchPhrase}}</code></td>
+          <td>A random company catch phrase</td>
+          <td>Innovate. Create. Transform.</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCatchPhraseAdjective}}</code></td>
+          <td>A random catch phrase adjective</td>
+          <td>innovative, revolutionary</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCatchPhraseDescriptor}}</code></td>
+          <td>A random catch phrase descriptor</td>
+          <td>next-generation, cutting-edge</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCatchPhraseNoun}}</code></td>
+          <td>A random catch phrase noun</td>
+          <td>solutions, platform</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Database<span class="hx:absolute hx:-mt-20" id="database"></span>
+    <a href="#database" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomDatabaseColumn}}</code></td>
+          <td>A random database column name</td>
+          <td>id, name, created_at</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDatabaseType}}</code></td>
+          <td>A random database type</td>
+          <td>varchar, int, timestamp</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDatabaseCollation}}</code></td>
+          <td>A random database collation</td>
+          <td>utf8_general_ci, latin1_swedish_ci</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDatabaseEngine}}</code></td>
+          <td>A random database engine</td>
+          <td>InnoDB, MyISAM</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Dates<span class="hx:absolute hx:-mt-20" id="dates"></span>
+    <a href="#dates" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomDateFuture}}</code></td>
+          <td>A random future date</td>
+          <td>2024-12-31T23:59:59.999Z</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDatePast}}</code></td>
+          <td>A random past date</td>
+          <td>2020-01-01T00:00:00.000Z</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDateRecent}}</code></td>
+          <td>A random recent date</td>
+          <td>2024-03-15T12:34:56.789Z</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomWeekday}}</code></td>
+          <td>A random weekday</td>
+          <td>Monday, Tuesday</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomMonth}}</code></td>
+          <td>A random month</td>
+          <td>January, February</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Files and System<span class="hx:absolute hx:-mt-20" id="files-and-system"></span>
+    <a href="#files-and-system" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomFileName}}</code></td>
+          <td>A random file name</td>
+          <td>document.pdf</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomFileType}}</code></td>
+          <td>A random file type</td>
+          <td>application/pdf</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomFileExt}}</code></td>
+          <td>A random file extension</td>
+          <td>.pdf, .jpg</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCommonFileName}}</code></td>
+          <td>A random common file name</td>
+          <td>document.pdf</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCommonFileType}}</code></td>
+          <td>A random common file type</td>
+          <td>application/pdf</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomCommonFileExt}}</code></td>
+          <td>A random common file extension</td>
+          <td>.pdf, .jpg</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomFilePath}}</code></td>
+          <td>A random file path</td>
+          <td>/path/to/file.txt</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDirectoryPath}}</code></td>
+          <td>A random directory path</td>
+          <td>/usr/local/bin</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomMimeType}}</code></td>
+          <td>A random MIME type</td>
+          <td>application/json</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Commerce<span class="hx:absolute hx:-mt-20" id="commerce"></span>
+    <a href="#commerce" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomPrice}}</code></td>
+          <td>A random price</td>
+          <td>99.99, 149.95</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomProduct}}</code></td>
+          <td>A random product</td>
+          <td>Chair, Table</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomProductAdjective}}</code></td>
+          <td>A random product adjective</td>
+          <td>Ergonomic, Modern</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomProductMaterial}}</code></td>
+          <td>A random product material</td>
+          <td>Wood, Metal</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomProductName}}</code></td>
+          <td>A random product name</td>
+          <td>Ergonomic Wooden Chair</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomDepartment}}</code></td>
+          <td>A random department name</td>
+          <td>Electronics, Clothing</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Hacker and Lorem<span class="hx:absolute hx:-mt-20" id="hacker-and-lorem"></span>
+    <a href="#hacker-and-lorem" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Variable Name</th>
+          <th>Description</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>{{$randomNoun}}</code></td>
+          <td>A random noun</td>
+          <td>protocol, interface</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomVerb}}</code></td>
+          <td>A random verb</td>
+          <td>hack, override</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomIngverb}}</code></td>
+          <td>A random -ing verb</td>
+          <td>hacking, overriding</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomAdjective}}</code></td>
+          <td>A random adjective</td>
+          <td>digital, virtual</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomPhrase}}</code></td>
+          <td>A random phrase</td>
+          <td>Try to reboot the SQL bus</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremWord}}</code></td>
+          <td>A random Lorem Ipsum word</td>
+          <td>lorem, ipsum</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremWords}}</code></td>
+          <td>Multiple Lorem Ipsum words</td>
+          <td>lorem ipsum dolor</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremSentence}}</code></td>
+          <td>A random Lorem Ipsum sentence</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremSentences}}</code></td>
+          <td>Multiple Lorem Ipsum sentences</td>
+          <td>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremParagraph}}</code></td>
+          <td>A random Lorem Ipsum paragraph</td>
+          <td>Lorem ipsum dolor sit amet&hellip;</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremParagraphs}}</code></td>
+          <td>Multiple Lorem Ipsum paragraphs</td>
+          <td>Lorem ipsum dolor sit amet&hellip;\n\nConsectetur adipiscing elit&hellip;</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremText}}</code></td>
+          <td>A random Lorem Ipsum text</td>
+          <td>Lorem ipsum dolor sit amet&hellip;</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremSlug}}</code></td>
+          <td>A random Lorem Ipsum slug</td>
+          <td>lorem-ipsum-dolor</td>
+      </tr>
+      <tr>
+          <td><code>{{$randomLoremLines}}</code></td>
+          <td>Multiple Lorem Ipsum lines</td>
+          <td>Lorem ipsum dolor\nConsectetur adipiscing elit</td>
+      </tr>
+  </tbody>
+</table>
 
         </div>
         <div class="hx:mt-16"></div>
