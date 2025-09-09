@@ -9,14 +9,23 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Environment Variables – Trayce App</title>
-  <meta name="description" content="This page is under a folder." /><link rel="canonical" href="//localhost:1313/docs/variables/environment-variables/" itemprop="url" />
+  <meta name="description" content="Environment variables are variables that are scoped to an environment, such as local development or production. They are useful for storing variables that can be re-used across the collection that are different depending on the environment. An example would be the host url of the server you want to test.
+How to Add an Environment Variable Go to environments (top right) and press configure. If there are no environments, you will be prompted to create one. Add your variable name and value for the specific environment. Save your changes. " /><link rel="canonical" href="//localhost:1313/docs/variables/environment-variables/" itemprop="url" />
 
 <meta property="og:title" content="Environment Variables">
 <meta
   property="og:description"
   content="
     
-      This page is under a folder.
+      Environment variables are variables that are scoped to an environment, such as local development or production. They are useful for storing variables that can be re-used across the collection that are different depending on the environment. An example would be the host url of the server you want to test.
+How to Add an Environment Variable
+Go to environments (top right) and press configure.
+If there are no environments, you will be prompted to create one.
+Add your variable name and value for the specific environment.
+Save your changes.
+
+
+    
     
   ">
 <meta
@@ -30,11 +39,13 @@
 
 
   <meta itemprop="name" content="Environment Variables">
-  <meta itemprop="description" content="This page is under a folder.">
-  <meta itemprop="wordCount" content="6">
+  <meta itemprop="description" content="Environment variables are variables that are scoped to an environment, such as local development or production. They are useful for storing variables that can be re-used across the collection that are different depending on the environment. An example would be the host url of the server you want to test.
+How to Add an Environment Variable Go to environments (top right) and press configure. If there are no environments, you will be prompted to create one. Add your variable name and value for the specific environment. Save your changes.">
+  <meta itemprop="wordCount" content="178">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Environment Variables">
-  <meta name="twitter:description" content="This page is under a folder.">
+  <meta name="twitter:description" content="Environment variables are variables that are scoped to an environment, such as local development or production. They are useful for storing variables that can be re-used across the collection that are different depending on the environment. An example would be the host url of the server you want to test.
+How to Add an Environment Variable Go to environments (top right) and press configure. If there are no environments, you will be prompted to create one. Add your variable name and value for the specific environment. Save your changes.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -300,6 +311,20 @@
     
   >Environment Variables
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#using-an-environment-variable"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Using an Environment Variable</a>
+            </li>
+          <li>
+              <a
+                href="#using-the-environment-directory"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Using the ./environment Directory</a>
+            </li>
+          </ul>
   
               
             </li><li class="hx:flex hx:flex-col "><a
@@ -722,7 +747,41 @@
 
         <div class="content">
           <h1>Environment Variables</h1>
-          <p>This page is under a folder.</p>
+          <p>Environment variables are variables that are scoped to an environment, such as local development or production. They are useful for storing variables that can be re-used across the collection that are different depending on the environment. An example would be the host url of the server you want to test.</p>
+<h1>How to Add an Environment Variable</h1><ol>
+<li>Go to environments (top right) and press configure.</li>
+<li>If there are no environments, you will be prompted to create one.</li>
+<li>Add your variable name and value for the specific environment.</li>
+<li>Save your changes.</li>
+</ol>
+<p>
+    <img src=".././3.png" alt=""  loading="lazy" /></p>
+<p>Select the environment from the dropdown:
+
+    <img src=".././4.png" alt=""  loading="lazy" /></p>
+<h2>Using an Environment Variable<span class="hx:absolute hx:-mt-20" id="using-an-environment-variable"></span>
+    <a href="#using-an-environment-variable" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Just like other variables you can use the <code>{{varName}}</code> syntax to use an environment variable in a request. On the top-right, you can see which environment you are currently using and select a different one.</p>
+<h2>Using the ./environment Directory<span class="hx:absolute hx:-mt-20" id="using-the-environment-directory"></span>
+    <a href="#using-the-environment-directory" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Environment variables are synced with the <code>/environments</code> directory inside your collection. You can also create and manage environments there.</p>
+<p>Each environment is saved in a <code>&lt;environment-name&gt;.bru</code> file, which looks like this:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vars <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  host: http://localhost:8787
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">vars:secret <span class="o">[</span>
+</span></span><span class="line"><span class="cl">  my_password
+</span></span><span class="line"><span class="cl"><span class="o">]</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
 
         </div>
         <div class="hx:mt-16"></div>

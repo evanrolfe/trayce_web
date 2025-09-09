@@ -9,14 +9,14 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Runtime Variables – Trayce App</title>
-  <meta name="description" content="This page is under a folder." /><link rel="canonical" href="//localhost:1313/docs/variables/runtime-variables/" itemprop="url" />
+  <meta name="description" content="Runtime variables are ephemeral variables that exist only during the runtime of the API client. These variables are scoped within a collection, meaning they are accessible to all requests within that collection. However, once the API client is closed or restarted, the values of these variables are lost. They are ideal for managing temporary data such as session tokens, dynamic parameters, or other values that are generated or updated during the execution of requests." /><link rel="canonical" href="//localhost:1313/docs/variables/runtime-variables/" itemprop="url" />
 
 <meta property="og:title" content="Runtime Variables">
 <meta
   property="og:description"
   content="
     
-      This page is under a folder.
+      Runtime variables are ephemeral variables that exist only during the runtime of the API client. These variables are scoped within a collection, meaning they are accessible to all requests within that collection. However, once the API client is closed or restarted, the values of these variables are lost. They are ideal for managing temporary data such as session tokens, dynamic parameters, or other values that are generated or updated during the execution of requests.
     
   ">
 <meta
@@ -30,11 +30,11 @@
 
 
   <meta itemprop="name" content="Runtime Variables">
-  <meta itemprop="description" content="This page is under a folder.">
-  <meta itemprop="wordCount" content="6">
+  <meta itemprop="description" content="Runtime variables are ephemeral variables that exist only during the runtime of the API client. These variables are scoped within a collection, meaning they are accessible to all requests within that collection. However, once the API client is closed or restarted, the values of these variables are lost. They are ideal for managing temporary data such as session tokens, dynamic parameters, or other values that are generated or updated during the execution of requests.">
+  <meta itemprop="wordCount" content="334">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Runtime Variables">
-  <meta name="twitter:description" content="This page is under a folder.">
+  <meta name="twitter:description" content="Runtime variables are ephemeral variables that exist only during the runtime of the API client. These variables are scoped within a collection, meaning they are accessible to all requests within that collection. However, once the API client is closed or restarted, the values of these variables are lost. They are ideal for managing temporary data such as session tokens, dynamic parameters, or other values that are generated or updated during the execution of requests.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -340,6 +340,14 @@
     
   >Runtime Variables
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              ></a>
+            </li>
+          </ul>
   
               
             </li><li class="hx:flex hx:flex-col "><a
@@ -722,7 +730,77 @@
 
         <div class="content">
           <h1>Runtime Variables</h1>
-          <p>This page is under a folder.</p>
+          <p>Runtime variables are <strong>ephemeral variables</strong> that exist only during the runtime of the API client. These variables are scoped within a collection, meaning they are accessible to all requests within that collection. However, once the API client is closed or restarted, the values of these variables are lost. They are ideal for managing temporary data such as session tokens, dynamic parameters, or other values that are generated or updated during the execution of requests.</p>
+<h3>How to Add a Runtime Variable<span class="hx:absolute hx:-mt-20" id="how-to-add-a-runtime-variable"></span>
+    <a href="#how-to-add-a-runtime-variable" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To create a runtime variable, you can use the <code>bru.setVar(name, value)</code> function. This function allows you to store any value (e.g., tokens, response data, temporary user inputs) as a runtime variable.</p>
+<h4>Example:<span class="hx:absolute hx:-mt-20" id="example"></span>
+    <a href="#example" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Suppose you receive an authentication token as part of a response body and want to reuse it in subsequent requests. You can capture it using the <code>bru.setVar()</code> function in your post response script.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setVar</span><span class="p">(</span><span class="s2">&#34;token&#34;</span><span class="p">,</span> <span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">token</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>
+    <img src=".././15.png" alt=""  loading="lazy" /></p>
+<h3>Using a Runtime Variable<span class="hx:absolute hx:-mt-20" id="using-a-runtime-variable"></span>
+    <a href="#using-a-runtime-variable" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Once a runtime variable is created, you can use it in subsequent API requests by referencing it with the <code>{{variableName}}</code>syntax. The variable&rsquo;s value will be dynamically injected into the request at runtime.</p>
+<h4>Example:<span class="hx:absolute hx:-mt-20" id="example-1"></span>
+    <a href="#example-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>If you’ve stored a token variable using <code>bru.setVar()</code>, you can use it in headers, query parameters, body, or URL of subsequent requests like this:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Authorization: Bearer {{token}}</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>You can also use the <code>bru.getVar()</code> function to get the value of a runtime variable and use it inside your pre request scripts.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">token</span> <span class="o">=</span> <span class="nx">bru</span><span class="p">.</span><span class="nx">getVar</span><span class="p">(</span><span class="s2">&#34;token&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">req</span><span class="p">.</span><span class="nx">setHeader</span><span class="p">(</span><span class="s2">&#34;Authorization&#34;</span><span class="p">,</span> <span class="sb">`Bearer </span><span class="si">${</span><span class="nx">token</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>Viewing Runtime Variables<span class="hx:absolute hx:-mt-20" id="viewing-runtime-variables"></span>
+    <a href="#viewing-runtime-variables" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>You can view all runtime variables by clicking on the <strong>Eye</strong> icon located in the top-right corner of the navigation bar</p>
+<Callout emoji="">
+  The request must be executed before you can view the runtime variables.
+</Callout>
+<h4>Example:<span class="hx:absolute hx:-mt-20" id="example-2"></span>
+    <a href="#example-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Consider the following script inside Trayce, which creates a runtime variable with a <code>key</code> and value <code>pair</code>. In this case, the key is <em>hey</em> and the value is <em>Trayce</em>.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">setVar</span><span class="p">(</span><span class="s2">&#34;hey&#34;</span><span class="p">,</span> <span class="s2">&#34;Trayce&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>Once the request is executed, the runtime variable will be available for viewing. Click the eye icon in the top right corner to view them:</p>
+<p>
+    <img src=".././16.png" alt=""  loading="lazy" /></p>
 
         </div>
         <div class="hx:mt-16"></div>
