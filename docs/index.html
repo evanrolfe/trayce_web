@@ -72,6 +72,7 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body><header>
     <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
@@ -233,7 +234,7 @@
                 <p class="lead">Enter your email to be notified of new releases:</p>
                 <div class="input-group mb-3 justify-content-center" width="300px">
                     <input type="text" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Email"
-                        style="max-width: 300px;">
+                        style="max-width: 300px; color: #5C5C59">
                     <button class="btn btn-outline-secondary" type="submit" name="subscribe"
                         id="mc-embedded-subscribe">Sign
                         Up</button>
@@ -241,7 +242,10 @@
                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
                     <input type="text" name="b_12e6589bb25afc25201b8a0d6_c96c436682" tabindex="-1" value="">
                 </div>
-                <small>*You can unsubscribe at anytime</small>
+                <small>*You can unsubscribe at anytime <i class="bi bi-question-circle" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="To unsubscribe, enter your email, click 'Sign up' and then click 'Update your preferences'"
+                        style="cursor: pointer;"></i></small>
             </form>
         </div>
     </div>
@@ -447,6 +451,12 @@
 <script src="/js/chart-utils.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
         // Startup Time Chart
         const data = [
             { name: 'Trayce', time: 1.2 },
