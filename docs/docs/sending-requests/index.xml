@@ -23,7 +23,8 @@
       <description>
         
         
-        &lt;p&gt;Welcome to sending requests!&lt;/p&gt;
+        &lt;p&gt;HTTP (Hypertext Transfer Protocol) is the foundational protocol that powers the World Wide Web, enabling communication between web browsers and servers. It operates as a request-response protocol where clients (like web browsers) send HTTP requests to servers, which then respond with the requested resources such as HTML pages, images, json, or data.&lt;/p&gt;
+&lt;p&gt;HTTP is stateless, meaning each request is independent and doesn&amp;rsquo;t retain information from previous interactions, though mechanisms like cookies and sessions can maintain state when needed.&lt;/p&gt;
 
       </description>
     </item>
@@ -37,7 +38,8 @@
       <description>
         
         
-        &lt;p&gt;Welcome to graphql!&lt;/p&gt;
+        &lt;p&gt;HTTP (Hypertext Transfer Protocol) is the foundational protocol that powers the World Wide Web, enabling communication between web browsers and servers. It operates as a request-response protocol where clients (like web browsers) send HTTP requests to servers, which then respond with the requested resources such as HTML pages, images, JSON, or data.&lt;/p&gt;
+&lt;p&gt;HTTP is stateless, meaning each request is independent and doesn&amp;rsquo;t retain information from previous interactions, though mechanisms like cookies and sessions can maintain state when needed.&lt;/p&gt;
 
       </description>
     </item>

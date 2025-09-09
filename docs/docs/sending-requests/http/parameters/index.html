@@ -9,14 +9,21 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Parameters – Trayce App</title>
-  <meta name="description" content="This page is under a folder." /><link rel="canonical" href="//localhost:1313/docs/sending-requests/http/parameters/" itemprop="url" />
+  <meta name="description" content="Trayce enables you to send data with your HTTP requests. You can include both query and path parameters in the request and define their corresponding values.
+Query Parameters Path Parameters Query Parameters Query parameters are a way to pass additional information to a server via the URL when making an HTTP request. They are commonly used in GET requests to filter, sort, or specify the data you’re asking for." /><link rel="canonical" href="//localhost:1313/docs/sending-requests/http/parameters/" itemprop="url" />
 
 <meta property="og:title" content="Parameters">
 <meta
   property="og:description"
   content="
     
-      This page is under a folder.
+      Trayce enables you to send data with your HTTP requests. You can include both query and path parameters in the request and define their corresponding values.
+
+Query Parameters
+Path Parameters
+
+Query Parameters
+    Query parameters are a way to pass additional information to a server via the URL when making an HTTP request. They are commonly used in GET requests to filter, sort, or specify the data you’re asking for.
     
   ">
 <meta
@@ -30,11 +37,13 @@
 
 
   <meta itemprop="name" content="Parameters">
-  <meta itemprop="description" content="This page is under a folder.">
-  <meta itemprop="wordCount" content="6">
+  <meta itemprop="description" content="Trayce enables you to send data with your HTTP requests. You can include both query and path parameters in the request and define their corresponding values.
+Query Parameters Path Parameters Query Parameters Query parameters are a way to pass additional information to a server via the URL when making an HTTP request. They are commonly used in GET requests to filter, sort, or specify the data you’re asking for.">
+  <meta itemprop="wordCount" content="260">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Parameters">
-  <meta name="twitter:description" content="This page is under a folder.">
+  <meta name="twitter:description" content="Trayce enables you to send data with your HTTP requests. You can include both query and path parameters in the request and define their corresponding values.
+Query Parameters Path Parameters Query Parameters Query parameters are a way to pass additional information to a server via the URL when making an HTTP request. They are commonly used in GET requests to filter, sort, or specify the data you’re asking for.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -236,6 +245,20 @@
     
   >Parameters
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#query-parameters"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Query Parameters</a>
+            </li>
+          <li>
+              <a
+                href="#path-parameters"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Path Parameters</a>
+            </li>
+          </ul>
   
               
             </li><li class="hx:flex hx:flex-col "><a
@@ -725,7 +748,59 @@
 
         <div class="content">
           <h1>Parameters</h1>
-          <p>This page is under a folder.</p>
+          <p>Trayce enables you to send data with your HTTP requests. You can include both query and path parameters in the request and define their corresponding values.</p>
+<ol>
+<li>Query Parameters</li>
+<li>Path Parameters</li>
+</ol>
+<h2>Query Parameters<span class="hx:absolute hx:-mt-20" id="query-parameters"></span>
+    <a href="#query-parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Query parameters are a way to pass additional information to a server via the URL when making an HTTP request. They are commonly used in GET requests to filter, sort, or specify the data you’re asking for.</p>
+<h3>How Query Parameters Work<span class="hx:absolute hx:-mt-20" id="how-query-parameters-work"></span>
+    <a href="#how-query-parameters-work" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Query parameters are appended to the end of the URL after a ? symbol</li>
+<li>Each parameter consists of a key-value pair</li>
+<li>If there are multiple query parameters, they are separated by an &amp; symbol</li>
+</ul>
+<h3>How to Add Query Parameters<span class="hx:absolute hx:-mt-20" id="how-to-add-query-parameters"></span>
+    <a href="#how-to-add-query-parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ol>
+<li>Create a request</li>
+<li>Navigate to the Params tab</li>
+<li>Enter the Name of the parameter and its corresponding Value
+
+    <img src=".././1.png" alt=""  loading="lazy" /></li>
+</ol>
+<p>You’ll notice that the values are appended to the URL, starting with a ?.</p>
+<h2>Path Parameters<span class="hx:absolute hx:-mt-20" id="path-parameters"></span>
+    <a href="#path-parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>A path parameter is a dynamic value embedded directly in the URL path of an API request. It is used to specify particular resources or data points within an API endpoint.</p>
+<h3>How Path Parameters Work<span class="hx:absolute hx:-mt-20" id="how-path-parameters-work"></span>
+    <a href="#how-path-parameters-work" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Path parameters are embedded directly in the URL path.</li>
+<li>They are represented as placeholders preceded by a colon (:).</li>
+<li>When making the request, the placeholder is replaced with a dynamic value, which is part of the URL.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><pre><code>https://api.example.com/users/:id</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><code>:id</code> is a path parameter.</p>
+<h3>How to Add Path Parameters<span class="hx:absolute hx:-mt-20" id="how-to-add-path-parameters"></span>
+    <a href="#how-to-add-path-parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ol>
+<li>Create a request</li>
+<li>Navigate to the Params tab</li>
+<li>Add the path parameter variable in the URL. e.g. <code>/users/:user</code></li>
+<li>Enter the value in the path parameter section for the corresponding variable.
+
+    <img src=".././2.png" alt=""  loading="lazy" /></li>
+</ol>
 
         </div>
         <div class="hx:mt-16"></div>

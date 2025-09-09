@@ -8,15 +8,18 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Body – Trayce App</title>
-  <meta name="description" content="This page is under a folder." /><link rel="canonical" href="//localhost:1313/docs/sending-requests/http/body/" itemprop="url" />
+<title>Body Data – Trayce App</title>
+  <meta name="description" content="The Body tab allows you to send specific data with your API requests. You can choose from various data formats, such as Form, Raw, and others, using the dropdown menu.
+How Send API Requests with a Body You can select the data type based on your API request requirements. For example, if you’re working with a request where you need to send specific details about a particular item, you’ll likely choose JSON as the data type and include the data in the body of the request." /><link rel="canonical" href="//localhost:1313/docs/sending-requests/http/body/" itemprop="url" />
 
-<meta property="og:title" content="Body">
+<meta property="og:title" content="Body Data">
 <meta
   property="og:description"
   content="
     
-      This page is under a folder.
+      The Body tab allows you to send specific data with your API requests. You can choose from various data formats, such as Form, Raw, and others, using the dropdown menu.
+How Send API Requests with a Body
+    You can select the data type based on your API request requirements. For example, if you’re working with a request where you need to send specific details about a particular item, you’ll likely choose JSON as the data type and include the data in the body of the request.
     
   ">
 <meta
@@ -29,12 +32,14 @@
 
 
 
-  <meta itemprop="name" content="Body">
-  <meta itemprop="description" content="This page is under a folder.">
-  <meta itemprop="wordCount" content="6">
+  <meta itemprop="name" content="Body Data">
+  <meta itemprop="description" content="The Body tab allows you to send specific data with your API requests. You can choose from various data formats, such as Form, Raw, and others, using the dropdown menu.
+How Send API Requests with a Body You can select the data type based on your API request requirements. For example, if you’re working with a request where you need to send specific details about a particular item, you’ll likely choose JSON as the data type and include the data in the body of the request.">
+  <meta itemprop="wordCount" content="378">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Body">
-  <meta name="twitter:description" content="This page is under a folder.">
+  <meta name="twitter:title" content="Body Data">
+  <meta name="twitter:description" content="The Body tab allows you to send specific data with your API requests. You can choose from various data formats, such as Form, Raw, and others, using the dropdown menu.
+How Send API Requests with a Body You can select the data type based on your API request requirements. For example, if you’re working with a request where you need to send specific details about a particular item, you’ll likely choose JSON as the data type and include the data in the body of the request.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -252,6 +257,14 @@
     
   >Body
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#how-send-api-requests-with-a-body"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >How Send API Requests with a Body</a>
+            </li>
+          </ul>
   
               
             </li></ul>
@@ -724,8 +737,52 @@
   </div>
 
         <div class="content">
-          <h1>Body</h1>
-          <p>This page is under a folder.</p>
+          <h1>Body Data</h1>
+          <p>The Body tab allows you to send specific data with your API requests. You can choose from various data formats, such as Form, Raw, and others, using the dropdown menu.</p>
+<h2>How Send API Requests with a Body<span class="hx:absolute hx:-mt-20" id="how-send-api-requests-with-a-body"></span>
+    <a href="#how-send-api-requests-with-a-body" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>You can select the data type based on your API request requirements. For example, if you’re working with a request where you need to send specific details about a particular item, you’ll likely choose JSON as the data type and include the data in the body of the request.</p>
+<h3>1. Text-Based Data<span class="hx:absolute hx:-mt-20" id="1-text-based-data"></span>
+    <a href="#1-text-based-data" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Text-based data allows you to send data in its raw, unprocessed form in the body of an API request. It doesn’t require a predefined structure like key-value pairs or multi-part boundaries. Instead, you can send data exactly as it is, which is useful when dealing with structured data formats such as JSON, XML or plain text.</p>
+<ol>
+<li>Navigate to the Body tab.</li>
+<li>Select your preferred data format (i.e. JSON).</li>
+<li>Add appropriate data for your API request.</li>
+<li>Save and execute the request.
+
+    <img src=".././6.png" alt=""  loading="lazy" /></li>
+</ol>
+<h3>2. Form Data<span class="hx:absolute hx:-mt-20" id="2-form-data"></span>
+    <a href="#2-form-data" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Multipart Form</strong></p>
+<p>Multipart form data is used for sending files along with form data, allowing multiple parts with different content types in a single request. In multipart form data, each part of the request is separated by a boundary.</p>
+<ol>
+<li>Navigate to the Body tab.</li>
+<li>Select Multipart Form from dropdown.</li>
+<li>Click on Add File and upload your file.</li>
+<li>Save and execute the request.
+
+    <img src="../8.png" alt=""  loading="lazy" /></li>
+</ol>
+<p><strong>URL-Encoded Form</strong></p>
+<p>URL-Encoded form data is commonly used for simple form submissions where data is sent as key-value pairs. Each key and value are separated by an equal sign (=), and multiple pairs are separated by an ampersand (&amp;).</p>
+<ol>
+<li>Navigate to the Body tab.</li>
+<li>Select Form URL Encoded from dropdown.</li>
+<li>Click on Add Param and add key-value pair.</li>
+<li>Save and execute the request.
+
+    <img src=".././7.png" alt=""  loading="lazy" /></li>
+</ol>
+<h3>3. File Data<span class="hx:absolute hx:-mt-20" id="3-file-data"></span>
+    <a href="#3-file-data" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>File data allows you to upload and send files directly in the body of your API request. This is commonly used for uploading documents, images, or any binary data to endpoints that accept file uploads. The file is sent as raw binary data in the request body.</p>
+<ol>
+<li>Navigate to the Body tab.</li>
+<li>Select File from dropdown.</li>
+<li>Click Browse to upload a file.</li>
+<li>Click the file&rsquo;s radio button to select it to be sent</li>
+<li>Save and execute the request.
+
+    <img src=".././9.png" alt=""  loading="lazy" /></li>
+</ol>
 
         </div>
         <div class="hx:mt-16"></div>

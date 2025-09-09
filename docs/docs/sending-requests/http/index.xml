@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trayce App – HTTP</title>
-    <link>//localhost:34043/docs/sending-requests/http/</link>
+    <link>//localhost:1313/docs/sending-requests/http/</link>
     <description>Recent content in HTTP on Trayce App</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:34043/docs/sending-requests/http/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/docs/sending-requests/http/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,42 +16,148 @@
     
     <item>
       <title>Parameters</title>
-      <link>//localhost:34043/docs/sending-requests/http/parameters/</link>
+      <link>//localhost:1313/docs/sending-requests/http/parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:34043/docs/sending-requests/http/parameters/</guid>
+      <guid>//localhost:1313/docs/sending-requests/http/parameters/</guid>
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;Trayce enables you to send data with your HTTP requests. You can include both query and path parameters in the request and define their corresponding values.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Query Parameters&lt;/li&gt;
+&lt;li&gt;Path Parameters&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Query Parameters&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;query-parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#query-parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Query parameters are a way to pass additional information to a server via the URL when making an HTTP request. They are commonly used in GET requests to filter, sort, or specify the data you’re asking for.&lt;/p&gt;
+&lt;h3&gt;How Query Parameters Work&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-query-parameters-work&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-query-parameters-work&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Query parameters are appended to the end of the URL after a ? symbol&lt;/li&gt;
+&lt;li&gt;Each parameter consists of a key-value pair&lt;/li&gt;
+&lt;li&gt;If there are multiple query parameters, they are separated by an &amp;amp; symbol&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Add Query Parameters&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-add-query-parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-add-query-parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create a request&lt;/li&gt;
+&lt;li&gt;Navigate to the Params tab&lt;/li&gt;
+&lt;li&gt;Enter the Name of the parameter and its corresponding Value
+
+    &lt;img src=&#34;.././1.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You’ll notice that the values are appended to the URL, starting with a ?.&lt;/p&gt;
+&lt;h2&gt;Path Parameters&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;path-parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#path-parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A path parameter is a dynamic value embedded directly in the URL path of an API request. It is used to specify particular resources or data points within an API endpoint.&lt;/p&gt;
+&lt;h3&gt;How Path Parameters Work&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-path-parameters-work&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-path-parameters-work&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Path parameters are embedded directly in the URL path.&lt;/li&gt;
+&lt;li&gt;They are represented as placeholders preceded by a colon (:).&lt;/li&gt;
+&lt;li&gt;When making the request, the placeholder is replaced with a dynamic value, which is part of the URL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;https://api.example.com/users/:id&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;:id&lt;/code&gt; is a path parameter.&lt;/p&gt;
+&lt;h3&gt;How to Add Path Parameters&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-add-path-parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-add-path-parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create a request&lt;/li&gt;
+&lt;li&gt;Navigate to the Params tab&lt;/li&gt;
+&lt;li&gt;Add the path parameter variable in the URL. e.g. &lt;code&gt;/users/:user&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enter the value in the path parameter section for the corresponding variable.
+
+    &lt;img src=&#34;.././2.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
     
     <item>
       <title>Headers</title>
-      <link>//localhost:34043/docs/sending-requests/http/headers/</link>
+      <link>//localhost:1313/docs/sending-requests/http/headers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:34043/docs/sending-requests/http/headers/</guid>
+      <guid>//localhost:1313/docs/sending-requests/http/headers/</guid>
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;Request headers are key-value pairs sent along with an HTTP request to provide additional information to the server about the request. The request headers give the server more information about how to process the incoming request.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Default Headers:&lt;/strong&gt; Default headers are predefined headers that are part of the HTTP specification.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custom Headers:&lt;/strong&gt; Custom headers are headers that are user-defined and are not part of the official HTTP specification.&lt;/p&gt;
+&lt;h2&gt;How to Add Request Headers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-add-request-headers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-add-request-headers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Create a request&lt;/li&gt;
+&lt;li&gt;Navigate to the Headers tab&lt;/li&gt;
+&lt;li&gt;Enter the Name of the header and its corresponding Value.
+
+    &lt;img src=&#34;.././3.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Body</title>
-      <link>//localhost:34043/docs/sending-requests/http/body/</link>
+      <title>Body Data</title>
+      <link>//localhost:1313/docs/sending-requests/http/body/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:34043/docs/sending-requests/http/body/</guid>
+      <guid>//localhost:1313/docs/sending-requests/http/body/</guid>
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;The Body tab allows you to send specific data with your API requests. You can choose from various data formats, such as Form, Raw, and others, using the dropdown menu.&lt;/p&gt;
+&lt;h2&gt;How Send API Requests with a Body&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-send-api-requests-with-a-body&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-send-api-requests-with-a-body&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can select the data type based on your API request requirements. For example, if you’re working with a request where you need to send specific details about a particular item, you’ll likely choose JSON as the data type and include the data in the body of the request.&lt;/p&gt;
+&lt;h3&gt;1. Text-Based Data&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-text-based-data&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-text-based-data&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Text-based data allows you to send data in its raw, unprocessed form in the body of an API request. It doesn’t require a predefined structure like key-value pairs or multi-part boundaries. Instead, you can send data exactly as it is, which is useful when dealing with structured data formats such as JSON, XML or plain text.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the Body tab.&lt;/li&gt;
+&lt;li&gt;Select your preferred data format (i.e. JSON).&lt;/li&gt;
+&lt;li&gt;Add appropriate data for your API request.&lt;/li&gt;
+&lt;li&gt;Save and execute the request.
+
+    &lt;img src=&#34;.././6.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Form Data&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-form-data&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-form-data&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Multipart Form&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Multipart form data is used for sending files along with form data, allowing multiple parts with different content types in a single request. In multipart form data, each part of the request is separated by a boundary.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the Body tab.&lt;/li&gt;
+&lt;li&gt;Select Multipart Form from dropdown.&lt;/li&gt;
+&lt;li&gt;Click on Add File and upload your file.&lt;/li&gt;
+&lt;li&gt;Save and execute the request.
+
+    &lt;img src=&#34;../8.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;URL-Encoded Form&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;URL-Encoded form data is commonly used for simple form submissions where data is sent as key-value pairs. Each key and value are separated by an equal sign (=), and multiple pairs are separated by an ampersand (&amp;amp;).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the Body tab.&lt;/li&gt;
+&lt;li&gt;Select Form URL Encoded from dropdown.&lt;/li&gt;
+&lt;li&gt;Click on Add Param and add key-value pair.&lt;/li&gt;
+&lt;li&gt;Save and execute the request.
+
+    &lt;img src=&#34;.././7.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;3. File Data&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-file-data&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-file-data&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;File data allows you to upload and send files directly in the body of your API request. This is commonly used for uploading documents, images, or any binary data to endpoints that accept file uploads. The file is sent as raw binary data in the request body.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the Body tab.&lt;/li&gt;
+&lt;li&gt;Select File from dropdown.&lt;/li&gt;
+&lt;li&gt;Click Browse to upload a file.&lt;/li&gt;
+&lt;li&gt;Click the file&amp;rsquo;s radio button to select it to be sent&lt;/li&gt;
+&lt;li&gt;Save and execute the request.
+
+    &lt;img src=&#34;.././9.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
