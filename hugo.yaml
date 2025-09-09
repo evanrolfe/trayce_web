@@ -8,6 +8,7 @@ module:
 
 # Configure Hugo to build to ./docs instead of ./public
 publishDir: "docs"
+enableInlineShortcodes: true
 
 markup:
   # allow raw html

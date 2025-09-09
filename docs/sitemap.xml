@@ -2,23 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/docs/getting-started/install/</loc>
+  </url><url>
     <loc>//localhost:1313/docs/variables/environment-variables/</loc>
   </url><url>
     <loc>//localhost:1313/docs/scripting/execution-flow/</loc>
+  </url><url>
+    <loc>//localhost:1313/docs/getting-started/</loc>
   </url><url>
     <loc>//localhost:1313/docs/sending-requests/graphql/query/</loc>
   </url><url>
     <loc>//localhost:1313/docs/sending-requests/http/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/getting-started/install/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/introduction/</loc>
-  </url><url>
     <loc>//localhost:1313/docs/sending-requests/http/parameters/</loc>
   </url><url>
     <loc>//localhost:1313/docs/getting-started/create-collection/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/getting-started/</loc>
   </url><url>
     <loc>//localhost:1313/docs/variables/global-environment-variables/</loc>
   </url><url>

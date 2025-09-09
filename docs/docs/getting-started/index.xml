@@ -15,7 +15,7 @@
     
     
     <item>
-      <title>Install</title>
+      <title>Download &amp; Install</title>
       <link>//localhost:1313/docs/getting-started/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -23,7 +23,64 @@
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;Trayce is a free and open-source, fast and lightweight API client for exploring and testing APIs. It&amp;rsquo;s designed to be a modern alternative to slow, browser-based API clients with a focus on speed, simplicity, and collaboration.&lt;/p&gt;
+&lt;h2&gt;Download&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;download&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#download&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Download Trayce from &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases/latest&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Install&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;install&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Trayce can currently only be installed by downloading a packaged installer and opening it on your machine. Package manager distribution is not yet available.&lt;/p&gt;
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34;&gt;&lt;button
+        class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white&#34;
+        role=&#34;tab&#34;
+        type=&#34;button&#34;
+        aria-controls=&#34;tabs-panel-0&#34; aria-selected=&#34;true&#34;  tabindex=&#34;0&#34;  data-state=&#34;selected&#34;&gt;mac&lt;/button&gt;&lt;button
+        class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white&#34;
+        role=&#34;tab&#34;
+        type=&#34;button&#34;
+        aria-controls=&#34;tabs-panel-1&#34;&gt;linux&lt;/button&gt;&lt;button
+        class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white&#34;
+        role=&#34;tab&#34;
+        type=&#34;button&#34;
+        aria-controls=&#34;tabs-panel-2&#34;&gt;windows&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+
+  &lt;div
+  class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34;
+  id=&#34;tabs-panel-0&#34;
+  role=&#34;tabpanel&#34; tabindex=&#34;0&#34;  data-state=&#34;selected&#34; &gt;Download the &lt;code&gt;.dmg&lt;/code&gt; installer from our releases page on GitHub. Open it and drag the Trayce icon to your Applications folder.&lt;/div&gt;
+  &lt;div
+  class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34;
+  id=&#34;tabs-panel-1&#34;
+  role=&#34;tabpanel&#34;&gt;&lt;p&gt;On Debian-based distros you can download the &lt;code&gt;.deb&lt;/code&gt; installer and install that from the command line by running:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;sudo dpkg -i trayce.deb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;For other distros you will have to follow the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/blob/main/README.md#build&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;README.md&lt;/a&gt; to build Trayce from source.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div
+  class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34;
+  id=&#34;tabs-panel-2&#34;
+  role=&#34;tabpanel&#34;&gt;The Windows version of Trayce is not yet available, sorry!&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;h2&gt;Release Information&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;release-information&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#release-information&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Trayce follows semantic versioning. You can check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub releases page&lt;/a&gt; for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Latest version information&lt;/li&gt;
+&lt;li&gt;Release notes&lt;/li&gt;
+&lt;li&gt;Bug fixes&lt;/li&gt;
+&lt;li&gt;New features included in each release&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -37,7 +94,20 @@
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;A collection in Trayce is a structured group of API requests, tests, and related resources that helps you organize and manage your API testing workflow.&lt;/p&gt;
+&lt;h2&gt;How to Create a Collection&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-create-a-collection&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-create-a-collection&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Open Trayce&lt;/li&gt;
+&lt;li&gt;Click on the &lt;code&gt;...&lt;/code&gt; button and select &lt;code&gt;Create Collection&lt;/code&gt; from the dropdown (or click &amp;ldquo;New Collection&amp;rdquo; below the Trayce logo)
+
+    &lt;img src=&#34;../2.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Enter a name for your collection&lt;/li&gt;
+&lt;li&gt;Choose a location on your filesystem to store the collection
+
+    &lt;img src=&#34;../3.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Congratulations! You have successfully created your first collection.&lt;/p&gt;
 
       </description>
     </item>
@@ -51,7 +121,17 @@
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;Trayce helps you organize your API requests efficiently by grouping them into folders. You can create a structured hierarchy that matches your API&amp;rsquo;s organization, making it easier to manage and navigate your collections.&lt;/p&gt;
+&lt;h2&gt;How to Create a Folder&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-create-a-folder&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-create-a-folder&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Right-click your collection from the file explorer&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;New Folder&lt;/code&gt; from the menu
+
+    &lt;img src=&#34;../4.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Type a name for your folder and hit Enter
+
+    &lt;img src=&#34;../5.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
@@ -65,7 +145,18 @@
       <description>
         
         
-        &lt;p&gt;This page is under a folder.&lt;/p&gt;
+        &lt;p&gt;A request is the primary object in Trayce. Let&amp;rsquo;s walk through how to create your first request:&lt;/p&gt;
+&lt;h2&gt;How to Create a Request&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-create-a-request&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-create-a-request&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Right-click your collection from the file explorer&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;New Request&lt;/code&gt; from the menu (or press &lt;code&gt;Ctrl+N&lt;/code&gt; on your keyboard)
+
+    &lt;img src=&#34;../6.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Type a name for your request and hit Enter
+
+    &lt;img src=&#34;../7.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You have successfully created your first request in Trayce! Feel free to add headers, query parameters, and a request body to your request, or play around with the other options available.&lt;/p&gt;
 
       </description>
     </item>
