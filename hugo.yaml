@@ -25,6 +25,7 @@ params:
   sidebar:
     open: true
   theme:
+    default: dark
     displayToggle: false
 
   navbar:

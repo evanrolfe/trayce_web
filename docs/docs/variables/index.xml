@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trayce App – Variables</title>
-    <link>//localhost:1313/docs/variables/</link>
+    <link>//localhost:34043/docs/variables/</link>
     <description>Recent content in Variables on Trayce App</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/variables/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:34043/docs/variables/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Environment Variables</title>
-      <link>//localhost:1313/docs/variables/environment-variables/</link>
+      <link>//localhost:34043/docs/variables/environment-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/environment-variables/</guid>
+      <guid>//localhost:34043/docs/variables/environment-variables/</guid>
       <description>
         
         
@@ -64,10 +64,10 @@
     
     <item>
       <title>Global Environment Variables</title>
-      <link>//localhost:1313/docs/variables/global-environment-variables/</link>
+      <link>//localhost:34043/docs/variables/global-environment-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/global-environment-variables/</guid>
+      <guid>//localhost:34043/docs/variables/global-environment-variables/</guid>
       <description>
         
         
@@ -114,10 +114,10 @@
     
     <item>
       <title>Collection Variables</title>
-      <link>//localhost:1313/docs/variables/collection-variables/</link>
+      <link>//localhost:34043/docs/variables/collection-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/collection-variables/</guid>
+      <guid>//localhost:34043/docs/variables/collection-variables/</guid>
       <description>
         
         
@@ -159,10 +159,10 @@
     
     <item>
       <title>Folder Variables</title>
-      <link>//localhost:1313/docs/variables/folder-variables/</link>
+      <link>//localhost:34043/docs/variables/folder-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/folder-variables/</guid>
+      <guid>//localhost:34043/docs/variables/folder-variables/</guid>
       <description>
         
         
@@ -204,10 +204,10 @@
     
     <item>
       <title>Request Variables</title>
-      <link>//localhost:1313/docs/variables/request-variables/</link>
+      <link>//localhost:34043/docs/variables/request-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/request-variables/</guid>
+      <guid>//localhost:34043/docs/variables/request-variables/</guid>
       <description>
         
         
@@ -244,10 +244,10 @@
     
     <item>
       <title>Runtime Variables</title>
-      <link>//localhost:1313/docs/variables/runtime-variables/</link>
+      <link>//localhost:34043/docs/variables/runtime-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/runtime-variables/</guid>
+      <guid>//localhost:34043/docs/variables/runtime-variables/</guid>
       <description>
         
         
@@ -333,10 +333,10 @@
     
     <item>
       <title>Process Environment Variables</title>
-      <link>//localhost:1313/docs/variables/process-environment-variables/</link>
+      <link>//localhost:34043/docs/variables/process-environment-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/process-environment-variables/</guid>
+      <guid>//localhost:34043/docs/variables/process-environment-variables/</guid>
       <description>
         
         
@@ -450,10 +450,10 @@ manage the &lt;code&gt;.env&lt;/code&gt; file for you.&lt;/div&gt;
     
     <item>
       <title>Variables Interpolation</title>
-      <link>//localhost:1313/docs/variables/variables-interpolation/</link>
+      <link>//localhost:34043/docs/variables/variables-interpolation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/variables/variables-interpolation/</guid>
+      <guid>//localhost:34043/docs/variables/variables-interpolation/</guid>
       <description>
         
         
