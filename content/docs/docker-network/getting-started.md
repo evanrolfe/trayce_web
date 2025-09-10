@@ -10,4 +10,8 @@ TODO
 
 ![](./0-init-agent.png)
 
-![](./1.png)
+![](./curl-example-1.png)
+
+![](./curl-example-2.png)
+
+![](./curl-example-3.png)
