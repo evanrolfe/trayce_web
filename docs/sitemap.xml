@@ -12,11 +12,15 @@
   </url><url>
     <loc>https://trayce.dev/docs/sending-requests/graphql/query/</loc>
   </url><url>
+    <loc>https://trayce.dev/docs/docker-network/how-does-it-work/</loc>
+  </url><url>
     <loc>https://trayce.dev/docs/sending-requests/http/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/sending-requests/http/parameters/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/getting-started/create-collection/</loc>
+  </url><url>
+    <loc>https://trayce.dev/docs/docker-network/getting-started/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/variables/global-environment-variables/</loc>
   </url><url>
@@ -32,6 +36,8 @@
   </url><url>
     <loc>https://trayce.dev/docs/getting-started/create-folder/</loc>
   </url><url>
+    <loc>https://trayce.dev/docs/docker-network/http-grpc/</loc>
+  </url><url>
     <loc>https://trayce.dev/docs/sending-requests/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/scripting/variables/</loc>
@@ -42,6 +48,8 @@
   </url><url>
     <loc>https://trayce.dev/docs/variables/folder-variables/</loc>
   </url><url>
+    <loc>https://trayce.dev/docs/docker-network/mysql-postgresql/</loc>
+  </url><url>
     <loc>https://trayce.dev/docs/scripting/npm-packages/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/variables/</loc>
@@ -51,6 +59,8 @@
     <loc>https://trayce.dev/docs/variables/request-variables/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/scripting/</loc>
+  </url><url>
+    <loc>https://trayce.dev/docs/docker-network/</loc>
   </url><url>
     <loc>https://trayce.dev/docs/variables/runtime-variables/</loc>
   </url><url>

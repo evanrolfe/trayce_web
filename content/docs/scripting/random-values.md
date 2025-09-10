@@ -2,6 +2,7 @@
 title: Random Values
 weight: 8
 prev: docs/scripting/response-query
+next: docs/docker-network/
 ---
 
 Random variables enable you to generate and use random data in your testing workflow. Trayce uses the [faker.js](https://fakerjs.dev/) library to generate random data. You can use these variables like any other variables in Trayce. The syntax to use random variables is `{{$randomData}}`, and you can use them in the request body, authentication, parameters, and other fields.

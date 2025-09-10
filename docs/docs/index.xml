@@ -228,6 +228,20 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
     </item>
     
     <item>
+      <title>How Does It Work</title>
+      <link>https://trayce.dev/docs/docker-network/how-does-it-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trayce.dev/docs/docker-network/how-does-it-work/</guid>
+      <description>
+        
+        
+        &lt;p&gt;TODO&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Parameters</title>
       <link>https://trayce.dev/docs/sending-requests/http/parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -320,6 +334,26 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
 &lt;li&gt;Click &lt;strong&gt;Create&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Congratulations! You have successfully created your first collection.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://trayce.dev/docs/docker-network/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trayce.dev/docs/docker-network/getting-started/</guid>
+      <description>
+        
+        
+        &lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././0-init.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././0-init-agent.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././1.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -569,6 +603,28 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
     </item>
     
     <item>
+      <title>HTTP &amp; gRPC</title>
+      <link>https://trayce.dev/docs/docker-network/http-grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trayce.dev/docs/docker-network/http-grpc/</guid>
+      <description>
+        
+        
+        &lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././2-http.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././3-grpc.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././4-grpc.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././5-grpc.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Variables</title>
       <link>https://trayce.dev/docs/scripting/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -727,6 +783,24 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>MySQL &amp; PostgreSQL</title>
+      <link>https://trayce.dev/docs/docker-network/mysql-postgresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trayce.dev/docs/docker-network/mysql-postgresql/</guid>
+      <description>
+        
+        
+        &lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././6-postgres.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././7-mysql.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 
       </description>
     </item>
