@@ -36,7 +36,7 @@ Request
   <meta itemprop="name" content="Javascript Reference">
   <meta itemprop="description" content="Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows. Here is the complete set of API reference for the scripting feature in Trayce.
 Request The req variable represents the HTTP request object and is automatically available inside your scripting and testing context. It provides methods to access and modify the current request’s properties such as URL, method, headers, body, and other configuration options before the request is sent to the server.">
-  <meta itemprop="wordCount" content="2499">
+  <meta itemprop="wordCount" content="2601">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Javascript Reference">
   <meta name="twitter:description" content="Trayce offers powerful scripting capabilities that allow you to extend and automate your API testing workflows. Here is the complete set of API reference for the scripting feature in Trayce.
@@ -953,6 +953,16 @@ Here is the complete set of API reference for the scripting feature in Trayce.</
 </div>
 <h3><code>setMaxRedirects</code><span class="hx:absolute hx:-mt-20" id="setmaxredirects"></span>
     <a href="#setmaxredirects" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Set the maximum number of redirects to follow</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>setMaxRedirects()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1729,6 +1739,16 @@ Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_bla
     <a href="#setnextrequest" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>By default, the collection runner (UI) and the CLI run requests in order.
 You can change the order by calling <code>setNextRequest</code> with the name of the next request to be run.
 This works only in a post-request script or test-script.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>setNextRequest()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1788,23 +1808,18 @@ This works only in a post-request script or test-script.</p>
 </div>
 </div>
 <h3>Collection Runner Utility Functions<span class="hx:absolute hx:-mt-20" id="collection-runner-utility-functions"></span>
-    <a href="#collection-runner-utility-functions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>setNextRequest</code><span class="hx:absolute hx:-mt-20" id="setnextrequest-1"></span>
-    <a href="#setnextrequest-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>By default, the collection runner (UI) and CLI execute requests in sequential order. You can alter this order by invoking <code>bru.runner.setNextRequest</code> with the name of the next request to execute. This function is applicable only within post-request scripts or test scripts.</p>
-<p><strong>Example:</strong></p>
-<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">bru</span><span class="p">.</span><span class="nx">runner</span><span class="p">.</span><span class="nx">setNextRequest</span><span class="p">(</span><span class="s2">&#34;Get process status&#34;</span><span class="p">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-  <button
-    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-    title="Copy code"
-  >
-    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
-<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
-  </button>
-</div>
-</div>
-<h4><code>skipRequest</code><span class="hx:absolute hx:-mt-20" id="skiprequest"></span>
+    <a href="#collection-runner-utility-functions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>skipRequest</code><span class="hx:absolute hx:-mt-20" id="skiprequest"></span>
     <a href="#skiprequest" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>To skip the execution of the current request, use <code>bru.runner.skipRequest()</code> in the pre-request script section. This function is valid only within the context of a collection run.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>skipRequest()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1820,6 +1835,16 @@ This works only in a post-request script or test-script.</p>
 </div>
 <h4><code>stopExecution</code><span class="hx:absolute hx:-mt-20" id="stopexecution"></span>
     <a href="#stopexecution" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>You can terminate the collection run by using <code>bru.runner.stopExecution()</code> in the pre-request scripts, post-request scripts, or the test scripts. This function is effective only within the context of a collection run.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>stopExecution()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1836,6 +1861,16 @@ This works only in a post-request script or test-script.</p>
 <h3>Test Utility Functions<span class="hx:absolute hx:-mt-20" id="test-utility-functions"></span>
     <a href="#test-utility-functions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>getTestResults</code><span class="hx:absolute hx:-mt-20" id="gettestresults"></span>
     <a href="#gettestresults" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Obtain the test results of a request by calling <code>bru.getTestResults</code> within test scripts.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>getTestResults()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1851,6 +1886,16 @@ This works only in a post-request script or test-script.</p>
 </div>
 <h4><code>getAssertionResults</code><span class="hx:absolute hx:-mt-20" id="getassertionresults"></span>
     <a href="#getassertionresults" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Obtain the assertion results of a request by calling <code>bru.getAssertionResults</code> within test scripts.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>getAssertionResults()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1867,6 +1912,16 @@ This works only in a post-request script or test-script.</p>
 <h3>OAuth2 Credentials<span class="hx:absolute hx:-mt-20" id="oauth2-credentials"></span>
     <a href="#oauth2-credentials" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4><code>getOauth2CredentialVar</code><span class="hx:absolute hx:-mt-20" id="getoauth2credentialvar"></span>
     <a href="#getoauth2credentialvar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Retrieve an OAuth2 credential variable value. This is useful for accessing OAuth2 tokens and credentials.</p>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><code>getOauth2CredentialVar()</code> is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
+  </div>
+</div>
+
 <p><strong>Example:</strong></p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -1899,11 +1954,13 @@ This works only in a post-request script or test-script.</p>
 </div>
 <h3>Cookie Management<span class="hx:absolute hx:-mt-20" id="cookie-management"></span>
     <a href="#cookie-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Trayce provides Cookie Jar APIs that enable programmatic cookie management in request scripts. These APIs allow you to set, get, and delete cookies programmatically using a cookie jar instance.</p>
-<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
-  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg></div>
 
   <div class="hx:w-full hx:min-w-0 hx:leading-7">
-    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">Cookie management APIs are available in pre-request scripts, post-request scripts, and test scripts.</div>
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">Cookie Management is not yet implemented in Trayce.
+<br>
+Check the <a href="https://github.com/evanrolfe/trayce_gui/releases"target="_blank" rel="noopener">GitHub releases page</a> for updates, or subscribe to version updates <a href="https://trayce.dev"target="_blank" rel="noopener">here</a>.</div>
   </div>
 </div>
 

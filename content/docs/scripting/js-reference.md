@@ -148,6 +148,12 @@ req.setBody({
 
 Set the maximum number of redirects to follow
 
+{{<callout type="error" >}}
+`setMaxRedirects()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
+
 **Example:**
 
 ```javascript
@@ -653,6 +659,12 @@ By default, the collection runner (UI) and the CLI run requests in order.
 You can change the order by calling `setNextRequest` with the name of the next request to be run.
 This works only in a post-request script or test-script.
 
+{{<callout type="error" >}}
+`setNextRequest()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
+
 **Example:**
 
 ```javascript
@@ -685,19 +697,16 @@ const requestResponse = await bru.runRequest("echo/echo json");
 
 ### Collection Runner Utility Functions
 
-#### `setNextRequest`
-
-By default, the collection runner (UI) and CLI execute requests in sequential order. You can alter this order by invoking `bru.runner.setNextRequest` with the name of the next request to execute. This function is applicable only within post-request scripts or test scripts.
-
-**Example:**
-
-```javascript
-bru.runner.setNextRequest("Get process status");
-```
-
 #### `skipRequest`
 
 To skip the execution of the current request, use `bru.runner.skipRequest()` in the pre-request script section. This function is valid only within the context of a collection run.
+
+{{<callout type="error" >}}
+`skipRequest()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
+
 
 **Example:**
 
@@ -708,6 +717,13 @@ bru.runner.skipRequest();
 #### `stopExecution`
 
 You can terminate the collection run by using `bru.runner.stopExecution()` in the pre-request scripts, post-request scripts, or the test scripts. This function is effective only within the context of a collection run.
+
+{{<callout type="error" >}}
+`stopExecution()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
+
 
 **Example:**
 
@@ -721,6 +737,13 @@ bru.runner.stopExecution();
 
 Obtain the test results of a request by calling `bru.getTestResults` within test scripts.
 
+{{<callout type="error" >}}
+`getTestResults()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
+
+
 **Example:**
 
 ```javascript
@@ -730,6 +753,12 @@ const testResults = await bru.getTestResults();
 #### `getAssertionResults`
 
 Obtain the assertion results of a request by calling `bru.getAssertionResults` within test scripts.
+
+{{<callout type="error" >}}
+`getAssertionResults()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
 
 **Example:**
 
@@ -742,6 +771,12 @@ const assertionResults = await bru.getAssertionResults();
 #### `getOauth2CredentialVar`
 
 Retrieve an OAuth2 credential variable value. This is useful for accessing OAuth2 tokens and credentials.
+
+{{<callout type="error" >}}
+`getOauth2CredentialVar()` is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
+{{</callout>}}
 
 **Example:**
 
@@ -766,8 +801,10 @@ console.log('Current collection:', collectionName);
 
 Trayce provides Cookie Jar APIs that enable programmatic cookie management in request scripts. These APIs allow you to set, get, and delete cookies programmatically using a cookie jar instance.
 
-{{<callout type="info" >}}
-  Cookie management APIs are available in pre-request scripts, post-request scripts, and test scripts.
+{{<callout type="error" >}}
+Cookie Management is not yet implemented in Trayce.
+<br>
+Check the [GitHub releases page](https://github.com/evanrolfe/trayce_gui/releases) for updates, or subscribe to version updates [here](https://trayce.dev).
 {{</callout>}}
 
 #### `cookies.jar()`
