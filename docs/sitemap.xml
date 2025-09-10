@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:34043/docs/getting-started/install/</loc>
+    <loc>https://trayce.dev/docs/getting-started/install/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/environment-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/environment-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/execution-flow/</loc>
+    <loc>https://trayce.dev/docs/scripting/execution-flow/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/</loc>
+    <loc>https://trayce.dev/docs/getting-started/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/graphql/query/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/graphql/query/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/http/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/parameters/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/http/parameters/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/create-collection/</loc>
+    <loc>https://trayce.dev/docs/getting-started/create-collection/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/global-environment-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/global-environment-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/graphql/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/graphql/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/graphql/variables/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/graphql/variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/headers/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/http/headers/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/js-file/</loc>
+    <loc>https://trayce.dev/docs/scripting/js-file/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/collection-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/collection-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/create-folder/</loc>
+    <loc>https://trayce.dev/docs/getting-started/create-folder/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/variables/</loc>
+    <loc>https://trayce.dev/docs/scripting/variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/sending-requests/http/body/</loc>
+    <loc>https://trayce.dev/docs/sending-requests/http/body/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/getting-started/create-request/</loc>
+    <loc>https://trayce.dev/docs/getting-started/create-request/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/folder-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/folder-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/npm-packages/</loc>
+    <loc>https://trayce.dev/docs/scripting/npm-packages/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/</loc>
+    <loc>https://trayce.dev/docs/variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/js-reference/</loc>
+    <loc>https://trayce.dev/docs/scripting/js-reference/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/request-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/request-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/</loc>
+    <loc>https://trayce.dev/docs/scripting/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/runtime-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/runtime-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/sync-requests/</loc>
+    <loc>https://trayce.dev/docs/scripting/sync-requests/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/process-environment-variables/</loc>
+    <loc>https://trayce.dev/docs/variables/process-environment-variables/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/response-query/</loc>
+    <loc>https://trayce.dev/docs/scripting/response-query/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/scripting/random-values/</loc>
+    <loc>https://trayce.dev/docs/scripting/random-values/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/variables/variables-interpolation/</loc>
+    <loc>https://trayce.dev/docs/variables/variables-interpolation/</loc>
   </url><url>
-    <loc>//localhost:34043/about/</loc>
+    <loc>https://trayce.dev/about/</loc>
   </url><url>
-    <loc>//localhost:34043/categories/</loc>
+    <loc>https://trayce.dev/categories/</loc>
   </url><url>
-    <loc>//localhost:34043/docs/</loc>
+    <loc>https://trayce.dev/docs/</loc>
   </url><url>
-    <loc>//localhost:34043/tags/</loc>
+    <loc>https://trayce.dev/tags/</loc>
   </url><url>
-    <loc>//localhost:34043/</loc>
+    <loc>https://trayce.dev/</loc>
   </url>
 </urlset>

@@ -22,6 +22,7 @@ markup:
 
 params:
   noindex: true
+
   sidebar:
     open: true
   theme:

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=34043&amp;path=livereload" data-no-instant defer></script>
+<html lang="en" dir="ltr"><head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="index, follow" />
   <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
@@ -11,7 +11,7 @@
 <title>Response Query – Trayce App</title>
   <meta name="description" content="The res object that is available inside the post-response variables and scripts. contexts can be queried for data by invoking it like below.
 Think of it as lodash.get() on steroids
-res(&#39;order.total&#39;) Examples const data = { customer: { address: { city: &#34;bangalore&#34; }, orders: [ { id: &#34;order-1&#34;, items: [ { id: 1, amount: 10 }, { id: 2, amount: 20 } ] }, { id: &#34;order-2&#34;, items: [ { id: 3, amount: 30 }, { id: 4, amount: 40 } ] } ] }, }; Query Output res(“customer.address.city”) bangalore res(“customer.orders.items.amount”) [10, 20, 30, 40] res(“customer.orders.items.amount[0]”) 10 res(&#34;..items.amount&#34;) [10, 20, 30, 40] res(&#34;..amount&#34;) [10, 20, 30, 40] res(&#34;..items.amount[0]&#34;) 10 res(&#34;..items[0].amount&#34;) 10 res(&#34;..items[5].amount&#34;) undefined res(&#34;..id&#34;) [“order-1”, 1, 2, “order-2”, 3, 4] res(“customer.orders.foo”) undefined res(&#34;..customer.foo&#34;) undefined res(&#34;..address&#34;) [{ city: “bangalore” }] res(&#34;..address[0]&#34;) { city: “bangalore” } API Standard dot notation Example:" /><link rel="canonical" href="//localhost:34043/docs/scripting/response-query/" itemprop="url" />
+res(&#39;order.total&#39;) Examples const data = { customer: { address: { city: &#34;bangalore&#34; }, orders: [ { id: &#34;order-1&#34;, items: [ { id: 1, amount: 10 }, { id: 2, amount: 20 } ] }, { id: &#34;order-2&#34;, items: [ { id: 3, amount: 30 }, { id: 4, amount: 40 } ] } ] }, }; Query Output res(“customer.address.city”) bangalore res(“customer.orders.items.amount”) [10, 20, 30, 40] res(“customer.orders.items.amount[0]”) 10 res(&#34;..items.amount&#34;) [10, 20, 30, 40] res(&#34;..amount&#34;) [10, 20, 30, 40] res(&#34;..items.amount[0]&#34;) 10 res(&#34;..items[0].amount&#34;) 10 res(&#34;..items[5].amount&#34;) undefined res(&#34;..id&#34;) [“order-1”, 1, 2, “order-2”, 3, 4] res(“customer.orders.foo”) undefined res(&#34;..customer.foo&#34;) undefined res(&#34;..address&#34;) [{ city: “bangalore” }] res(&#34;..address[0]&#34;) { city: “bangalore” } API Standard dot notation Example:" /><link rel="canonical" href="https://trayce.dev/docs/scripting/response-query/" itemprop="url" />
 
 <meta property="og:title" content="Response Query">
 <meta
@@ -133,7 +133,7 @@ API
   content="
     article
   ">
-<meta property="og:url" content="//localhost:34043/docs/scripting/response-query/"><meta property="article:section" content="docs">
+<meta property="og:url" content="https://trayce.dev/docs/scripting/response-query/"><meta property="article:section" content="docs">
 
 
 
@@ -148,11 +148,15 @@ res(&#39;order.total&#39;) Examples const data = { customer: { address: { city: 
   <meta name="twitter:description" content="The res object that is available inside the post-response variables and scripts. contexts can be queried for data by invoking it like below.
 Think of it as lodash.get() on steroids
 res(&#39;order.total&#39;) Examples const data = { customer: { address: { city: &#34;bangalore&#34; }, orders: [ { id: &#34;order-1&#34;, items: [ { id: 1, amount: 10 }, { id: 2, amount: 20 } ] }, { id: &#34;order-2&#34;, items: [ { id: 3, amount: 30 }, { id: 4, amount: 40 } ] } ] }, }; Query Output res(“customer.address.city”) bangalore res(“customer.orders.items.amount”) [10, 20, 30, 40] res(“customer.orders.items.amount[0]”) 10 res(&#34;..items.amount&#34;) [10, 20, 30, 40] res(&#34;..amount&#34;) [10, 20, 30, 40] res(&#34;..items.amount[0]&#34;) 10 res(&#34;..items[0].amount&#34;) 10 res(&#34;..items[5].amount&#34;) undefined res(&#34;..id&#34;) [“order-1”, 1, 2, “order-2”, 3, 4] res(“customer.orders.foo”) undefined res(&#34;..customer.foo&#34;) undefined res(&#34;..address&#34;) [{ city: “bangalore” }] res(&#34;..address[0]&#34;) { city: “bangalore” } API Standard dot notation Example:">
-<link href="/css/compiled/main.css" rel="stylesheet" />
-    <link href="/css/variables.css" rel="stylesheet" />
-    <link href="/css/custom.css" rel="stylesheet" />
+
+    <link rel="preload" href="/css/compiled/main.min.860421afd86baea436520550e3f5b912c5d0ca8bfec32b073ac5871b3ae0ca74.css" as="style" integrity="sha256-hgQhr9hrrqQ2UgVQ4/W5EsXQyov&#43;wysHOsWHGzrgynQ=" />
+    <link href="/css/compiled/main.min.860421afd86baea436520550e3f5b912c5d0ca8bfec32b073ac5871b3ae0ca74.css" rel="stylesheet" integrity="sha256-hgQhr9hrrqQ2UgVQ4/W5EsXQyov&#43;wysHOsWHGzrgynQ=" />
 
   
+
+
+
+
 
 
   <script>
@@ -1061,8 +1065,8 @@ res(&#39;order.total&#39;) Examples const data = { customer: { address: { city: 
     crossorigin="anonymous"></script>
 
     
-    <script defer src="/js/main.js" integrity=""></script>
-<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
-        <script defer src="/en.search.js" integrity=""></script>
+    <script defer src="/js/main.min.9ad16343aeb97ffd6eb4b7238932efb3c09618e19f1f90a87b53b7f89ebb5bde.js" integrity="sha256-mtFjQ665f/1utLcjiTLvs8CWGOGfH5Coe1O3&#43;J67W94="></script>
+<script defer src="/js/flexsearch.433e941a8a573ebb9931fc16fc75266ab6b93f569ac2fb4f3dc66882e0416f4c.js" integrity="sha256-Qz6UGopXPruZMfwW/HUmara5P1aawvtPPcZoguBBb0w=" crossorigin="anonymous"></script>
+        <script defer src="/en.search.min.097e3a24da0aba2ac82ef0f53e82e1500343a7126260a0203f3a45bbe0876093.js" integrity="sha256-CX46JNoKuirILvD1PoLhUANDpxJiYKAgPzpFu&#43;CHYJM="></script>
   </body>
 </html>

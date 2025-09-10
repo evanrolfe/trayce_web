@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trayce App – Trayce - API Client</title>
-    <link>//localhost:34043/</link>
+    <link>https://trayce.dev/</link>
     <description>Recent content in Trayce - API Client on Trayce App</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:34043/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://trayce.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
       

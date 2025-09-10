@@ -79,6 +79,14 @@ footer {
     width: 1000px;
 }
 
+.hero-section-top {
+    background-color: #2D2D2D;
+    background-image:
+        radial-gradient(ellipse 60% 300% at 0% 50%, rgba(108, 180, 173, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse 70% 240% at 100% 50%, rgba(251, 140, 0, 0.2) 0%, transparent 50%);
+
+}
+
 /* .hero-section::before {
     content: '';
     position: absolute;

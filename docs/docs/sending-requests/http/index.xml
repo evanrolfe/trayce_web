@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trayce App – HTTP</title>
-    <link>//localhost:34043/docs/sending-requests/http/</link>
+    <link>https://trayce.dev/docs/sending-requests/http/</link>
     <description>Recent content in HTTP on Trayce App</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:34043/docs/sending-requests/http/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://trayce.dev/docs/sending-requests/http/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Parameters</title>
-      <link>//localhost:34043/docs/sending-requests/http/parameters/</link>
+      <link>https://trayce.dev/docs/sending-requests/http/parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:34043/docs/sending-requests/http/parameters/</guid>
+      <guid>https://trayce.dev/docs/sending-requests/http/parameters/</guid>
       <description>
         
         
@@ -82,10 +82,10 @@
     
     <item>
       <title>Headers</title>
-      <link>//localhost:34043/docs/sending-requests/http/headers/</link>
+      <link>https://trayce.dev/docs/sending-requests/http/headers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:34043/docs/sending-requests/http/headers/</guid>
+      <guid>https://trayce.dev/docs/sending-requests/http/headers/</guid>
       <description>
         
         
@@ -106,10 +106,10 @@
     
     <item>
       <title>Body Data</title>
-      <link>//localhost:34043/docs/sending-requests/http/body/</link>
+      <link>https://trayce.dev/docs/sending-requests/http/body/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:34043/docs/sending-requests/http/body/</guid>
+      <guid>https://trayce.dev/docs/sending-requests/http/body/</guid>
       <description>
         
         
