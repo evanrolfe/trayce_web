@@ -9,22 +9,29 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Getting Started – Trayce App</title>
-  <meta name="description" content="TODO" /><link rel="canonical" href="https://trayce.dev/docs/docker-network/getting-started/" itemprop="url" />
+  <meta name="description" content="To get started, lets monitor a container, make an HTTP request from it and see that request appear in Trayce.
+1. Start a Container Lets start an alpine container and install curl on it:
+docker run -it alpine sh apk add curl Verify it works by running curl https://trayce.dev: " /><link rel="canonical" href="https://trayce.dev/docs/docker-network/getting-started/" itemprop="url" />
 
 <meta property="og:title" content="Getting Started">
 <meta
   property="og:description"
   content="
     
-      TODO
+      To get started, lets monitor a container, make an HTTP request from it and see that request appear in Trayce.
+1. Start a Container
+    Lets start an alpine container and install curl on it:
 
+
+docker run -it alpine sh
+apk add curl
+  
     
 
-    
+  
 
-    
 
-    
+Verify it works by running curl https://trayce.dev:
 
     
     
@@ -40,11 +47,15 @@
 
 
   <meta itemprop="name" content="Getting Started">
-  <meta itemprop="description" content="TODO">
-  <meta itemprop="wordCount" content="1">
+  <meta itemprop="description" content="To get started, lets monitor a container, make an HTTP request from it and see that request appear in Trayce.
+1. Start a Container Lets start an alpine container and install curl on it:
+docker run -it alpine sh apk add curl Verify it works by running curl https://trayce.dev:">
+  <meta itemprop="wordCount" content="183">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Getting Started">
-  <meta name="twitter:description" content="TODO">
+  <meta name="twitter:description" content="To get started, lets monitor a container, make an HTTP request from it and see that request appear in Trayce.
+1. Start a Container Lets start an alpine container and install curl on it:
+docker run -it alpine sh apk add curl Verify it works by running curl https://trayce.dev:">
 
     <link rel="preload" href="/css/compiled/main.min.860421afd86baea436520550e3f5b912c5d0ca8bfec32b073ac5871b3ae0ca74.css" as="style" integrity="sha256-hgQhr9hrrqQ2UgVQ4/W5EsXQyov&#43;wysHOsWHGzrgynQ=" />
     <link href="/css/compiled/main.min.860421afd86baea436520550e3f5b912c5d0ca8bfec32b073ac5871b3ae0ca74.css" rel="stylesheet" integrity="sha256-hgQhr9hrrqQ2UgVQ4/W5EsXQyov&#43;wysHOsWHGzrgynQ=" />
@@ -90,6 +101,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="/css/style.css">
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body><header>
     <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
@@ -473,6 +486,14 @@
   >Getting Started
     </a>
   
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              ></a>
+            </li>
+          </ul>
+  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -821,15 +842,45 @@
 
         <div class="content">
           <h1>Getting Started</h1>
-          <p>TODO</p>
-<p>
-    <img src=".././0-init.png" alt=""  loading="lazy" /></p>
-<p>
-    <img src=".././0-init-agent.png" alt=""  loading="lazy" /></p>
-<p>
-    <img src=".././curl-example-1.png" alt=""  loading="lazy" /></p>
-<p>
+          <p>To get started, lets monitor a container, make an HTTP request from it and see that request appear in Trayce.</p>
+<h3>1. Start a Container<span class="hx:absolute hx:-mt-20" id="1-start-a-container"></span>
+    <a href="#1-start-a-container" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Lets start an alpine container and install curl on it:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><pre><code>docker run -it alpine sh
+apk add curl</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>Verify it works by running <code>curl https://trayce.dev</code>:
+
     <img src=".././curl-example-2.png" alt=""  loading="lazy" /></p>
+<h3>2. Monitor the Container<span class="hx:absolute hx:-mt-20" id="2-monitor-the-container"></span>
+    <a href="#2-monitor-the-container" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Open Trayce, click on the Docker icon in the sidebar:
+
+    <img src=".././0-init.png" alt=""  loading="lazy" />
+Click on the &ldquo;Containers&rdquo; button, copy the command and run it in a console window. This will start the TrayceAgent.
+
+    <img src=".././0-init-agent.png" alt=""  loading="lazy" />
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><svg height=1.2em class="hx:inline-block hx:align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">If the containers you wish to monitor are not running on the default network, you will have to append a <code>--network</code> arg to the command.</div>
+  </div>
+</div>
+</p>
+<p>Once the TrayceAgent has sucessfully started, the modal will change to a list of running containers. Check which container you want to monitor and click &ldquo;Save&rdquo;. In our case we want to monitor the alpine container we started in step 1.
+
+    <img src=".././curl-example-1.png" alt=""  loading="lazy" /></p>
+<h3>3. Make a Request<span class="hx:absolute hx:-mt-20" id="3-make-a-request"></span>
+    <a href="#3-make-a-request" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Go back to the shell console on the alpine container, and re-run <code>curl https://trayce.dev</code>, you should now see this request was picked up by Trayce and displayed in the GUI:</p>
 <p>
     <img src=".././curl-example-3.png" alt=""  loading="lazy" /></p>
 

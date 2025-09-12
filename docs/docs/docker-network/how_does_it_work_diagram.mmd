@@ -1,0 +1,18 @@
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    n1["Network"] <--> B["Kernel"]
+    B <-- sys calls --> C["libssl.so"]
+    C -- uprobes 🔍 --> D@{ label: "<img src=\"https://raw.githubusercontent.com/evanrolfe/trayce_gui/refs/heads/main/fonts/logo.svg\" width=\"20\" height=\"20\"> TrayceAgent<br>Container" }
+    C <-- lib calls --> F["fa:fa-user<br>Monitored<br>Container"]
+    B -- kprobes 🔍 --> D
+    D --> G["Trayce GUI"]
+    n1@{ icon: "aws:res-internet", pos: "b"}
+    B@{ shape: rect}
+    C@{ shape: rect}
+    D@{ shape: rect}
+    G@{ icon: "aws:res-data-table", pos: "b"}
+    style B stroke-width:2px,stroke-dasharray: 2
+    style C stroke-width:2px,stroke-dasharray: 2

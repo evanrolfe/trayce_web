@@ -9,14 +9,16 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>How Does It Work – Trayce App</title>
-  <meta name="description" content="TODO" /><link rel="canonical" href="https://trayce.dev/docs/docker-network/how-does-it-work/" itemprop="url" />
+  <meta name="description" content="Trayce does not rely on a proxy to read network traffic, even if it’s TLS-encrypted. Instead the TrayceAgent container is run on the same machine as the containers being monitored. It uses a combination of eBPF kprobes and uprobes to read raw, unencrypted network traffic.
+Raw byte streams of network traffic are sent from the kernel-space eBPF program, to a user-space program running in the agent container, which parses those streams into structured requests/responses. Which are then sent over gRPC to the GUI to be displayed to the user." /><link rel="canonical" href="https://trayce.dev/docs/docker-network/how-does-it-work/" itemprop="url" />
 
 <meta property="og:title" content="How Does It Work">
 <meta
   property="og:description"
   content="
     
-      TODO
+      Trayce does not rely on a proxy to read network traffic, even if it&rsquo;s TLS-encrypted. Instead the TrayceAgent container is run on the same machine as the containers being monitored. It uses a combination of eBPF kprobes and uprobes to read raw, unencrypted network traffic.
+Raw byte streams of network traffic are sent from the kernel-space eBPF program, to a user-space program running in the agent container, which parses those streams into structured requests/responses. Which are then sent over gRPC to the GUI to be displayed to the user.
     
   ">
 <meta
@@ -30,11 +32,13 @@
 
 
   <meta itemprop="name" content="How Does It Work">
-  <meta itemprop="description" content="TODO">
-  <meta itemprop="wordCount" content="1">
+  <meta itemprop="description" content="Trayce does not rely on a proxy to read network traffic, even if it’s TLS-encrypted. Instead the TrayceAgent container is run on the same machine as the containers being monitored. It uses a combination of eBPF kprobes and uprobes to read raw, unencrypted network traffic.
+Raw byte streams of network traffic are sent from the kernel-space eBPF program, to a user-space program running in the agent container, which parses those streams into structured requests/responses. Which are then sent over gRPC to the GUI to be displayed to the user.">
+  <meta itemprop="wordCount" content="457">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How Does It Work">
-  <meta name="twitter:description" content="TODO">
+  <meta name="twitter:description" content="Trayce does not rely on a proxy to read network traffic, even if it’s TLS-encrypted. Instead the TrayceAgent container is run on the same machine as the containers being monitored. It uses a combination of eBPF kprobes and uprobes to read raw, unencrypted network traffic.
+Raw byte streams of network traffic are sent from the kernel-space eBPF program, to a user-space program running in the agent container, which parses those streams into structured requests/responses. Which are then sent over gRPC to the GUI to be displayed to the user.">
 
     <link rel="preload" href="/css/compiled/main.min.860421afd86baea436520550e3f5b912c5d0ca8bfec32b073ac5871b3ae0ca74.css" as="style" integrity="sha256-hgQhr9hrrqQ2UgVQ4/W5EsXQyov&#43;wysHOsWHGzrgynQ=" />
     <link href="/css/compiled/main.min.860421afd86baea436520550e3f5b912c5d0ca8bfec32b073ac5871b3ae0ca74.css" rel="stylesheet" integrity="sha256-hgQhr9hrrqQ2UgVQ4/W5EsXQyov&#43;wysHOsWHGzrgynQ=" />
@@ -80,6 +84,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="/css/style.css">
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body><header>
     <nav class="navbar navbar-expand-sm navbar-dark main-nav" style="padding-top: 5px; padding-bottom: 5px;">
@@ -455,6 +461,26 @@
   >How Does It Work
     </a>
   
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#kprobes"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >kprobes</a>
+            </li>
+          <li>
+              <a
+                href="#uprobes"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >uprobes</a>
+            </li>
+          <li>
+              <a
+                href="#user-space"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >user-space</a>
+            </li>
+          </ul>
+  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -811,7 +837,35 @@
 
         <div class="content">
           <h1>How Does It Work</h1>
-          <p>TODO</p>
+          <p>Trayce does not rely on a proxy to read network traffic, even if it&rsquo;s TLS-encrypted. Instead the <a href="https://github.com/evanrolfe/trayce_agent"target="_blank" rel="noopener">TrayceAgent</a> container is run on the same machine as the containers being monitored. It uses a combination of <a href="https://ebpf.io/what-is-ebpf/"target="_blank" rel="noopener">eBPF</a> kprobes and uprobes to read raw, unencrypted network traffic.</p>
+<p>Raw byte streams of network traffic are sent from the kernel-space eBPF program, to a user-space program running in the agent container, which parses those streams into structured requests/responses. Which are then sent over gRPC to the GUI to be displayed to the user.</p>
+<pre class="mermaid hx:mt-6">
+  ---
+config:
+  layout: dagre
+---
+flowchart TB
+    n1[&#34;fa:fa-globe Network&#34;] &lt;--&gt; B[&#34;Kernel&#34;]
+    B &lt;-- sys calls --&gt; C[&#34;libssl.so&#34;]
+    C -- uprobes --&gt; D@{ label: &#34;&lt;img src=\&#34;https://raw.githubusercontent.com/evanrolfe/trayce_gui/refs/heads/main/fonts/logo.svg\&#34; style=\&#34;width:20px;height:20px\&#34;&gt; TrayceAgent&lt;br&gt;Container&#34; }
+    C &lt;-- lib calls --&gt; F[&#34;fa:fa-user&lt;br&gt;Monitored&lt;br&gt;Container&#34;]
+    B -- kprobes  --&gt; D
+    D --&gt; G[&#34;fa:fa-table Trayce GUI&#34;]
+    B@{ shape: rect}
+    C@{ shape: rect}
+    D@{ shape: rect}
+    style B stroke-width:2px,stroke-dasharray: 2
+    style C stroke-width:2px,stroke-dasharray: 2
+    style D width:150px
+    style F width:150px
+</pre><h2>kprobes<span class="hx:absolute hx:-mt-20" id="kprobes"></span>
+    <a href="#kprobes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>eBPF kprobes are programs which hook into Linux kernel functions. They get executed any time the kernel function is called, or returned from (kretprobes). TrayceAgent attaches kprobes to kernel functions which transfer data over sockets, e.g. <a href="https://linux.die.net/man/3/sendto"target="_blank" rel="noopener">sendto</a> and <a href="https://linux.die.net/man/3/recvfrom"target="_blank" rel="noopener">recvfrom</a>. This allows us to read the raw bytes being sent and received over the network. Filtering is done on these calls to ensure we only capture TCP traffic from the containers we want to monitor.</p>
+<h2>uprobes<span class="hx:absolute hx:-mt-20" id="uprobes"></span>
+    <a href="#uprobes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>eBPF uprobes are like kprobes except they hook into user-space programs. To intercept TLS-encrypted traffic, the TrayceAgent attaches uprobes to the OpenSSL library (i.e. <code>libssl.so.3</code>) and reads any calls made to <code>SSL_Write</code> or <code>SSL_Read</code>. This way it is able to see the raw, unencrypted traffic, before it is encrypted to be sent over the network, or read incoming traffic after it has been decrypted by OpenSSL.</p>
+<p>For programs written in Go, the functions for encrypting and decrypting TLS traffic in Go&rsquo;s <a href="https://pkg.go.dev/crypto/tls"target="_blank" rel="noopener">crypto/tls</a> package are attached with uprobes in a similar way to how OpenSSL is done. This is because Go does not rely on OpenSSL for TLS encryption and instead comes with its own built-in package for encryption.</p>
+<h2>user-space<span class="hx:absolute hx:-mt-20" id="user-space"></span>
+    <a href="#user-space" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The user-space part of the TrayceAgent is a program written in Go which receives the raw byte stream of network traffic, sent over a BPF <a href="https://www.kernel.org/doc/html/next/bpf/ringbuf.html"target="_blank" rel="noopener">ring-buffer map</a> from the kprobes and uprobes mentioned above. The byte streams are segmented by TCP connection and an algorithm is run over the byte stream to detect which protocol is being used. If a supported protocol is detected, then it starts parsing the byte stream into request and response structs. Those structs are then sent over gRPC to the GUI to be displayed to the user.</p>
+<p>For more in-depth documentation on the TrayceAgent, see the <a href="https://github.com/evanrolfe/trayce_agent/tree/main/docs"target="_blank" rel="noopener">docs</a> in its Github repo.</p>
 
         </div>
         <div class="hx:mt-16"></div>
@@ -844,6 +898,35 @@
     
     <script defer src="/js/main.min.9ad16343aeb97ffd6eb4b7238932efb3c09618e19f1f90a87b53b7f89ebb5bde.js" integrity="sha256-mtFjQ665f/1utLcjiTLvs8CWGOGfH5Coe1O3&#43;J67W94="></script>
 <script defer src="/js/flexsearch.433e941a8a573ebb9931fc16fc75266ab6b93f569ac2fb4f3dc66882e0416f4c.js" integrity="sha256-Qz6UGopXPruZMfwW/HUmara5P1aawvtPPcZoguBBb0w=" crossorigin="anonymous"></script>
-        <script defer src="/en.search.min.097e3a24da0aba2ac82ef0f53e82e1500343a7126260a0203f3a45bbe0876093.js" integrity="sha256-CX46JNoKuirILvD1PoLhUANDpxJiYKAgPzpFu&#43;CHYJM="></script>
+        <script defer src="/en.search.min.097e3a24da0aba2ac82ef0f53e82e1500343a7126260a0203f3a45bbe0876093.js" integrity="sha256-CX46JNoKuirILvD1PoLhUANDpxJiYKAgPzpFu&#43;CHYJM="></script><script defer src="/js/mermaid.min.ba0a3a6a6d83f1c8416818bf60c86f1054b06e543d53655c7c9a0dac3ab89da2.js" integrity="sha256-ugo6am2D8chBaBi/YMhvEFSwblQ9U2VcfJoNrDq4naI=" crossorigin="anonymous"></script><script>
+  document.addEventListener("DOMContentLoaded", () => {
+    
+    document.querySelectorAll(".mermaid").forEach((el) => {
+      el.dataset.original = el.innerHTML;
+    });
+
+    const theme = document.documentElement.classList.contains("dark") ? "dark" : "default";
+    mermaid.initialize({ startOnLoad: true, theme: theme });
+
+    let timeout;
+    new MutationObserver(() => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        const theme = document.documentElement.classList.contains("dark") ? "dark" : "default";
+        document.querySelectorAll(".mermaid").forEach((el) => {
+          
+          el.innerHTML = el.dataset.original;
+          el.removeAttribute("data-processed");
+        });
+        mermaid.initialize({ startOnLoad: true, theme: theme });
+        mermaid.init();
+      }, 150);
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  });
+</script>
+
   </body>
 </html>

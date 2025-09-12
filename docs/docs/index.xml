@@ -236,7 +236,35 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
       <description>
         
         
-        &lt;p&gt;TODO&lt;/p&gt;
+        &lt;p&gt;Trayce does not rely on a proxy to read network traffic, even if it&amp;rsquo;s TLS-encrypted. Instead the &lt;a href=&#34;https://github.com/evanrolfe/trayce_agent&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TrayceAgent&lt;/a&gt; container is run on the same machine as the containers being monitored. It uses a combination of &lt;a href=&#34;https://ebpf.io/what-is-ebpf/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eBPF&lt;/a&gt; kprobes and uprobes to read raw, unencrypted network traffic.&lt;/p&gt;
+&lt;p&gt;Raw byte streams of network traffic are sent from the kernel-space eBPF program, to a user-space program running in the agent container, which parses those streams into structured requests/responses. Which are then sent over gRPC to the GUI to be displayed to the user.&lt;/p&gt;
+&lt;pre class=&#34;mermaid hx:mt-6&#34;&gt;
+  ---
+config:
+  layout: dagre
+---
+flowchart TB
+    n1[&amp;#34;fa:fa-globe Network&amp;#34;] &amp;lt;--&amp;gt; B[&amp;#34;Kernel&amp;#34;]
+    B &amp;lt;-- sys calls --&amp;gt; C[&amp;#34;libssl.so&amp;#34;]
+    C -- uprobes --&amp;gt; D@{ label: &amp;#34;&amp;lt;img src=\&amp;#34;https://raw.githubusercontent.com/evanrolfe/trayce_gui/refs/heads/main/fonts/logo.svg\&amp;#34; style=\&amp;#34;width:20px;height:20px\&amp;#34;&amp;gt; TrayceAgent&amp;lt;br&amp;gt;Container&amp;#34; }
+    C &amp;lt;-- lib calls --&amp;gt; F[&amp;#34;fa:fa-user&amp;lt;br&amp;gt;Monitored&amp;lt;br&amp;gt;Container&amp;#34;]
+    B -- kprobes  --&amp;gt; D
+    D --&amp;gt; G[&amp;#34;fa:fa-table Trayce GUI&amp;#34;]
+    B@{ shape: rect}
+    C@{ shape: rect}
+    D@{ shape: rect}
+    style B stroke-width:2px,stroke-dasharray: 2
+    style C stroke-width:2px,stroke-dasharray: 2
+    style D width:150px
+    style F width:150px
+&lt;/pre&gt;&lt;h2&gt;kprobes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;kprobes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#kprobes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;eBPF kprobes are programs which hook into Linux kernel functions. They get executed any time the kernel function is called, or returned from (kretprobes). TrayceAgent attaches kprobes to kernel functions which transfer data over sockets, e.g. &lt;a href=&#34;https://linux.die.net/man/3/sendto&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sendto&lt;/a&gt; and &lt;a href=&#34;https://linux.die.net/man/3/recvfrom&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recvfrom&lt;/a&gt;. This allows us to read the raw bytes being sent and received over the network. Filtering is done on these calls to ensure we only capture TCP traffic from the containers we want to monitor.&lt;/p&gt;
+&lt;h2&gt;uprobes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;uprobes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uprobes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;eBPF uprobes are like kprobes except they hook into user-space programs. To intercept TLS-encrypted traffic, the TrayceAgent attaches uprobes to the OpenSSL library (i.e. &lt;code&gt;libssl.so.3&lt;/code&gt;) and reads any calls made to &lt;code&gt;SSL_Write&lt;/code&gt; or &lt;code&gt;SSL_Read&lt;/code&gt;. This way it is able to see the raw, unencrypted traffic, before it is encrypted to be sent over the network, or read incoming traffic after it has been decrypted by OpenSSL.&lt;/p&gt;
+&lt;p&gt;For programs written in Go, the functions for encrypting and decrypting TLS traffic in Go&amp;rsquo;s &lt;a href=&#34;https://pkg.go.dev/crypto/tls&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;crypto/tls&lt;/a&gt; package are attached with uprobes in a similar way to how OpenSSL is done. This is because Go does not rely on OpenSSL for TLS encryption and instead comes with its own built-in package for encryption.&lt;/p&gt;
+&lt;h2&gt;user-space&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;user-space&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#user-space&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The user-space part of the TrayceAgent is a program written in Go which receives the raw byte stream of network traffic, sent over a BPF &lt;a href=&#34;https://www.kernel.org/doc/html/next/bpf/ringbuf.html&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ring-buffer map&lt;/a&gt; from the kprobes and uprobes mentioned above. The byte streams are segmented by TCP connection and an algorithm is run over the byte stream to detect which protocol is being used. If a supported protocol is detected, then it starts parsing the byte stream into request and response structs. Those structs are then sent over gRPC to the GUI to be displayed to the user.&lt;/p&gt;
+&lt;p&gt;For more in-depth documentation on the TrayceAgent, see the &lt;a href=&#34;https://github.com/evanrolfe/trayce_agent/tree/main/docs&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs&lt;/a&gt; in its Github repo.&lt;/p&gt;
 
       </description>
     </item>
@@ -347,15 +375,45 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
       <description>
         
         
-        &lt;p&gt;TODO&lt;/p&gt;
-&lt;p&gt;
-    &lt;img src=&#34;.././0-init.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;
-    &lt;img src=&#34;.././0-init-agent.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;
-    &lt;img src=&#34;.././curl-example-1.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;
+        &lt;p&gt;To get started, lets monitor a container, make an HTTP request from it and see that request appear in Trayce.&lt;/p&gt;
+&lt;h3&gt;1. Start a Container&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-start-a-container&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-start-a-container&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Lets start an alpine container and install curl on it:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;docker run -it alpine sh
+apk add curl&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Verify it works by running &lt;code&gt;curl https://trayce.dev&lt;/code&gt;:
+
     &lt;img src=&#34;.././curl-example-2.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;2. Monitor the Container&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-monitor-the-container&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-monitor-the-container&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Open Trayce, click on the Docker icon in the sidebar:
+
+    &lt;img src=&#34;.././0-init.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;
+Click on the &amp;ldquo;Containers&amp;rdquo; button, copy the command and run it in a console window. This will start the TrayceAgent.
+
+    &lt;img src=&#34;.././0-init-agent.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;If the containers you wish to monitor are not running on the default network, you will have to append a &lt;code&gt;--network&lt;/code&gt; arg to the command.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Once the TrayceAgent has sucessfully started, the modal will change to a list of running containers. Check which container you want to monitor and click &amp;ldquo;Save&amp;rdquo;. In our case we want to monitor the alpine container we started in step 1.
+
+    &lt;img src=&#34;.././curl-example-1.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;3. Make a Request&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-make-a-request&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-make-a-request&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Go back to the shell console on the alpine container, and re-run &lt;code&gt;curl https://trayce.dev&lt;/code&gt;, you should now see this request was picked up by Trayce and displayed in the GUI:&lt;/p&gt;
 &lt;p&gt;
     &lt;img src=&#34;.././curl-example-3.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 
@@ -615,13 +673,18 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
       <description>
         
         
-        &lt;p&gt;TODO&lt;/p&gt;
-&lt;p&gt;
+        &lt;p&gt;Trayce can monitor HTTP and HTTP-based protocols, including HTTP1.1, HTTP2 and gRPC.&lt;/p&gt;
+&lt;h2&gt;HTTP&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;http&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#http&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;
     &lt;img src=&#34;.././2-http.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;gRPC&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;grpc&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#grpc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;gRPC messages will initially appear with their raw data:&lt;/p&gt;
 &lt;p&gt;
     &lt;img src=&#34;.././3-grpc.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To parse the messages and properly display them, you must import the &lt;code&gt;.proto&lt;/code&gt; file for the API in use. Do this by click the &amp;ldquo;Select .proto file&amp;rdquo; dropdown in the top right corner, and clicking &amp;ldquo;Import .proto file&amp;rdquo;. Click &amp;ldquo;Upload&amp;rdquo; and browse to the file in your machine.&lt;/p&gt;
 &lt;p&gt;
     &lt;img src=&#34;.././4-grpc.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can now select the &lt;code&gt;.proto&lt;/code&gt; file from the dropdown, and the message will be parsed and displayed in a readable format:&lt;/p&gt;
 &lt;p&gt;
     &lt;img src=&#34;.././5-grpc.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 
@@ -800,10 +863,12 @@ Check the &lt;a href=&#34;https://github.com/evanrolfe/trayce_gui/releases&#34;t
       <description>
         
         
-        &lt;p&gt;TODO&lt;/p&gt;
-&lt;p&gt;
+        &lt;p&gt;Trayce can monitor the network protocols for SQL databases including PostgreSQL and MySQL.&lt;/p&gt;
+&lt;h2&gt;PostgreSQL&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;postgresql&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#postgresql&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;
     &lt;img src=&#34;.././6-postgres.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;
+&lt;h2&gt;MySQL&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mysql&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mysql&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;
     &lt;img src=&#34;.././7-mysql.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 
       </description>
