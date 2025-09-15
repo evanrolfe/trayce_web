@@ -375,7 +375,7 @@ X-Request-ID: c99050e0-db8f-4621-bd9b-f00f0a661260</code></pre>
 
                 case 'SELECT * FROM users WHERE active=TRUE AND name=\'John\'':
                     details.arguments = ['Query parameters: active=TRUE, name=\'John\''];
-                    details.returnValues = ['ResultSet: 1 row returned', 'Data: [{id: 1, name: "John", email: "john@example.com", active: true, created_at: "2024-01-15 10:30:00", updated_at: "2024-01-15 10:30:00"}]'];
+                    details.returnValues = ['error: unknown column: active"'];
                     details.description = 'SQL query executed against the users table with filtering conditions.';
                     details.context = 'Database query execution';
                     break;
